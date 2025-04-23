@@ -11,6 +11,18 @@ mkdocs = "^1.6.1"
 taskipy = "^1.14.1"
 isort = "^5.13.2"
 black = "^24.10.0"
+ipykernel = "^6.29.5"
+nltk = "^3.9.1"
+stanza = "^1.10.1"
+googletrans = "^4.0.2"
+deep-translator = "^1.11.4"
+pyttsx3 = "^2.98"
+inflect = "^7.5.0"
+gtts = "^2.5.4"
+pandas = "^2.2.3"
+speechrecognition = "^3.13.0"
+textblob = "^0.18.0.post0"
+quiz-maker = "^1.0"
 
 
 [build-system]
