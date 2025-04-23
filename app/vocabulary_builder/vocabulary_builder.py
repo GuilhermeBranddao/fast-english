@@ -7,22 +7,61 @@ engine = inflect.engine()
 # Dados de vocabulário
 #word = engine.number_to_words(int(number))
 # engine.number_to_words(int(number))
+
 VOCABULARY = {
     "Numbers": {
-        "Numbers 0-100": {str(number):engine.number_to_words(int(number)) for number in range(101)},
-        "Ordinal Numbers 0-100": [f"{i}th" if i > 0 else "0th" for i in range(101)],
+        "Numbers 0-100": {str(number): engine.number_to_words(number) for number in range(101)},
+        #"Large Numbers 100-1000": {str(number): engine.number_to_words(random.randint(100, 1000)) for _ in range(101)},
+        #"Large Numbers 1000-1000000": {str(number): engine.number_to_words(random.randint(1000, 1000000)) for _ in range(101)},
+        "Ordinal Numbers 0-100": {f"{number}th": engine.ordinal(engine.number_to_words(number)) if number > 0 else "0th" for number in range(101)},
     },
     "Time Expressions": {
-        "Days of the Week": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-        "Months of the Year": [
-            "January", "February", "March", "April", "May", "June",
-            "July", "August", "September", "October", "November", "December"
-        ],
-        "The Calendar": ["day", "week", "month", "year", "decade", "century"]
+        "Dias da Semana": {
+            "Segunda-feira": "Monday",
+            "Terça-feira": "Tuesday",
+            "Quarta-feira": "Wednesday",
+            "Quinta-feira": "Thursday",
+            "Sexta-feira": "Friday",
+            "Sábado": "Saturday",
+            "Domingo": "Sunday",
+        },
+        "Meses do Ano": {
+            "Janeiro": "January",
+            "Fevereiro": "February",
+            "Março": "March",
+            "Abril": "April",
+            "Maio": "May",
+            "Junho": "June",
+            "Julho": "July",
+            "Agosto": "August",
+            "Setembro": "September",
+            "Outubro": "October",
+            "Novembro": "November",
+            "Dezembro": "December"
+        },
+        "O Calendário": {
+            "dia": "day",
+            "semana": "week",
+            "mês": "month",
+            "ano": "year",
+            "década": "decade",
+            "século": "century"
+        }
     },
     "Seasons and Frequency": {
-        "Seasons": ["Spring", "Summer", "Autumn", "Winter"],
-        "Frequency": ["always", "often", "sometimes", "rarely", "never"]
+        "Estações": {
+            "Primavera": "Spring",
+            "Verão": "Summer",
+            "Outono": "Autumn",
+            "Inverno": "Winter"
+        },
+        "Frequência": {
+            "sempre": "always",
+            "frequentemente": "often",
+            "às vezes": "sometimes",
+            "raramente": "rarely",
+            "nunca": "never"
+        }
     }
 }
 
@@ -34,6 +73,7 @@ class VocabularyQuiz:
         self.current_category = None
         self.current_subcategory = None
         self.current_word = None
+        self.current_answer = None
 
         self.setup_ui()
 
@@ -92,18 +132,20 @@ class VocabularyQuiz:
 
     def next_word(self):
         words = VOCABULARY[self.current_category][self.current_subcategory]
-        breakpoint()
-        self.current_word = random.choice(words)
+        self.current_word = random.choice([i for i in words])
+        self.current_answer = words[self.current_word]
+
         self.word_label.config(text=self.current_word)
         self.answer_entry.delete(0, tk.END)
         self.feedback_label.config(text="")
 
     def check_answer(self):
         user_answer = self.answer_entry.get().strip()
-        if user_answer.lower() == self.current_word.lower():
+        if user_answer.lower() == self.current_answer.lower():
             self.feedback_label.config(text="Correct!", foreground="green")
         else:
-            self.feedback_label.config(text=f"Wrong! Correct answer: {self.current_word}", foreground="red")
+            self.feedback_label.config(text=f"{self.current_answer}", foreground="red")
+            print(f"❌: {user_answer}, ✅: {self.current_answer}")
         self.root.after(2000, self.next_word)
 
     def back_to_categories(self):

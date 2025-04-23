@@ -90,7 +90,7 @@ def main(text):
     window.mainloop()
     return result_list
 
-with open("text.txt", 'r') as f:
+with open("app/database/txt/text.txt", 'r') as f:
     text = f.read()
 # Chama a função principal e obtém as sentenças salvas
 saved_sentences = main(text)

@@ -1,0 +1,16 @@
+mkdocs
+taskipy
+isort
+black
+ipykernel
+nltk
+stanza
+googletrans
+deep-translator
+pyttsx3
+inflect
+gtts
+pandas
+speechrecognition
+textblob
+quiz-maker
