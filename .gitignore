@@ -10,6 +10,8 @@ __pycache__/
 # C extensions
 *.so
 
+raw_images
+
 .venv
 # Distribution / packaging
 .Python

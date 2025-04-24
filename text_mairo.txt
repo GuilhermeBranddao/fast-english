@@ -1,0 +1,201 @@
+texto = """
+- for the last three Spring Breaks in a row.
+= pelas últimas três Férias de Páscoa/Semana Santa seguidas.
+
+- They loved to get away from their busy lives, slow down, and enjoy nature and each other.
+= Eles adoravam fugir de suas vidas ocupadas, se acalmar ("diminuir a
+velocidade"), e curtir a natureza e o tempo juntos (um ao outro).
+
+- William was their older son at nine years old.
+= William era o filho mais velho deles com nove anos de idade.
+
+- He took after his mother, with deep brown hair and eyes and olive-toned skin.
+= Ele puxava a mãe, com olhos e cabelos castanhos escuros e pele morena.
+
+- The walls were a deep red.
+= As paredes eram vermelhas escuras.
+
+- He took every responsibility given to him seriously, just like his mother, and he enjoyed giving advice to his younger brother.
+= Ele assumiu todas as responsabilidades dadas a ele seriamente, assim como sua mãe, e ele gostava de dar conselhos ao seu irmão mais novo.
+
+- Zack, a five-year-old, was more like his father with strawberry-blonde hair and a pale complexion.
+= Zack, uma criança de cinco anos de idade, era mais como seu pai, com cabelos loiros-avermelhados e uma pele clara.
+
+- All of the children had healthy complexions.
+= Todas as crianças tinham a aparência saudável.
+
+- He was also more like his father in his love for mischief.
+= Ele era também mais como seu pai em seu amor por travessuras.
+
+- Those children are always getting into mischief.
+= Aqueles crianças estão sempre se envolvendo com travessuras.
+
+- His father enjoyed hiding around corners and popping out at the next passer-by, saying, "Boo!" and startling them.
+= Seu pai gostava de se esconder nos cantos e aparecer de surpresa para o próximo transeunte, dizendo "Boo!" e surpreendendo-os.
+
+- The window opened and a dog's head popped out.
+= A janela abriu e a cabeça de um cachorro apareceu de repente.
+
+- I'm sorry that I startled you.
+= Desculpe-me por ter assustado/surpreendo você.
+
+- Zack also loved to hide and surprise people, but he had other added mischievous behaviors, as well.
+= Zack também adorava se esconder e surpreender as pessoas, mas ele tinha
+também outros comportamentos maliciosos.
+
+- The Jensons camped in an old RV that Mr. Jenson had to repair during just about every trip.
+= Os Jensons acamparam em um trailer velho que o Sr. Jenson tinha que consertar durante quase/praticamente todas as viagens.
+
+- Last season, a gasket on the toilet had given out, causing a leak the Mr. Jenson spent hours fixing.
+= Na última temporada, uma vedação/gaxeta no banheiro tinha cedido/estragado, causando um vazamento que o Sr. Jenson passou horas consertando.
+
+- He'd had to travel to the nearest RV specialty store to replace the part.
+= Ele "tinha tido que viajar" para a loja especializada em trailers mais próxima para substituir a peça.
+
+- This year, there seemed to be some problem with the RV's electrical system.
+= Este ano, parecia haver algum problema com o sistema elétrico do trailer.
+
+- The Jensons had tried everything they could think of, and they couldn’t get the air conditioning to run.
+= Os Jensons tinham tentado tudo que eles conseguiam pensar (em), e eles não conseguiram fazer o ar condicionado funcionar.
+
+- Mrs. Jenson had decided to walk the campsite, looking for RV campers that seemed to have a good deal of experience.
+= A Sra. Jenson tinha decidido caminhar pelo acampamento, procurando por pessoas acampando em trailers que parecessem ter uma boa dose de experiência.
+
+- Maybe someone had had this problem before and knew how to fix it.
+= Talvez alguém tenha tido esse problema antes e soubesse como corrigi-lo.
+
+- Mr. Jenson stayed at the RV, trying different fuses, checking plugs and connections,
+= O Sr. Jenson ficou no trailer, tentando diferentes fusíveis, verificando plugues e conexões,
+
+- …and generally tinkering with anything he thought might relate to the problem.
+= …e de modo geral fazendo pequenos ajustes com qualquer coisa que ele considerasse que pudesse estar relacionado com o problema.
+
+- He looked up to check on the boys every time he thought about it.
+= Ele olhava para cima para verificar os meninos toda vez que ele pensava sobre isso.
+
+- William and Zack were playing Adventure Seekers,
+= William e Zack estavam bricando de "Adventure Seekers",
+
+- which was basically hide and seek while wearing safari hats and supply backpacks.
+= que era basicamente esconde-esconde enquanto usando chapéus de safári e mochilas de suprimentos.
+
+- Their parents' rule was that they could not leave their particular campsite without permission.
+= A regra de seus pais era que eles não podiam deixar seu acampamento em particular sem  permissão.
+
+- That gave them the thirty yards between their camper and the next.
+= Isso lhes deu as trinta jardas entre o trailer deles e o seguinte.
+
+- There weren't many hiding places in this small space.
+= Não havia muitos esconderijos neste pequeno espaço.
+
+- On Zack's turn to hide, his brother covered his eyes and counted to twenty,
+= Na vez de Zack se esconder, seu irmão cobriu os olhos e contou até vinte,
+
+- Please wait your turn.
+= Por favor, espere a sua vez.
+
+- When it's your turn, take another card.
+= Quando for a sua vez, pegue outra carta.
+
+- while Zack tiptoed out of the campsite and into the woods across the street.
+= enquanto Zack saiu na ponta dos pés do acampamento e entrou na floresta do outro lado da rua.
+
+- He tiptoed quietly around the house to avoid waking the children.
+= Ele andou na ponta dos pés silenciosamente pela casa para evitar acordar as crianças.
+
+- He watched from behind some bushes as his big brother searched everywhere in the campsite.
+= Ele observou por trás de alguns arbustos enquanto seu irmão mais velho procurava em todos os lugares do acampamento.
+
+- Zack couldn't help but giggle that he'd outsmarted William,
+= Zack não teve como não rir que ele tinha sido mais esperto que William,
+
+- The girls giggled at the joke.
+= As meninas riram da piada.
+
+- but as soon as he heard that laugh, William's head whipped around, following the giggle to Zack's spot in the bushes.
+= mas logo que ele ouviu aquela risada, a cabeça de William girou rapidamente, seguindo o riso até o lugar de Zack nos arbustos.
+
+- The sharp turn whipped me around, but I wasn't hurt.
+= A curva fechada me jogou de um lado para o outro, mas eu não me machuquei.
+
+- William started to run toward his little brother, yelling that it was breaking the rules to be out of the campsite.
+= William começou a correr em direção ao seu irmão mais novo, gritando que era quebrar as regras estar fora do acampamento.
+
+- The bus is heading toward town.
+= O ônibus está indo em direção à cidade.
+
+- This is a first step towards political union.
+= Esse é um primeiro passo visando/em direção a únião política.
+
+- William looked around for his dad, but didn’t see him.
+= William olhou pelo local em busca do pai, mas não o viu.
+
+- He must've been inside the RV working on the problem.
+= Ele devia estar dentro do trailer trabalhando no problema.
+
+- So, William ran to get Zack and bring him back to the campsite himself.
+= Então, William correu para pegar o Zack e ele mesmo trazê-lo de volta ao acampamento.
+
+- Zack saw his brother running toward him, but he laughed even harder and ran off in the opposite direction.
+= Zack viu o irmão correndo na direção dele, mas ele riu ainda mais e saiuccorrendo/foi embora na direção oposta.
+
+- He heard William calling, "No! Stop! We can't leave the campsite.
+= Ele ouviu William chamando: "Não! Pare! Não podemos deixar o acampamento.
+
+- We're going to get in trouble!", Zack wouldn't stop, though.
+= Nós vamos arrumar problemas!", Zack não parava, no entanto.
+
+- I would do anything to protect my children.
+= Eu faria qualquer coisa para proteger meus filhos.
+
+- My car wouldn't start this morning.
+= Meu carro não ligava hoje de manhã.
+
+- He wouldn't give up and lose the game that easily.
+= Ele não desistiria e perderia o jogo tão facilmente.
+
+- William finally caught up to Zack when his little brother tripped over a tree root.
+= William finalmente alcançou Zack quando seu irmãozinho tropeçou em uma raiz de árvore.
+
+- Go on ahead. I'll catch up with you.
+= Vai na frente. Eu vou te alcançar.
+
+- They went so fast we couldn't catch up.
+= Eles foram tão rápido que nós não conseguimos alcançá-los.
+
+- Angry that his little brother was about to get him in huge trouble, he yanked Zack up by the arm.
+= Irritado por seu irmão mais novo estar prestes a arrumar grandes problemas para ele, ele puxou Zack pelo braço.
+
+- She yanked the rope.
+= Ela deu um puxão na corda.
+
+- I yanked the door open.
+= Eu puxei a porta (abrindo-a).
+
+- "What are you thinking, you little idiot?"
+= "O que você está pensando, seu pequeno idiota?"
+
+- Zack had a skinned knee from the fall, so his brother's yelling made him cry
+= with pitiful little sobs.
+
+- Zack tinha um joelho esfolado por causa da queda, por isso os gritos de seu
+= irmão o fizeram chorar com pequenos e lamentáveis soluços.
+
+- William sighed and hugged Zack. "I can't stay mad at you when you cry. No fair."
+= William suspirou e abraçou Zack. "Eu não consigo continuar bravo com você quando você chora. Não é justo."
+
+"""
+
+cards = []
+for line in texto.split("\n"):
+    if line.startswith("- "):  # Pergunta
+        question = line[2:].strip()
+    elif line.startswith("= "):  # Resposta
+        answer = line[2:].strip()
+        cards.append((question, answer))  # Adicionar ao baralho
+
+# Criar arquivo formatado para o Anki
+with open("anki_cards.txt", "w", encoding="utf-8") as file:
+    for question, answer in cards:
+        file.write(f"{question}\t{answer}\n")
+
