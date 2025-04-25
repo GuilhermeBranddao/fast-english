@@ -108,8 +108,14 @@ class GameVocabulary(Pagina):
     def __init__(self, parent, controller):
         Pagina.__init__(self, parent, controller)
         self.controller = controller
+
+        self.label_image = tk.Label(self)
+        # self.label_image.pack() # Ou use self.centralizar_widget se essa função estiver definida
+        self.centralizar_widget(self.label_image, 0.25)
+        self.displayed_image_tk = None
+
         self.word_label = tk.Label(self, text="", font=("Arial", 18, "bold"))
-        self.centralizar_widget(self.word_label, 0.3)
+        self.centralizar_widget(self.word_label, 0.4)
         self.answer_entry = ttk.Entry(self, font=("Arial", 14))
         self.centralizar_widget(self.answer_entry, 0.5)
         self.feedback_label = ttk.Label(self, text="", font=("Arial", 12))
@@ -133,6 +139,19 @@ class GameVocabulary(Pagina):
         self.word_label.config(text=word)
         self.answer_entry.delete(0, tk.END)
         self.feedback_label.config(text="")
+    
+    def display_image(self, path_image):
+        try:
+            imagem_pil = Image.open(path_image)
+            imagem_tk = ImageTk.PhotoImage(imagem_pil)
+            self.label_image.config(image=imagem_tk)
+            self.displayed_image_tk = imagem_tk # Guarde a referência
+        except FileNotFoundError:
+            print(f"Erro: Arquivo de imagem não encontrado em {path_image}")
+            self.label_image.config(text="Imagem não encontrada")
+        except Exception as e:
+            print(f"Erro ao carregar a imagem: {e}")
+            self.label_image.config(text=f"Erro ao carregar a imagem: {e}")
 
     def display_feedback(self, message, color):
         self.feedback_label.config(text=message, foreground=color)

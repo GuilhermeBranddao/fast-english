@@ -30,8 +30,11 @@ class VocabularyController:
     def next_word(self):
         if self.view:
             word, answer = self.model.get_next_word()
+            path_image = self.model.get_path_image(answer)
             if word:
                 self.view.display_word(word)
+            if path_image:
+                self.view.display_image(path_image)
             else:
                 messagebox.showinfo("Quiz End", "You have answered all the words in this subcategory!")
                 # self.view.controller.mostrar_frame(PageGame)

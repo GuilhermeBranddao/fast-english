@@ -4,8 +4,9 @@ import json
 import os
 
 class VocabularyModel:
-    def __init__(self, data_folder="data"):
-        self.data_folder = data_folder
+    def __init__(self, data_folder="database/vocabulary_json", data_folder_imagens="database/images/time_expressions"):
+        self.data_folder = data_folder 
+        self.data_folder_imagens = data_folder_imagens
         self.current_category = None
         self.current_subcategory = None
         self.words = {}
@@ -42,6 +43,10 @@ class VocabularyModel:
         self.current_word = random.choice(list(self.words.keys()))
         self.current_answer = self.words[self.current_word]
         return self.current_word, self.current_answer
+    
+    def get_path_image(self, image_name:str):
+        image_name = image_name.lower()
+        return os.path.join(self.data_folder_imagens, f"{image_name}.png") 
 
     def check_answer(self, user_answer):
         if self.current_word and user_answer.strip().lower() == self.current_answer.lower():
