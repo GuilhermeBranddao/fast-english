@@ -48,8 +48,16 @@ class VocabularyModel:
         image_name = image_name.lower()
         return os.path.join(self.data_folder_imagens, f"{image_name}.png") 
 
-    def check_answer(self, user_answer):
-        if self.current_word and user_answer.strip().lower() == self.current_answer.lower():
+    def prep_test(self, text:str):
+        text = text.lower()
+        text = text.strip()
+        return text
+
+    def check_answer(self, user_answer:str):
+        user_answer = self.prep_test(user_answer)
+        self.current_answer = self.prep_test(self.current_answer)
+
+        if self.current_word and user_answer == self.current_answer:
             self.words.pop(self.current_word)
             return True
         return False

@@ -28,24 +28,39 @@ class VocabularyController:
         return False
 
     def next_word(self):
-        if self.view:
+        if self.root:
             word, answer = self.model.get_next_word()
             path_image = self.model.get_path_image(answer)
             if word:
-                self.view.display_word(word)
+                self.root.display_word(word)
             if path_image:
-                self.view.display_image(path_image)
+                self.root.display_image(path_image)
             else:
                 messagebox.showinfo("Quiz End", "You have answered all the words in this subcategory!")
                 # self.view.controller.mostrar_frame(PageGame)
 
     def check_answer(self, user_answer):
-        if self.view:
+        # self.root.feedback_label.config(text="message", foreground="red")
+        # if self.model.check_answer(user_answer):
+        #     # self.root.after(2000, self.next_word)
+
+        #     # return {"mensage","Correct!", "color":"green"}
+        #     return ("Correct!", "green")
+        # else:
+        #     correct_answer = self.model.current_answer
+        #     # self.view.display_feedback(f"{correct_answer}", "red")
+        #     print(f"❌: {user_answer}, ✅: {correct_answer}")
+        #     # self.root.after(2000, self.next_word)
+        #     return (f"{correct_answer}", "red")
+
+        #     # return {"mensage",correct_answer, "color":"red"}
+
+        if self.root:
             if self.model.check_answer(user_answer):
-                self.view.display_feedback("Correct!", "green")
+                self.root.display_feedback("Correct!", "green")
             else:
                 correct_answer = self.model.current_answer
-                self.view.display_feedback(f"{correct_answer}", "red")
+                self.root.display_feedback(f"{correct_answer}", "red")
                 print(f"❌: {user_answer}, ✅: {correct_answer}")
             self.root.after(2000, self.next_word)
 

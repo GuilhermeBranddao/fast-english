@@ -23,6 +23,7 @@ pandas = "^2.2.3"
 speechrecognition = "^3.13.0"
 textblob = "^0.18.0.post0"
 quiz-maker = "^1.0"
+pillow = "^11.2.1"
 
 
 [build-system]
