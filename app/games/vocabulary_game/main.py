@@ -1,7 +1,8 @@
 import tkinter as tk
 from tkinter import ttk
-from app.vocabulary_game.model.vocabulary_model import VocabularyModel
-from app.vocabulary_game.controller.vocabulary_controller import VocabularyController
+from app.model.vocabulary_model import VocabularyModel
+from app.games.vocabulary_game.controller.vocabulary_controller import VocabularyController
+from app.utils.score import ScoreManager
 
 from PIL import Image, ImageTk
 

@@ -30,7 +30,7 @@ class VocabularyController:
     def next_word(self):
         if self.root:
             word, answer = self.model.get_next_word()
-            path_image = self.model.get_path_image(answer)
+            path_image = self.model.get_image_path(answer)
             if word:
                 self.root.display_word(word)
             if path_image:

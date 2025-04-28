@@ -1,202 +1,148 @@
 import tkinter as tk
-from PIL import Image, ImageTk
-from tkinter import ttk, messagebox
-import os
+from tkinter import messagebox
+from app.games.vocabulary_game.main import VocabularyGame
+from app.games.game_color.main import ColorGame
+from app.games.hangman_game.main import HangmanGame
+from app.games.text_challenge.main import TextChallengeApp
 
-from app.vocabulary_game.model.vocabulary_model import VocabularyModel
-# from app.vocabulary_game.view.vocabulary_view import VocabularyView
-from app.vocabulary_game.controller.vocabulary_controller import VocabularyController
-from app.game_color.main import ColorGame
-from app.hangman_game.main import HangmanGame
-from app.vocabulary_game.main import VocabularyGame
-from app.text_challenge.main import TextChallengeApp
 
-class Pagina(tk.Frame):
+
+class BasePage(tk.Frame):
+    """Classe base para todas as páginas com métodos comuns."""
+
     def __init__(self, parent, controller, **kwargs):
-        tk.Frame.__init__(self, parent, **kwargs)
+        super().__init__(parent, **kwargs)
         self.controller = controller
 
-    def centralizar_widget(self, widget, rely):
+    def centralize_widget(self, widget, rely):
+        """Centraliza um widget verticalmente."""
         widget.place(relx=0.5, rely=rely, anchor=tk.CENTER)
 
-class PaginaInicial(Pagina):
+    def add_back_button(self, text="Voltar para a Inicial"):
+        """Adiciona um botão para voltar à página inicial."""
+        back_button = tk.Button(self, text=text, command=lambda: self.controller.show_frame("MainPage"))
+        self.centralize_widget(back_button, 0.85)
+
+    def add_stats_view(self):
+        pass
+
+
+class MainPage(BasePage):
+    """Página inicial contendo o menu principal."""
+
     def __init__(self, parent, controller, **kwargs):
-        Pagina.__init__(self, parent, controller, **kwargs)
+        super().__init__(parent, controller, **kwargs)
+
+        # Título do menu principal
+        title_label = tk.Label(self, text="Menu Principal", font=("Arial", 16, "bold"))
+        title_label.pack(pady=20)
+
+        # Lista de botões e páginas correspondentes
+        games = [
+            ("Jogo de Vocabulário", VocabularyGame),
+            ("Jogo Da Forca", HangmanGame),
+            ("Game Color", ColorGame),
+            ("Desafio de Texto", TextChallengeApp)
+        ]
+
+        # Criação dinâmica de botões
+        for game_name, game_class in games:
+            button = tk.Button(self, text=game_name, width=25, height=2,
+                               command=lambda g=game_class: controller.show_game_frame(g))
+            button.pack(pady=10)
+
+        # Botão adicional
+        other_button = tk.Button(self, text="Ir para a Página 2", width=25, height=2,
+                                  command=lambda: controller.show_frame("PageTwo"))
+        other_button.pack(pady=10)
 
 
-        label = tk.Label(self, text="Esta é a Página Inicial")
-        label.grid(row=0, column=0, columnspan=2, padx=10, pady=10) # Ocupa duas colunas
+class GamePage(BasePage):
+    """Página genérica para carregar jogos dinamicamente."""
 
-        botao1 = tk.Button(self, text="Jogo Vocabulario", command=lambda: controller.mostrar_frame(VocabularyGameView))
-        botao1.grid(row=1, column=0, padx=10, pady=5, sticky="ew") # sticky="ew" expande horizontalmente
+    def __init__(self, parent, controller, game_class, **kwargs):
+        super().__init__(parent, controller, **kwargs)
+        self.game_instance = None
+        self.game_class = game_class
 
-        botao2 = tk.Button(self, text="Ir para a Página 2", command=lambda: controller.mostrar_frame(Pagina2))
-        botao2.grid(row=2, column=0, padx=10, pady=5, sticky="ew")
+    def load_game(self):
+        """Carrega e exibe o jogo apenas quando necessário."""
+        if not self.game_instance:
+            self.game_instance = self.game_class(self)
+            self.game_instance.pack(expand=True, fill="both")
+            self.add_back_button()
 
-        botao_game_color = tk.Button(self, text="Game Color", command=lambda: controller.mostrar_frame(ColorGameView))
-        botao_game_color.grid(row=1, column=1, padx=10, pady=5, sticky="ew")
+            # Estatisticas
+            # # Divisão da interface em dois frames
+            # self.game_frame = tk.Frame(self, bg="#ffffff")  # Área do jogo com fundo branco
+            # self.stats_frame = tk.Frame(self, bg="#2c3e50", width=220, relief="raised", bd=2)  # Estatísticas com bordas
 
-        botao_hangman_game = tk.Button(self, text="Jogo Da Forca", command=lambda: controller.mostrar_frame(HangmanGameView))
-        botao_hangman_game.grid(row=2, column=1, padx=10, pady=5, sticky="ew")
+            # title_label = tk.Label(
+            #     self.stats_frame, text="Estatísticas", font=("Helvetica", 16, "bold"),
+            #     bg="#34495e", fg="#ecf0f1", pady=10
+            # )
+            # title_label.pack(pady=10, fill="x")
 
-        botao_text_challenge = tk.Button(self, text="Desafio Do Texto", command=lambda: controller.mostrar_frame(TextChallengeAppView))
-        botao_text_challenge.grid(row=2, column=2, padx=10, pady=5, sticky="ew")
 
+class PageTwo(BasePage):
+    """Página adicional de exemplo."""
 
-class HangmanGameView(Pagina):
     def __init__(self, parent, controller, **kwargs):
-        Pagina.__init__(self, parent, controller, **kwargs)
-        self.game = HangmanGame(self)
-        self.game.pack(expand=True, fill='both')
-
-        botao_voltar = tk.Button(self, text="Voltar para a Inicial", command=lambda: controller.mostrar_frame(PaginaInicial))
-        self.centralizar_widget(botao_voltar, 0.8)
-
-class ColorGameView(Pagina):
-    def __init__(self, parent, controller, **kwargs):
-        Pagina.__init__(self, parent, controller, **kwargs)
-        self.game = ColorGame(self)
-        self.game.pack(expand=True, fill='both')
-
-        botao_voltar = tk.Button(self, text="Voltar para a Inicial", command=lambda: controller.mostrar_frame(PaginaInicial))
-        self.centralizar_widget(botao_voltar, 0.8)
-
-class PaginaComBotaoVoltar(Pagina):
-    def __init__(self, parent, controller, texto_label, **kwargs):
-        Pagina.__init__(self, parent, controller, **kwargs)
-        label = tk.Label(self, text=texto_label)
-        self.centralizar_widget(label, 0.2)
-        botao_voltar = tk.Button(self, text="Voltar para a Inicial", command=lambda: controller.mostrar_frame(PaginaInicial))
-        self.centralizar_widget(botao_voltar, 0.8)
-
-class VocabularyGameView(Pagina):
-    def __init__(self, parent, controller, **kwargs):
-        Pagina.__init__(self, parent, controller, **kwargs)
-
-        self.game = VocabularyGame(self)
-        self.game.pack(expand=True, fill='both')
-
-        botao_voltar = tk.Button(self, text="Voltar para a Inicial", command=lambda: controller.mostrar_frame(PaginaInicial))
-        self.centralizar_widget(botao_voltar, 0.8)
-
-class TextChallengeAppView(Pagina):
-    def __init__(self, parent, controller, **kwargs):
-        Pagina.__init__(self, parent, controller, **kwargs)
-
-        self.game = TextChallengeApp(self)
-        self.game.pack(expand=True, fill='both')
-
-        botao_voltar = tk.Button(self, text="Voltar para a Inicial", command=lambda: controller.mostrar_frame(PaginaInicial))
-        self.centralizar_widget(botao_voltar, 0.8)
-
-class Pagina2(PaginaComBotaoVoltar):
-    def __init__(self, parent, controller):
-        super().__init__(parent, controller, "Esta é a Página 2")
+        super().__init__(parent, controller, **kwargs)
+        label = tk.Label(self, text="Esta é a Página 2", font=("Arial", 14))
+        self.centralize_widget(label, 0.4)
+        self.add_back_button()
 
 
+class PageController(tk.Tk):
+    """Gerenciador principal para alternar entre páginas."""
 
-class ControladorDePaginas(tk.Tk):
     def __init__(self, *args, **kwargs):
-        tk.Tk.__init__(self, *args, **kwargs)
-
+        super().__init__(*args, **kwargs)
         self.title("Aplicação com Múltiplas Páginas")
-        self.geometry('600x600')
+        self.geometry('700x500')
 
-        container = tk.Frame(self)
-        container.place(relx=0, rely=0, relwidth=1, relheight=1)
+        # Container para armazenar frames
+        self.container = tk.Frame(self)
+        self.container.pack(fill="both", expand=True)
 
+        # Dicionário para páginas
         self.frames = {}
+        self.games = {}
 
+        # Registra a página inicial e a página adicional
+        self.register_frame("MainPage", MainPage)
+        self.register_frame("PageTwo", PageTwo)
 
-        
-        for F in (PaginaInicial, Pagina2, VocabularyGameView, ColorGameView, HangmanGameView, TextChallengeAppView):
-            # config = page_configurations.get(F, {})
-            frame = F(container, self)
-            self.frames[F] = frame
-            frame.place(relx=0, rely=0, relwidth=1, relheight=1)
+        # Exibe a página inicial
+        self.show_frame("MainPage")
 
-        self.mostrar_frame(PaginaInicial)
+    def register_frame(self, name, page_class):
+        """Registra um frame."""
+        frame = page_class(self.container, self)
+        self.frames[name] = frame
+        frame.place(relwidth=1, relheight=1)
 
-    def mostrar_frame(self, pagina_classe, **kwargs):
-        frame = self.frames[pagina_classe]
+    def register_game_frame(self, game_class):
+        """Registra dinamicamente páginas de jogos."""
+        if game_class not in self.games:
+            frame = GamePage(self.container, self, game_class)
+            self.games[game_class] = frame
+            frame.place(relwidth=1, relheight=1)
+
+    def show_frame(self, name):
+        """Exibe a página pelo nome."""
+        frame = self.frames[name]
         frame.tkraise()
-        if pagina_classe == VocabularyGameView and kwargs:
-            frame.load_game_content(kwargs['game_category'], kwargs['game_subcategory'])
+
+    def show_game_frame(self, game_class):
+        """Exibe uma página de jogo dinamicamente."""
+        if game_class not in self.games:
+            self.register_game_frame(game_class)
+        self.games[game_class].tkraise()
+        self.games[game_class].load_game()
 
 
-# app = ControladorDePaginas()
-# app.mainloop()
-
-
-
-
-# import tkinter as tk
-# from tkinter import ttk
-
-# class VocabularyView:
-#     def __init__(self, root, controller):
-#         self.root = root
-#         self.root.title("Vocabulary Quiz")
-#         self.controller = controller
-
-#         self.category_frame = ttk.Frame(self.root, padding=10)
-#         self.category_frame.pack(fill="both", expand=True)
-
-#         ttk.Label(self.category_frame, text="Choose a category:", font=("Arial", 14)).pack(pady=5)
-#         self.category_combobox = ttk.Combobox(self.category_frame, state="readonly")
-#         self.category_combobox.pack(pady=5)
-#         self.category_combobox.bind("<<ComboboxSelected>>", self.populate_subcategories)
-
-#         ttk.Label(self.category_frame, text="Choose a subcategory:", font=("Arial", 14)).pack(pady=5)
-#         self.subcategory_combobox = ttk.Combobox(self.category_frame, state="readonly")
-#         self.subcategory_combobox.pack(pady=5)
-
-#         self.start_button = ttk.Button(self.category_frame, text="Start Quiz", command=self.controller.start_quiz)
-#         self.start_button.pack(pady=10)
-
-#         self.quiz_frame = ttk.Frame(self.root, padding=10)
-
-#         ttk.Label(self.quiz_frame, text="Translate the following word:", font=("Arial", 14)).pack(pady=10)
-#         self.word_label = ttk.Label(self.quiz_frame, text="", font=("Arial", 18, "bold"))
-#         self.word_label.pack(pady=10)
-
-#         self.label1 = ttk.Label(self.quiz_frame, text="Label 1")
-#         self.label1.pack(pady=13)
-
-#         self.answer_entry = ttk.Entry(self.quiz_frame, font=("Arial", 14))
-#         self.answer_entry.pack(pady=5)
-
-#         self.check_button = ttk.Button(self.quiz_frame, text="Check Answer", command=self.controller.check_answer)
-#         self.check_button.pack(pady=5)
-
-#         self.feedback_label = ttk.Label(self.quiz_frame, text="", font=("Arial", 12))
-#         self.feedback_label.pack(pady=5)
-
-#         self.back_button = ttk.Button(self.quiz_frame, text="Back to Categories", command=self.controller.back_to_categories)
-#         self.back_button.pack(pady=10)
-
-#         self.populate_categories(self.controller.get_categories())
-
-#     def populate_categories(self, categories):
-#         self.category_combobox["values"] = categories
-
-#     def populate_subcategories(self, event):
-#         category = self.category_combobox.get()
-#         subcategories = self.controller.get_subcategories(category)
-#         self.subcategory_combobox["values"] = subcategories
-
-#     def show_quiz_frame(self):
-#         self.category_frame.pack_forget()
-#         self.quiz_frame.pack(fill="both", expand=True)
-
-#     def show_category_frame(self):
-#         self.quiz_frame.pack_forget()
-#         self.category_frame.pack(fill="both", expand=True)
-
-#     def display_word(self, word):
-#         self.word_label.config(text=word)
-#         self.answer_entry.delete(0, tk.END)
-#         self.feedback_label.config(text="")
-
-#     def display_feedback(self, message, color):
-#         self.feedback_label.config(text=message, foreground=color)
+if __name__ == "__main__":
+    app = PageController()
+    app.mainloop()
