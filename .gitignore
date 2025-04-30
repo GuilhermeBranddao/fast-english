@@ -12,6 +12,11 @@ __pycache__/
 
 raw_images
 
+extract_data_video/data/video
+extract_data_video/data/audio/original
+extract_data_video/data/image
+# extract_data_video/data/recortes
+
 .venv
 # Distribution / packaging
 .Python
