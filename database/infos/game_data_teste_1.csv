@@ -1,0 +1,2 @@
+datetime,word,hint,won,difficulty,total_attempts,used_attempts,correct_guessed_letters,incorrect_guessed_letters,correct_guesses,incorrect_guesses,time_taken,game_name
+2025-05-01T08:47:20,beautiful,adjetivo,True,0.33,6,4,"a,e,d","a,e,d",2,2,40.5,teste_1

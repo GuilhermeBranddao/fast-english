@@ -17,6 +17,7 @@ extract_data_video/data/audio/original
 extract_data_video/data/image
 extract_data_video/data_organize
 # extract_data_video/data/recortes
+extract_data_video
 
 .venv
 # Distribution / packaging

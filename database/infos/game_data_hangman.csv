@@ -1,0 +1,158 @@
+datetime,word,hint,won,difficulty,total_attempts,used_attempts,correct_guessed_letters,incorrect_guessed_letters,correct_guesses,incorrect_guesses,time_taken,game_name,clicks_on_guess,category,sub_category
+2025-05-01T08:48:23,cramped,,False,1.0,6,6,c,"o,l,q,s,f,w",,,,hangman,,,
+2025-05-01T08:48:44,clean,,True,0.0,6,0,"c,l,e,a,n",,,,,hangman,,,
+2025-05-01T09:00:43,noisy,,True,0.0,6,0,"n,o,i,s,y",,,,12.17,hangman,,,
+2025-05-01T09:01:24,dusty,,True,0.67,6,4,"d,u,s,t,y","r,i,e,p",,,39.73,hangman,,,
+2025-05-01T09:02:01,contemporary,,True,0.0,6,0,"c,o,n,t,e,m,p,o,r,a,r,y",,,,34.69,hangman,,,
+2025-05-01T09:02:09,comfortable,,True,0.0,6,0,"c,o,m,f,o,r,t,a,b,l,e",,,,7.62,hangman,,,
+2025-05-01T09:02:19,quiet,,True,0.0,6,0,"q,u,i,e,t",,,,8.49,hangman,,,
+2025-05-01T09:02:36,cozy,,True,0.0,6,0,"c,o,z,y",,,,15.45,hangman,,,
+2025-05-01T09:02:54,messy,,False,1.0,6,6,,"z,g,c,b,d,a",,,16.13,hangman,,,
+2025-05-01T09:05:54,uncomfortable,,True,0.33,6,2,"u,n,c,o,m,f,o,r,t,a,b,l,e","d,i",,,23.77,hangman,,,
+2025-05-01T10:31:34,clean,limpo,True,0.0,6,0,"c,l,e,a,n",,,,5,hangman,,,
+2025-05-01T10:31:45,cozy,acolhedor,False,1.0,6,6,"c,z","x,n,m,b,v,a",,,10,hangman,,,
+2025-05-01T10:32:25,noisy,ruidoso,True,0.0,6,0,"n,o,i,s,y",,,,38,hangman,,,
+2025-05-01T10:32:42,temporary,temporário,False,1.0,6,6,a,"x,z,n,c,b,v",,,14,hangman,,,
+2025-05-01T11:15:42,uncomfortable,desconfortável,True,0.0,6,0,"u,n,c,o,m,f,o,r,t,a,b,l,e",,,,0,hangman,,,
+2025-05-01T11:16:06,abandoned,abandonado,True,0.17,6,1,"a,b,a,n,d,o,n,e,d",m,,,0,hangman,,,
+2025-05-01T11:20:43,provincial,provincial,True,0.0,6,0,"p,r,o,v,i,n,c,i,a,l",,,,9.002966403961182,hangman,,,
+2025-05-01T11:21:10,messy,desarrumado,True,0.5,6,3,"m,e,s,s,y","d,a,r",,,14.0043466091156,hangman,,,
+2025-05-01T11:22:36,spacious,espaçoso,True,0.33,6,2,"s,p,a,c,i,o,u,s","h,e",,,85.02545428276062,hangman,,,
+2025-05-01T11:23:02,uncomfortable,desconfortável,True,0.0,6,0,"u,n,c,o,m,f,o,r,t,a,b,l,e",,,,23.006908416748047,hangman,,,
+2025-05-01T11:23:23,temporary,temporário,True,0.0,6,0,"t,e,m,p,o,r,a,r,y",,,,10.00292181968689,hangman,,,
+2025-05-01T11:24:36,dusty,empoeirado,True,0.83,6,5,"d,u,s,t,y","z,o,a,i,r",,,70.02144765853882,hangman,,,
+2025-05-01T11:25:14,cramped,apertado,True,0.67,6,4,"c,r,a,m,p,e,d","h,n,y,t",,,35.01025176048279,hangman,,,
+2025-05-01T11:25:46,quiet,silencioso,True,0.0,6,0,"q,u,i,e,t",,,,8.002238273620605,hangman,,,
+2025-05-01T11:26:17,|uxurious,IuXuoso,False,1.0,6,6,"u,x,u,i,o,u,s","b,z,y,l,v,c",,,30.009848594665527,hangman,,,
+2025-05-01T11:26:28,cozy,acolhedor,True,0.0,6,0,"c,o,z,y",,,,5.001885652542114,hangman,,,
+2025-05-01T11:26:48,contemporary,contemporâneo,True,0.0,6,0,"c,o,n,t,e,m,p,o,r,a,r,y",,,,18.006763458251953,hangman,,,
+2025-05-01T11:26:53,clean,limpo,True,0.0,6,0,"c,l,e,a,n",,,,4.001095771789551,hangman,,,
+2025-05-01T11:27:04,comfortable,confortável,True,0.17,6,1,"c,o,m,f,o,r,t,a,b,l,e",n,,,8.0025634765625,hangman,,,
+2025-05-01T11:27:10,noisy,ruidoso,True,0.0,6,0,"n,o,i,s,y",,,,5.001431941986084,hangman,,,
+2025-05-01T11:27:16,abandoned,abandonado,True,0.17,6,1,"a,b,a,n,d,o,n,e,d",m,,,4.0010740756988525,hangman,,,
+2025-05-01T11:33:22,contemporary,contemporâneo,True,0.0,6,0,"c,o,n,t,e,m,p,o,r,a,r,y",,,,31.00967788696289,hangman,5,,
+2025-05-01T11:33:30,dusty,empoeirado,True,0.0,6,0,"d,u,s,t,y",,,,5.002163648605347,hangman,1,,
+2025-05-01T11:33:38,uncomfortable,desconfortável,True,0.0,6,0,"u,n,c,o,m,f,o,r,t,a,b,l,e",,,,6.001572847366333,hangman,1,,
+2025-05-01T11:33:46,clean,limpo,True,0.17,6,1,"c,l,e,a,n",m,,,7.003168344497681,hangman,2,,
+2025-05-01T11:33:52,provincial,provincial,True,0.0,6,0,"p,r,o,v,i,n,c,i,a,l",,,,4.001620769500732,hangman,1,,
+2025-05-01T11:33:59,temporary,temporário,True,0.0,6,0,"t,e,m,p,o,r,a,r,y",,,,5.001616477966309,hangman,1,,
+2025-05-01T11:34:04,noisy,ruidoso,True,0.0,6,0,"n,o,i,s,y",,,,4.001323699951172,hangman,1,,
+2025-05-01T11:34:35,spacious,espaçoso,True,0.0,6,0,"s,p,a,c,i,o,u,s",,,,29.010404348373413,hangman,6,,
+2025-05-01T11:34:44,comfortable,confortável,True,0.0,6,0,"c,o,m,f,o,r,t,a,b,l,e",,,,7.002421140670776,hangman,1,,
+2025-05-01T11:35:02,cramped,apertado,True,0.17,6,1,"c,r,a,m,p,e,d",s,,,17.02079701423645,hangman,3,,
+2025-05-01T11:35:19,furnished,mobilado,False,1.0,6,6,"h,e,d","w,z,o,a,g,m",,,16.005220413208008,hangman,8,,
+2025-05-01T11:35:42,messy,desarrumado,True,0.67,6,4,"m,e,s,s,y","a,r,d,u",,,18.011816024780273,hangman,8,,
+2025-05-01T11:35:49,quiet,silencioso,True,0.0,6,0,"q,u,i,e,t",,,,5.029746055603027,hangman,1,,
+2025-05-01T11:39:43,|uxurious,IuXuoso,False,1.0,6,6,x,"b,z,n,c,v,m",,,233.07482957839966,hangman,18,,
+2025-05-01T11:40:15,cozy,acolhedor,True,0.0,6,0,"c,o,z,y",,,,30.010117053985596,hangman,1,,
+2025-05-01T11:40:58,abandoned,abandonado,True,0.0,6,0,"a,b,a,n,d,o,n,e,d",,,,31.011847734451294,hangman,1,,
+2025-05-01T12:02:29,contemporary,contemporâneo,True,0.0,6,0,"c,o,n,t,e,m,p,o,r,a,r,y",,,,13.003796100616455,hangman,8,casa,descrição_da_casa
+2025-05-01T13:01:09,hourglass,a ampulheta,False,1.0,6,6,"h,u,r,l,a","x,t,f,p,m,e",,,48.01766610145569,hangman,11,casa,decoração
+2025-05-01T13:02:52,statuette,a estatueta,False,1.0,6,6,"s,t,a,t,e,t,t,e","w,y,o,l,h,i",,,58.02127933502197,hangman,11,casa,decoração
+2025-05-01T13:08:26,bedding,a roupa de cama,False,1.0,6,6,"b,e,d,d","s,l,u,a,c,r",,,53.018383264541626,hangman,9,casa,decoração
+2025-05-01T13:08:52,frame,a moldura,False,1.0,6,6,"a,e","s,d,h,q,p,u",,,20.007145404815674,hangman,4,casa,decoração
+2025-05-01T13:09:51,candle,a vela,False,1.0,6,6,"a,d,l,e","s,o,h,v,g,j",,,53.01950645446777,hangman,10,casa,decoração
+2025-05-01T13:14:42,tinsel,a grinalda | ouropel,False,1.0,6,6,"t,i,s","b,y,o,h,a,r",,,63.02191090583801,hangman,9,casa,decoração
+2025-05-01T13:18:39,drapes,as cortinas | cortinas,False,1.0,6,6,"r,a,p,e,s","w,o,l,h,g,c",,,120.0420331954956,hangman,12,casa,decoração
+2025-05-01T13:18:54,hourglass,a ampulheta | ampulheta,True,0.0,6,0,"h,o,u,r,g,l,a,s,s",,,,9.002668142318726,hangman,1,casa,decoração
+2025-05-01T13:19:09,statuette,a estatueta | estatueta,True,0.0,6,0,"s,t,a,t,u,e,t,t,e",,,,12.004294157028198,hangman,4,casa,decoração
+2025-05-01T13:20:01,towel,a toalha | toalha,False,1.0,6,6,"t,o,l","s,f,y,h,a,r",,,46.01797127723694,hangman,9,casa,decoração
+2025-05-01T13:20:34,ornament,o ornamento | ornamento,True,0.0,6,0,"o,r,n,a,m,e,n,t",,,,25.008634567260742,hangman,6,casa,decoração
+2025-05-01T13:22:17,tablecloth,a toalha de mesa | Tocada de mesa,True,0.5,6,3,"t,a,b,l,e,c,l,o,t,h","s,w,y",,,69.02464842796326,hangman,13,casa,decoração
+2025-05-01T13:22:57,towel,a toalha | toalha,True,0.0,6,0,"t,o,w,e,l",,,,7.00302529335022,hangman,1,casa,decoração
+2025-05-01T13:23:24,napkin,o guardanapo | guardanapo,False,1.0,6,6,a,"t,z,o,q,g,r",,,23.007771730422974,hangman,7,casa,decoração
+2025-05-01T13:23:45,napkin,o guardanapo | guardanapo,True,0.0,6,0,"n,a,p,k,i,n",,,,10.003811120986938,hangman,1,casa,decoração
+2025-05-01T13:25:13,flowerpot,O Vaso | Flowerpot,False,1.0,6,6,"f,o,w,r,p,o,t","s,x,z,a,u,c",,,83.02886962890625,hangman,12,casa,decoração
+2025-05-01T13:37:52,tablecloth,a toalha de mesa,True,0.0,6,0,"t,a,b,l,e,c,l,o,t,h",,,,20.014881372451782,hangman,4,casa,decoração
+2025-05-01T13:39:23,flowerpot,O Vaso,False,1.0,6,6,"f,l,o,w,e,r,o","s,b,d,h,a,i",,,89.03109169006348,hangman,9,casa,decoração
+2025-05-01T13:42:20,towel,a toalha,True,0.17,6,1,"t,o,w,e,l",f,,,12.003615140914917,hangman,2,casa,decoração
+2025-05-01T13:42:41,blanket,o cobertor,False,1.0,6,6,l,"s,w,f,o,c,r",,,19.006494283676147,hangman,7,casa,decoração
+2025-05-01T13:50:24,candlestick,o castiçal,True,0.67,6,4,"c,a,n,d,l,e,s,t,i,c,k","h,w,y,r",,,71.02587914466858,hangman,13,casa,decoração
+2025-05-01T13:50:37,bedding,a roupa de cama,True,0.0,6,0,"b,e,d,d,i,n,g",,,,8.003089427947998,hangman,3,casa,decoração
+2025-05-01T13:51:23,blanket,o cobertor,True,0.33,6,2,"b,l,a,n,k,e,t","i,d",,,45.015376329422,hangman,8,casa,decoração
+2025-05-01T13:51:33,vase,O Vaso,True,0.0,6,0,"v,a,s,e",,,,8.003444194793701,hangman,4,casa,decoração
+2025-05-01T13:51:58,tablecloth,a toalha de mesa,True,0.0,6,0,"t,a,b,l,e,c,l,o,t,h",,,,22.00801181793213,hangman,7,casa,decoração
+2025-05-01T13:52:20,ornament,o ornamento,True,0.0,6,0,"o,r,n,a,m,e,n,t",,,,4.001340627670288,hangman,1,casa,decoração
+2025-05-01T13:52:41,napkin,o guardanapo,False,1.0,6,6,"k,i","s,t,q,h,u,ç",,,19.008060216903687,hangman,8,casa,decoração
+2025-05-01T13:52:59,flowerpot,O Vaso,True,0.0,6,0,"f,l,o,w,e,r,p,o,t",,,,13.005004167556763,hangman,2,casa,decoração
+2025-05-01T13:53:30,carpet,o tapete,True,0.17,6,1,"c,a,r,p,e,t",h,,,29.010955810546875,hangman,6,casa,decoração
+2025-05-01T13:53:41,hourglass,a ampulheta,True,0.0,6,0,"h,o,u,r,g,l,a,s,s",,,,9.003243446350098,hangman,1,casa,decoração
+2025-05-01T13:54:20,pillowcase,a fronha,False,1.0,6,6,"o,a,s","t,f,n,h,v,r",,,37.015275955200195,hangman,10,casa,decoração
+2025-05-01T13:54:55,decoration,a decoração,True,0.17,6,1,"d,e,c,o,r,a,t,i,o,n",m,,,28.018304109573364,hangman,8,casa,decoração
+2025-05-01T13:56:10,drapes,as cortinas,False,1.0,6,6,"d,r,a,e,s","w,t,z,l,h,i",,,73.03782939910889,hangman,11,casa,decoração
+2025-05-01T13:56:35,candle,a vela,True,0.0,6,0,"c,a,n,d,l,e",,,,12.003730058670044,hangman,1,casa,decoração
+2025-05-01T13:56:55,wallpaper,o papel de parede,True,0.0,6,0,"w,a,l,l,p,a,p,e,r",,,,18.006181478500366,hangman,3,casa,decoração
+2025-05-01T13:57:03,napkin,o guardanapo,True,0.0,6,0,"n,a,p,k,i,n",,,,6.002365827560425,hangman,1,casa,decoração
+2025-05-01T13:57:49,bedsheet,o lençol,False,1.0,6,6,"b,e,d,s,e,e","z,q,a,k,c,r",,,45.01563286781311,hangman,8,casa,decoração
+2025-05-01T14:02:19,candle,a vela,True,0.0,6,0,"c,a,n,d,l,e",,,,21.00828742980957,hangman,1,casa,decoração
+2025-05-01T14:03:43,window shade,a persiana,True,0.67,6,4,"w,i,n,d,o,w,s,h,a,d,e","q,y,c,r",,,82.03590440750122,hangman,15,casa,decoração
+2025-05-01T14:04:17,tinsel,a grinalda,False,1.0,6,6,"t,s,e","f,d,o,h,q,p",,,29.00953960418701,hangman,9,casa,decoração
+2025-05-01T14:04:58,candlestick,o castiçal,True,0.33,6,2,"c,a,n,d,l,e,s,t,i,c,k","o,r",,,34.01184892654419,hangman,9,casa,decoração
+2025-05-01T14:05:11,hourglass,a ampulheta,True,0.0,6,0,"h,o,u,r,g,l,a,s,s",,,,10.00305461883545,hangman,1,casa,decoração
+2025-05-01T14:05:28,towel,a toalha,True,0.0,6,0,"t,o,w,e,l",,,,16.00611925125122,hangman,1,casa,decoração
+2025-05-01T14:05:41,tablecloth,a toalha de mesa,True,0.0,6,0,"t,a,b,l,e,c,l,o,t,h",,,,11.003869771957397,hangman,4,casa,decoração
+2025-05-01T14:05:52,decoration,a decoração,True,0.0,6,0,"d,e,c,o,r,a,t,i,o,n",,,,7.002424955368042,hangman,1,casa,decoração
+2025-05-01T14:05:59,vase,O Vaso,True,0.0,6,0,"v,a,s,e",,,,4.00146484375,hangman,1,casa,decoração
+2025-05-01T14:06:22,napkin,o guardanapo,True,0.0,6,0,"n,a,p,k,i,n",,,,21.006710290908813,hangman,4,casa,decoração
+2025-05-01T14:06:35,pillowcase,a fronha,True,0.0,6,0,"p,i,l,l,o,w,c,a,s,e",,,,12.003978729248047,hangman,1,casa,decoração
+2025-05-01T14:06:48,frame,a moldura,True,0.5,6,3,"f,r,a,m,e","h,s,p",,,11.004267454147339,hangman,3,casa,decoração
+2025-05-01T14:07:49,tinsel,a grinalda,False,1.0,6,6,"i,l","f,h,a,g,c,r",,,59.020843505859375,hangman,9,casa,decoração
+2025-05-01T14:08:18,bedding,a roupa de cama,True,0.17,6,1,"b,e,d,d,i,n,g",s,,,19.00639581680298,hangman,4,casa,decoração
+2025-05-01T14:08:36,to decorate,decorar,True,0.0,6,0,"t,o,d,e,c,o,r,a,t,e",,,,17.006450653076172,hangman,5,casa,decoração
+2025-05-01T14:08:59,wallpaper,o papel de parede,True,0.0,6,0,"w,a,l,l,p,a,p,e,r",,,,19.006539821624756,hangman,3,casa,decoração
+2025-05-01T14:09:06,ornament,o ornamento,True,0.0,6,0,"o,r,n,a,m,e,n,t",,,,5.001861095428467,hangman,1,casa,decoração
+2025-05-01T14:09:31,wreath,a coroa de flores,False,1.0,6,6,"w,r,e","f,n,o,l,i,g",,,23.00792098045349,hangman,4,casa,decoração
+2025-05-01T14:09:52,tinsel,a grinalda,True,0.0,6,0,"t,i,n,s,e,l",,,,8.00264859199524,hangman,2,casa,decoração
+2025-05-01T14:10:03,flowerpot,O Vaso,True,0.0,6,0,"f,l,o,w,e,r,p,o,t",,,,9.003040075302124,hangman,1,casa,decoração
+2025-05-01T14:10:19,statuette,a estatueta,True,0.0,6,0,"s,t,a,t,u,e,t,t,e",,,,15.00508427619934,hangman,5,casa,decoração
+2025-05-01T14:10:26,carpet,o tapete,True,0.0,6,0,"c,a,r,p,e,t",,,,4.0016889572143555,hangman,1,casa,decoração
+2025-05-01T14:12:08,chandelier,o lustre,True,0.67,6,4,"c,h,a,n,d,e,l,i,e,r","m,w,y,b",,,100.06400871276855,hangman,15,casa,decoração
+2025-05-01T14:12:19,pillow,a almofada,True,0.0,6,0,"p,i,l,l,o,w",,,,9.003462791442871,hangman,2,casa,decoração
+2025-05-01T14:12:54,blanket,o cobertor,False,1.0,6,6,"b,a,t","s,w,o,d,g,c",,,32.010807037353516,hangman,9,casa,decoração
+2025-05-01T14:13:12,blanket,o cobertor,True,0.17,6,1,"b,l,a,n,k,e,t",c,,,13.00480341911316,hangman,8,casa,decoração
+2025-05-01T14:13:29,bedsheet,o lençol,True,0.0,6,0,"b,e,d,s,h,e,e,t",,,,15.005154609680176,hangman,2,casa,decoração
+2025-05-01T14:14:29,drapes,as cortinas,True,0.17,6,1,"d,r,a,p,e,s",t,,,58.019789695739746,hangman,9,casa,decoração
+2025-05-01T14:15:07,wreath,a coroa de flores,False,1.0,6,6,"w,r,a","s,n,d,q,i,g",,,35.03361439704895,hangman,10,casa,decoração
+2025-05-01T14:15:18,wreath,a coroa de flores,True,0.0,6,0,"w,r,e,a,t,h",,,,5.001821756362915,hangman,1,casa,decoração
+2025-05-01T15:55:46,carpet,o tapete,True,0.0,6,0,"c,a,r,p,e,t",,,,7.001873731613159,hangman,1,casa,decoração
+2025-05-01T15:55:53,towel,a toalha,True,0.0,6,0,"t,o,w,e,l",,,,5.001209497451782,hangman,1,casa,decoração
+2025-05-01T15:56:14,window shade,a persiana,True,0.0,6,0,"w,i,n,d,o,w,s,h,a,d,e",,,,19.004432678222656,hangman,2,casa,decoração
+2025-05-01T15:56:38,candlestick,o castiçal,True,0.0,6,0,"c,a,n,d,l,e,s,t,i,c,k",,,,23.005521774291992,hangman,3,casa,decoração
+2025-05-01T15:57:25,chandelier,o lustre,True,0.17,6,1,"c,h,a,n,d,e,l,i,e,r",k,,,45.019108295440674,hangman,9,casa,decoração
+2025-05-01T15:59:13,blanket,o cobertor,False,1.0,6,6,"b,l,a,n,k,e","w,y,o,d,h,m",,,107.02783346176147,hangman,16,casa,decoração
+2025-05-01T15:59:26,pillowcase,a fronha,True,0.0,6,0,"p,i,l,l,o,w,c,a,s,e",,,,6.001295804977417,hangman,1,casa,decoração
+2025-05-01T15:59:35,to decorate,decorar,True,0.0,6,0,"t,o,d,e,c,o,r,a,t,e",,,,7.004392862319946,hangman,1,casa,decoração
+2025-05-01T15:59:52,bedding,a roupa de cama,True,0.0,6,0,"b,e,d,d,i,n,g",,,,7.001854181289673,hangman,1,casa,decoração
+2025-05-01T15:59:56,vase,O Vaso,True,0.0,6,0,"v,a,s,e",,,,3.0006043910980225,hangman,1,casa,decoração
+2025-05-01T16:00:03,blanket,o cobertor,True,0.0,6,0,"b,l,a,n,k,e,t",,,,6.001691102981567,hangman,1,casa,decoração
+2025-05-01T16:00:30,napkin,o guardanapo,True,0.0,6,0,"n,a,p,k,i,n",,,,25.007603406906128,hangman,4,casa,decoração
+2025-05-01T16:01:38,wreath,a coroa de flores,True,0.33,6,2,"w,r,e,a,t,h","i,d",,,66.01777791976929,hangman,8,casa,decoração
+2025-05-01T16:01:53,frame,a moldura,True,0.0,6,0,"f,r,a,m,e",,,,10.002324104309082,hangman,1,casa,decoração
+2025-05-01T16:02:47,tablecloth,a toalha de mesa,True,0.5,6,3,"t,a,b,l,e,c,l,o,t,h","i,y,k",,,53.01208806037903,hangman,8,casa,decoração
+2025-05-01T16:04:10,drapes,as cortinas,True,0.83,6,5,"d,r,a,p,e,s","w,t,l,h,i",,,81.02153658866882,hangman,12,casa,decoração
+2025-05-01T16:04:16,pillow,a almofada,True,0.0,6,0,"p,i,l,l,o,w",,,,3.000845432281494,hangman,1,casa,decoração
+2025-05-01T16:04:27,hourglass,a ampulheta,True,0.0,6,0,"h,o,u,r,g,l,a,s,s",,,,10.002339601516724,hangman,1,casa,decoração
+2025-05-01T16:04:35,wallpaper,o papel de parede,True,0.0,6,0,"w,a,l,l,p,a,p,e,r",,,,6.001332759857178,hangman,1,casa,decoração
+2025-05-01T16:04:41,ornament,o ornamento,True,0.0,6,0,"o,r,n,a,m,e,n,t",,,,4.000917673110962,hangman,1,casa,decoração
+2025-05-01T16:04:50,candle,a vela,True,0.0,6,0,"c,a,n,d,l,e",,,,7.001718997955322,hangman,1,casa,decoração
+2025-05-01T16:04:59,statuette,a estatueta,True,0.0,6,0,"s,t,a,t,u,e,t,t,e",,,,8.001862525939941,hangman,1,casa,decoração
+2025-05-01T16:05:08,bedsheet,o lençol,True,0.0,6,0,"b,e,d,s,h,e,e,t",,,,8.00177788734436,hangman,1,casa,decoração
+2025-05-01T16:05:24,flowerpot,O Vaso,True,0.0,6,0,"f,l,o,w,e,r,p,o,t",,,,12.003145456314087,hangman,1,casa,decoração
+2025-05-01T16:05:39,decoration,a decoração,True,0.0,6,0,"d,e,c,o,r,a,t,i,o,n",,,,13.002716541290283,hangman,2,casa,decoração
+2025-05-01T16:06:37,tinsel,a grinalda,False,1.0,6,6,"i,s,l","x,f,q,a,u,v",,,57.01498484611511,hangman,8,casa,decoração
+2025-05-01T16:06:52,tinsel,a grinalda,True,0.0,6,0,"t,i,n,s,e,l",,,,9.002204895019531,hangman,6,casa,decoração
+2025-05-01T16:14:53,hourglass,a ampulheta,True,0.5,6,3,"h,o,u,r,g,l,a,s,s","k,e,c",,,26.00795841217041,hangman,3,casa,decoração
+2025-05-01T16:20:48,hallway,o corredor,True,0.83,6,5,"h,a,l,l,w,a,y","d,o,r,u,f",,,60.01649188995361,hangman,10,casa,divisões
+2025-05-01T16:22:28,laundry,a lavandaria,False,1.0,6,6,"a,n,d,r,y","k,c,g,o,w,h",,,98.02898216247559,hangman,16,casa,divisões
+2025-05-01T16:22:42,loft,o loft,True,0.0,6,0,"l,o,f,t",,,,9.00295090675354,hangman,3,casa,divisões
+2025-05-01T16:23:20,toilet,o banheiro,False,1.0,6,6,e,"b,d,w,r,z,h",,,35.00899028778076,hangman,5,casa,divisões
+2025-05-01T16:23:35,bedroom,o quarto,True,0.0,6,0,"b,e,d,r,o,o,m",,,,10.00276494026184,hangman,1,casa,divisões
+2025-05-01T16:25:00,basement,a Cave,False,1.0,6,6,"a,e,e","k,c,d,o,v,y",,,20.005645513534546,hangman,7,casa,divisões
+2025-05-01T16:27:24,laundry,a lavandaria,False,1.0,6,6,"l,a,n,d,r,y","k,i,q,w,s,h",,,139.04225540161133,hangman,12,casa,divisões
+2025-05-01T18:49:29,living room,a sala de estar,False,1.0,6,6,"l,r,o,o,m","e,q,a,s,h,x",,,49.01500463485718,hangman,8,casa,divisões
+2025-05-01T18:50:20,larder,a despensa,False,1.0,6,6,"a,d,e","p,q,t,n,w,s",,,47.01374793052673,hangman,10,casa,divisões
+2025-05-01T18:50:33,toilet,o banheiro,True,0.33,6,2,"t,o,i,l,e,t","b,a",,,9.002413749694824,hangman,2,casa,divisões
+2025-05-01T18:50:57,larder,a despensa,True,0.0,6,0,"l,a,r,d,e,r",,,,21.00625777244568,hangman,5,casa,divisões
+2025-05-01T18:51:03,loft,o loft,True,0.0,6,0,"l,o,f,t",,,,3.0009169578552246,hangman,1,casa,divisões
+2025-05-01T19:01:42,larder,a despensa,True,0.17,6,1,"l,a,r,d,e,r",y,,,25.007209062576294,hangman,5,casa,divisões
+2025-05-01T19:02:05,attic,o sótão,False,1.0,6,6,"a,t,t","d,e,o,n,m,l",,,20.005173683166504,hangman,7,casa,divisões
