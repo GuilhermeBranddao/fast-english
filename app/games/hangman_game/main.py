@@ -19,7 +19,7 @@ TITLE_FONT = ("Arial", 20)
 LABEL_FONT = ("Arial", 14)
 SMALL_FONT = ("Arial", 12)
 
-DATA_PATH = Path("extract_data_video/data_organize")
+DATA_PATH = Path("extract_data_video/data/extracted_data/words/data_organize")
 
 from datetime import datetime
 from typing import List, Dict, Union
@@ -80,74 +80,6 @@ def save_game_data(data: Dict[str, Union[str, int, float, List[str], bool]],
             writer.writeheader()
             writer.writerow(data)
 
-def fill_dict(
-    word: str = None,
-    category: str = None,
-    sub_category: str = None,
-    hint: Union[str, int] = None,
-    won: bool = None,
-    difficulty: float = None,
-    total_attempts: int = None,
-    used_attempts: int = None,
-    clicks_on_guess: int = None,
-    correct_guessed_letters: List[str] = None,
-    incorrect_guessed_letters: List[str] = None,
-    correct_guesses: int = None,
-    incorrect_guesses: int = None,
-    time_taken: float = None,
-    game_name: str = None,
-) -> Dict[str, Union[str, int, float, List[str], bool]]:
-    """
-    Retorna um dicionário com os dados de desempenho de um jogador em uma partida.
-
-    Parâmetros:
-    - word: Palavra do jogo.
-    - category: Categoria da palavra
-    - sub_category: Sub-categoria da palavra
-    - hint: Dica associada à palavra (string ou ID).
-    - won: True se o jogador venceu, False se perdeu.
-    - difficulty: Dificuldade da palavra (0.0 a 1.0).
-    - total_attempts: Tentativas permitidas.
-    - used_attempts: Tentativas usadas.
-    - clicks_on_guess: quantidade de clikes no botão de adivinhar
-    - correct_guessed_letters: Lista de letras tentadas corretamente.
-    - incorrect_guessed_letters: Lista de letras tentadas incorretamente.
-    - correct_guesses: Quantidade de acertos.
-    - incorrect_guesses: Quantidade de erros.
-    - time_taken: Tempo gasto (em segundos).
-    - game_name: Nome do jogo.
-
-    Retorno:
-    - Um dicionário com os dados formatados.
-    """
-
-    assert total_attempts >= used_attempts, "Tentativas usadas não podem ser maiores que o total permitido."
-
-    datetime_now = datetime.now().isoformat(timespec="seconds")
-
-    game_data = {
-        "datetime": datetime_now,
-        "word": word,
-        "category":category,
-        "sub_category":sub_category,
-        "hint": hint,
-        "won": won,
-        "difficulty": difficulty,
-        "total_attempts": total_attempts,
-        "used_attempts": used_attempts,
-        "clicks_on_guess": clicks_on_guess,
-        "correct_guessed_letters": correct_guessed_letters,
-        "incorrect_guessed_letters": incorrect_guessed_letters,
-        "correct_guesses": correct_guesses,
-        "incorrect_guesses": incorrect_guesses,
-        "time_taken": time_taken,
-        "game_name": game_name,
-    
-    }
-
-    save_game_data(game_data)
-
-
 
 class DataLoader:
     def __init__(self, base_path=DATA_PATH):
@@ -177,25 +109,19 @@ class Palavra:
         self.path = path
         self.arquivos = list(os.listdir(path))
         self.texto_info = self._carregar_texto()
-        self.imagens = self._carregar_imagens()
 
-        self.text_pt_br = self.texto_info.get("recorte_1.jpg", "")
-        self.text_eng = self.texto_info.get("recorte_3.jpg", "")
+        self.text_pt_br = self.texto_info.get("pergunta_pt-br", "")
+        self.text_eng = self.texto_info.get("tradução_en", "")
         self.audio_path = path / "audio.wav"
-        self.fonetica_path = path / "recorte_4.jpg"
+        # self.fonetica_path = path / "recorte_4.jpg"
+        self.image_figure = path / "image_figure.jpg"
 
     def _carregar_texto(self):
         try:
-            with open(self.path / "text.json", "r", encoding="utf-8") as f:
+            with open(self.path / "text_v2.json", "r", encoding="utf-8") as f:
                 return json.load(f)
         except:
             return {}
-
-    def _carregar_imagens(self):
-        return sorted(
-            [self.path / arq for arq in self.arquivos if arq.startswith("recorte_") and arq.endswith(".jpg") and "recorte_4" not in arq],
-            key=lambda x: int(x.stem.split("_")[1])
-        )
 
 class GameTimer:
     def __init__(self, master, x=1.0, y=0.0, anchor="ne", font=("Arial", 12), fg="black"):
@@ -262,15 +188,20 @@ class HangmanGame(tk.Frame):
         super().__init__(parent, **kwargs)
         self.parent = parent
         self.loader = DataLoader()
-        self.palavras_paths = self.loader.get_all_words(subcategory_name="divisões")
+        self.palavras_paths = self.loader.get_all_words(subcategory_name="mobiliario")
         random.shuffle(self.palavras_paths)
 
         self.timer = GameTimer(self)
 
         self.clicks_on_guess = 0
 
+        self.id_game = self.gerar_hash_id()
         self.reset_game()
         self.setup_ui()
+
+    def gerar_hash_id(self):
+        agora = datetime.now().strftime("%Y%m%d%H%M%S%f")  # AnoMesDiaHoraMinSegMicroseg
+        return hex(abs(hash(agora)))[2:]  # Converte para hexadecimal e remove '0x'
 
     def reset_game(self):
         if not self.palavras_paths:
@@ -287,7 +218,7 @@ class HangmanGame(tk.Frame):
         
         self.word_question = self.palavra.text_pt_br
 
-        self.guessed_word = [" " if c == " " else "_" for c in self.word_answer]
+        self.guessed_word = self.hide_text(self.word_answer) 
         self.remaining_attempts = self.MAX_ATTEMPTS
         self.guessed_letters = set()
 
@@ -296,6 +227,9 @@ class HangmanGame(tk.Frame):
 
         # self.start_time = time.time()
 
+    def hide_text(self, text: str) -> str:
+        # return [" " if c == " " else "_" for c in text]
+        return ['_' if c.isalpha() else c for c in text]
 
     def show_label_words(self):
         font=("Arial", 12)
@@ -348,8 +282,8 @@ class HangmanGame(tk.Frame):
 
         # if not hasattr(self.image_label, 'current_image_path') or self.image_label.current_image_path != img_path:
 
-        if self.palavra.imagens:
-            img_path = self.palavra.imagens[0]
+        if self.palavra.image_figure:
+            img_path = self.palavra.image_figure
             img = Image.open(img_path).resize((200, 200))
             photo = ImageTk.PhotoImage(img)
 
@@ -427,32 +361,43 @@ class HangmanGame(tk.Frame):
 
         clicks_on_guess = self.clicks_on_guess
 
-        category = self.path_word.parts[2]
-        sub_category = self.path_word.parts[3]
+        category = self.path_word.parts[-3]
+        sub_category = self.path_word.parts[-2]
+        # adjetivos/sobre_as_pessoas/unable
 
-        if any([category == loader_category.name for loader_category in self.loader.get_categories()]):
-            print("Categoria existe")
+        if not any([category == loader_category.name for loader_category in self.loader.get_categories()]):
+            print("Categoria Não Existe")
 
         self.timer.reset_timer()
         self.clicks_on_guess = 0
 
-        fill_dict(
-            word=self.word_answer,
-            category=category,
-            sub_category=sub_category,
-            hint=self.word_question,
-            won=won,
-            difficulty=round(difficulty, 2),
-            total_attempts=self.MAX_ATTEMPTS,
-            used_attempts=attempts_used,
-            clicks_on_guess=clicks_on_guess,
-            correct_guessed_letters = correct_guessed_letters,
-            incorrect_guessed_letters = incorrect_guessed_letters,
-            # correct_guesses=2,
-            # incorrect_guesses=2,
-            time_taken=time_taken,
-            game_name='hangman',
-        )
+        # assert total_attempts >= used_attempts, "Tentativas usadas não podem ser maiores que o total permitido."
+
+        datetime_now = datetime.now().isoformat(timespec="seconds")
+        
+
+        game_data = {
+            "id_game": self.id_game,
+            "datetime": datetime_now,
+            "word": self.word_answer,
+            "category":category,
+            "sub_category":sub_category,
+            "hint": self.word_question,
+            "won": won,
+            "difficulty": difficulty,
+            "total_attempts": self.MAX_ATTEMPTS,
+            "used_attempts": attempts_used,
+            "clicks_on_guess": clicks_on_guess,
+            "correct_guessed_letters": correct_guessed_letters,
+            "incorrect_guessed_letters": incorrect_guessed_letters,
+            # "correct_guesses": correct_guesses,
+            # "incorrect_guesses": incorrect_guesses,
+            "time_taken": time_taken,
+            "game_name": "hangman",
+        }
+
+        save_game_data(game_data)
+        # self.save_score()
 
     def translate_sentence(self, sentence, source_lang="en", target_lang="pt"):
         try:
@@ -461,8 +406,6 @@ class HangmanGame(tk.Frame):
         except Exception as e:
             print(f"Translation error: {e}")
             return "Translation unavailable"
-
-
 
 if __name__ == "__main__":
     try:

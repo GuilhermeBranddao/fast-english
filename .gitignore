@@ -12,12 +12,16 @@ __pycache__/
 
 raw_images
 
-extract_data_video/data/video
-extract_data_video/data/audio/original
-extract_data_video/data/image
-extract_data_video/data_organize
-# extract_data_video/data/recortes
-extract_data_video
+extract_data_video/
+!extract_data_video/data/recortes/
+!extract_data_video/data/extracted_data/words/data_organize/casa
+!extract_data_video/data/extracted_data/words/data_organize/compras
+!extract_data_video/data/extracted_data/words/data_organize/descrição_de_pessoas
+!extract_data_video/data/extracted_data/words/data_organize/verbos
+
+!extract_data_video/data/extracted_data/phrases/data_organize/compras
+!extract_data_video/data/extracted_data/phrases/data_organize/empregos
+
 
 .venv
 # Distribution / packaging
