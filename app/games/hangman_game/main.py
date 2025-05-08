@@ -12,6 +12,12 @@ import time
 from deep_translator import GoogleTranslator
 from random import randint
 
+from typing import List, Dict, Union
+
+import csv
+from typing import Dict, Union, List
+
+
 # Inicializa o mixer do pygame
 pygame.mixer.init()
 
@@ -19,19 +25,10 @@ TITLE_FONT = ("Arial", 20)
 LABEL_FONT = ("Arial", 14)
 SMALL_FONT = ("Arial", 12)
 
-DATA_PATH = Path("extract_data_video/data/extracted_data/words/data_organize")
+# DATA_PATH = Path("extract_data_video/data/extracted_data/words/data_organize")
+DATA_PATH = Path("database/vocabulary/words/data_organize")
+SUBCATEGORY_NAME = "compras_online"
 
-from datetime import datetime
-from typing import List, Dict, Union
-
-from datetime import datetime
-import os 
-
-
-
-import csv
-import os
-from typing import Dict, Union, List
 def save_game_data(data: Dict[str, Union[str, int, float, List[str], bool]], 
                    file_path: str = "database/infos/game_data_{game_name}.csv") -> None:
     
@@ -188,7 +185,7 @@ class HangmanGame(tk.Frame):
         super().__init__(parent, **kwargs)
         self.parent = parent
         self.loader = DataLoader()
-        self.palavras_paths = self.loader.get_all_words(subcategory_name="mobiliario")
+        self.palavras_paths = self.loader.get_all_words(subcategory_name=SUBCATEGORY_NAME)
         random.shuffle(self.palavras_paths)
 
         self.timer = GameTimer(self)

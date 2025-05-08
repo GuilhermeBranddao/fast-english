@@ -1,148 +1,157 @@
 import tkinter as tk
-from tkinter import messagebox
-from app.games.vocabulary_game.main import VocabularyGame
-from app.games.game_color.main import ColorGame
-from app.games.hangman_game.main import HangmanGame
-from app.games.text_challenge.main import TextChallengeApp
+from tkinter import ttk
+from app.games.menu_games import PageMenuApapter
+# Cores do tema
+COR_FUNDO = "#f0f2f5"
+COR_TOPO = "#4a7a8c"
+COR_MENU = "#2c3e50"
+COR_TEXTO = "#ffffff"
+
+class Sidebar(tk.Frame):
+    def __init__(self, parent, width_open=200, width_closed=50, bg_color="#f5f5f5", texts=[]):
+        super().__init__(parent, bg=bg_color)
+        self.width_open = width_open
+        self.width_closed = width_closed
+        self.is_open = True
+
+        self.configure(width=self.width_open)
+        self.pack_propagate(False)
+
+        # Botão de alternar
+        self.toggle_button = tk.Button(
+            self,
+            text="≡",
+            command=self.toggle,
+            bg="#dddddd",
+            fg="#333333",
+            bd=0,
+            font=("Arial", 16),
+            relief="flat",
+            cursor="hand2"
+        )
+        self.toggle_button.pack(pady=10)
+
+        # Área dos botões
+        self.buttons_frame = tk.Frame(self, bg=bg_color)
+        self.buttons_frame.pack(fill="both", expand=True)
+
+        self.buttons = []
 
 
+    def add_button(self, text, command):
+        btn = tk.Button(
+            self.buttons_frame,
+            text=text,
+            bg=COR_MENU,
+            fg=COR_TEXTO,
+            font=("Arial", 12),
+            anchor="w",
+            relief="flat",
+            bd=0,
+            padx=10,
+            cursor="hand2",
+            command=command
+        )
+        btn.pack(fill="x", pady=5)
+        self.buttons.append(btn)
 
-class BasePage(tk.Frame):
-    """Classe base para todas as páginas com métodos comuns."""
+    def toggle(self):
+        if self.is_open:
+            self.configure(width=self.width_closed)
+            for btn in self.buttons:
+                btn.configure(text="")
+        else:
+            self.configure(width=self.width_open)
+            texts = ["Início", "Jogos", "Relatórios", "Configurações"]
+            for btn, text in zip(self.buttons, texts):
+                btn.configure(text=text)
 
-    def __init__(self, parent, controller, **kwargs):
-        super().__init__(parent, **kwargs)
-        self.controller = controller
-
-    def centralize_widget(self, widget, rely):
-        """Centraliza um widget verticalmente."""
-        widget.place(relx=0.5, rely=rely, anchor=tk.CENTER)
-
-    def add_back_button(self, text="Voltar para a Inicial"):
-        """Adiciona um botão para voltar à página inicial."""
-        back_button = tk.Button(self, text=text, command=lambda: self.controller.show_frame("MainPage"))
-        self.centralize_widget(back_button, 0.85)
-
-    def add_stats_view(self):
-        pass
-
-
-class MainPage(BasePage):
-    """Página inicial contendo o menu principal."""
-
-    def __init__(self, parent, controller, **kwargs):
-        super().__init__(parent, controller, **kwargs)
-
-        # Título do menu principal
-        title_label = tk.Label(self, text="Menu Principal", font=("Arial", 16, "bold"))
-        title_label.pack(pady=20)
-
-        # Lista de botões e páginas correspondentes
-        games = [
-            ("Jogo de Vocabulário", VocabularyGame),
-            ("Jogo Da Forca", HangmanGame),
-            ("Game Color", ColorGame),
-            ("Desafio de Texto", TextChallengeApp)
-        ]
-
-        # Criação dinâmica de botões
-        for game_name, game_class in games:
-            button = tk.Button(self, text=game_name, width=25, height=2,
-                               command=lambda g=game_class: controller.show_game_frame(g))
-            button.pack(pady=10)
-
-        # Botão adicional
-        other_button = tk.Button(self, text="Ir para a Página 2", width=25, height=2,
-                                  command=lambda: controller.show_frame("PageTwo"))
-        other_button.pack(pady=10)
+        self.is_open = not self.is_open
 
 
-class GamePage(BasePage):
-    """Página genérica para carregar jogos dinamicamente."""
+class FrameInicio(tk.Frame):
+    def __init__(self, parent):
+        super().__init__(parent, bg=COR_FUNDO)
+        tk.Label(self, text="Bem-vindo ao sistema", font=("Helvetica", 14), bg=COR_FUNDO).pack(pady=30)
 
-    def __init__(self, parent, controller, game_class, **kwargs):
-        super().__init__(parent, controller, **kwargs)
-        self.game_instance = None
-        self.game_class = game_class
-
-    def load_game(self):
-        """Carrega e exibe o jogo apenas quando necessário."""
-        if not self.game_instance:
-            self.game_instance = self.game_class(self)
-            self.game_instance.pack(expand=True, fill="both")
-            self.add_back_button()
-
-            # Estatisticas
-            # # Divisão da interface em dois frames
-            # self.game_frame = tk.Frame(self, bg="#ffffff")  # Área do jogo com fundo branco
-            # self.stats_frame = tk.Frame(self, bg="#2c3e50", width=220, relief="raised", bd=2)  # Estatísticas com bordas
-
-            # title_label = tk.Label(
-            #     self.stats_frame, text="Estatísticas", font=("Helvetica", 16, "bold"),
-            #     bg="#34495e", fg="#ecf0f1", pady=10
-            # )
-            # title_label.pack(pady=10, fill="x")
+class FrameRelatorios(tk.Frame):
+    def __init__(self, parent):
+        super().__init__(parent, bg=COR_FUNDO)
+        tk.Label(self, text="Relatórios disponíveis", font=("Helvetica", 14), bg=COR_FUNDO).pack(pady=30)
 
 
-class PageTwo(BasePage):
-    """Página adicional de exemplo."""
-
-    def __init__(self, parent, controller, **kwargs):
-        super().__init__(parent, controller, **kwargs)
-        label = tk.Label(self, text="Esta é a Página 2", font=("Arial", 14))
-        self.centralize_widget(label, 0.4)
-        self.add_back_button()
+class FrameConfiguracoes(tk.Frame):
+    def __init__(self, parent):
+        super().__init__(parent, bg=COR_FUNDO)
+        tk.Label(self, text="Configurações do Sistema", font=("Helvetica", 14), bg=COR_FUNDO).pack(pady=20)
+        ttk.Entry(self).pack(pady=10)
+        ttk.Button(self, text="Salvar").pack(pady=10)
 
 
-class PageController(tk.Tk):
-    """Gerenciador principal para alternar entre páginas."""
+class App:
+    def __init__(self, root):
+        self.root = root
+        self.root.title("Sistema com Sidebar Recolhível")
+        self.root.geometry("800x600")
+        self.root.configure(bg=COR_FUNDO)
 
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        self.title("Aplicação com Múltiplas Páginas")
-        self.geometry('700x500')
-
-        # Container para armazenar frames
-        self.container = tk.Frame(self)
-        self.container.pack(fill="both", expand=True)
-
-        # Dicionário para páginas
         self.frames = {}
-        self.games = {}
 
-        # Registra a página inicial e a página adicional
-        self.register_frame("MainPage", MainPage)
-        self.register_frame("PageTwo", PageTwo)
+        self.criar_topo()
 
-        # Exibe a página inicial
-        self.show_frame("MainPage")
+        # Dicionário com os nomes e classes dos frames
+        self.opcoes_frames = {
+            "Início": FrameInicio,
+            "Jogos": PageMenuApapter,
+            "Relatórios": FrameRelatorios,
+            "Configurações": FrameConfiguracoes
+        }
 
-    def register_frame(self, name, page_class):
-        """Registra um frame."""
-        frame = page_class(self.container, self)
-        self.frames[name] = frame
-        frame.place(relwidth=1, relheight=1)
+        texts = self.opcoes_frames.keys()
 
-    def register_game_frame(self, game_class):
-        """Registra dinamicamente páginas de jogos."""
-        if game_class not in self.games:
-            frame = GamePage(self.container, self, game_class)
-            self.games[game_class] = frame
-            frame.place(relwidth=1, relheight=1)
+        # Sidebar com toggle
+        self.sidebar = Sidebar(root, 
+                width_open=200, 
+                width_closed=50, 
+                bg_color=COR_MENU, 
+                texts=texts)
+        
+        self.sidebar.pack(side="left", fill="y")
 
-    def show_frame(self, name):
-        """Exibe a página pelo nome."""
-        frame = self.frames[name]
-        frame.tkraise()
+        self.sidebar.add_button("Início", lambda: self.mostrar_frame("Início"))
+        self.sidebar.add_button("Jogos", lambda: self.mostrar_frame("Jogos"))
+        self.sidebar.add_button("Relatórios", lambda: self.mostrar_frame("Relatórios"))
+        self.sidebar.add_button("Configurações", lambda: self.mostrar_frame("Configurações"))
 
-    def show_game_frame(self, game_class):
-        """Exibe uma página de jogo dinamicamente."""
-        if game_class not in self.games:
-            self.register_game_frame(game_class)
-        self.games[game_class].tkraise()
-        self.games[game_class].load_game()
+        # Conteúdo principal
+        self.conteudo = tk.Frame(root, bg=COR_FUNDO)
+        self.conteudo.pack(side="right", expand=True, fill="both")
+
+        self.mostrar_frame("Início")
+
+    def criar_topo(self):
+        topo = tk.Frame(self.root, height=60, bg=COR_TOPO)
+        topo.pack(side="top", fill="x")
+
+        titulo = tk.Label(topo, text="Meu Sistema", bg=COR_TOPO, fg=COR_TEXTO,
+                          font=("Helvetica", 18, "bold"))
+        titulo.pack(pady=10)
+
+    def mostrar_frame(self, nome):
+        # Esconde todos os frames
+        for frame in self.frames.values():
+            frame.pack_forget()
+
+        # Cria o frame se ainda não existir
+        if nome not in self.frames:
+            classe_frame = self.opcoes_frames[nome]
+            self.frames[nome] = classe_frame(self.conteudo)
+
+        # Exibe o frame desejado
+        self.frames[nome].pack(fill="both", expand=True)
 
 
 if __name__ == "__main__":
-    app = PageController()
-    app.mainloop()
+    root = tk.Tk()
+    app = App(root)
+    root.mainloop()
