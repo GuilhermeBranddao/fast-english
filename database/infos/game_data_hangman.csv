@@ -378,3 +378,41 @@ datetime,word,hint,won,difficulty,total_attempts,used_attempts,correct_guessed_l
 2025-05-08T09:29:47,order,a encomenda,True,0.5,6,3,"o,r,d,e,r","s,i,a",,,58.24297618865967,hangman,7,compras,compras_online,2dd5ad2a1b84e2df
 2025-05-08T09:30:00,sale,os saldos,True,0.0,6,0,"s,a,l,e",,,,6.0208494663238525,hangman,1,compras,compras_online,2dd5ad2a1b84e2df
 2025-05-08T15:22:47,price,o preço,True,0.0,6,0,"p,r,i,c,e",,,,5.003779172897339,hangman,1,compras,compras_online,70a7c2f535cdf293
+2025-05-09T08:58:43,to purchase,comprar,True,0.16666666666666666,6,1,"t,o,p,u,r,c,h,a,s,e",b,,,42.02887320518494,hangman,6,compras,compras_online,26aa72810924f824
+2025-05-09T09:10:30,customer service,o serviço de atendimento ao cliente,True,0.0,6,0,"c,u,s,t,o,m,e,r,s,e,r,v,i,c,e",,,,26.017631769180298,hangman,6,compras,compras_online,71b20e4b1dd35741
+2025-05-09T14:03:44,sale,os saldos,True,0.0,6,0,"s,a,l,e",,,,6.008121728897095,hangman,1,compras,compras_online,27cfee21252f1b89
+2025-05-09T14:03:53,buyer,o comprador,True,0.0,6,0,"b,u,y,e,r",,,,7.004876136779785,hangman,2,compras,compras_online,27cfee21252f1b89
+2025-05-09T14:04:39,order,a encomenda,True,0.3333333333333333,6,2,"o,r,d,e,r","n,c",,,44.03039479255676,hangman,4,compras,compras_online,27cfee21252f1b89
+2025-05-09T14:04:52,to track,rastrear,True,0.0,6,0,"t,o,t,r,a,c,k",,,,12.022788286209106,hangman,2,compras,compras_online,27cfee21252f1b89
+2025-05-09T14:05:32,to purchase,comprar,True,0.0,6,0,"t,o,p,u,r,c,h,a,s,e",,,,36.02175998687744,hangman,5,compras,compras_online,27cfee21252f1b89
+2025-05-09T14:05:48,tracking,o rastreamento,True,0.16666666666666666,6,1,"t,r,a,c,k,i,n,g",e,,,14.005510807037354,hangman,5,compras,compras_online,27cfee21252f1b89
+2025-05-09T14:06:43,assortment,a variedade,False,1.0,6,6,"a,s,s,o,t,m,e,t","v,g,z,i,p,y",,,54.07290601730347,hangman,17,compras,compras_online,27cfee21252f1b89
+2025-05-09T14:06:49,price,o preço,True,0.0,6,0,"p,r,i,c,e",,,,4.004328966140747,hangman,1,compras,compras_online,27cfee21252f1b89
+2025-05-09T14:07:01,customer service,o serviço de atendimento ao cliente,True,0.0,6,0,"c,u,s,t,o,m,e,r,s,e,r,v,i,c,e",,,,10.006498575210571,hangman,2,compras,compras_online,27cfee21252f1b89
+2025-05-09T14:07:20,delivery,a entrega,True,0.16666666666666666,6,1,"d,e,l,i,v,e,r,y",s,,,17.01217269897461,hangman,3,compras,compras_online,27cfee21252f1b89
+2025-05-09T14:09:19,return,a devolução,True,0.8333333333333334,6,5,"r,e,t,u,r,n","o,a,d,f,s",,,18.011264085769653,hangman,9,compras,compras_online,27cfee21252f1b89
+2025-05-09T14:09:26,account,a conta,True,0.0,6,0,"a,c,c,o,u,n,t",,,,6.004055738449097,hangman,1,compras,compras_online,27cfee21252f1b89
+2025-05-09T14:51:19,counter,o balcão,False,1.0,6,6,"n,t,e","a,k,d,f,i,s",,,43.03946280479431,hangman,12,compras,em_loja,6fa8e26e3e2d814d
+2025-05-09T14:52:34,price tag,o preço,False,1.0,6,6,"p,r,i,c,e,a","b,w,u,d,y,l",,,73.03724813461304,hangman,10,compras,em_loja,6fa8e26e3e2d814d
+2025-05-09T16:14:26,to sell,vender,True,0.0,6,0,"t,o,s,e,l,l",,,,15.024142980575562,hangman,2,compras,em_loja,6ec0c292107de08e
+2025-05-09T16:14:47,goods,os bens,False,1.0,6,6,s,"e,a,m,f,y,l",,,17.011295557022095,hangman,7,compras,em_loja,6ec0c292107de08e
+2025-05-09T16:15:26,goods,os bens,True,0.16666666666666666,6,1,"g,o,o,d,s",e,,,14.012453317642212,hangman,5,compras,em_loja,6ec0c292107de08e
+2025-05-09T16:16:04,aisle,o corredor,True,0.3333333333333333,6,2,"a,i,s,l,e","w,h",,,36.021023988723755,hangman,5,compras,em_loja,6ec0c292107de08e
+2025-05-09T16:16:52,consumer,o consumidor,True,0.0,6,0,"c,o,n,s,u,m,e,r",,,,13.005329132080078,hangman,4,compras,em_loja,6ec0c292107de08e
+2025-05-09T16:17:04,price tag,o preço,True,0.0,6,0,"p,r,i,c,e,t,a,g",,,,11.007961988449097,hangman,1,compras,em_loja,6ec0c292107de08e
+2025-05-09T16:17:27,discount,o desconto,True,0.16666666666666666,6,1,"d,i,s,c,o,u,n,t",e,,,21.015902519226074,hangman,7,compras,em_loja,6ec0c292107de08e
+2025-05-09T16:18:02,checkout,a caixa,True,0.16666666666666666,6,1,"c,h,e,c,k,o,u,t",a,,,33.01771306991577,hangman,8,compras,em_loja,6ec0c292107de08e
+2025-05-09T16:18:46,cost,o custo,True,0.0,6,0,"c,o,s,t",,,,4.002937316894531,hangman,1,compras,em_loja,6ec0c292107de08e
+2025-05-09T16:19:35,shopping list,a lista de compras,False,1.0,6,6,"s,i,l,i,s,t","e,a,r,b,d,f",,,47.03795289993286,hangman,11,compras,em_loja,6ec0c292107de08e
+2025-05-09T16:20:00,cart,o carrinho,True,0.0,6,0,"c,a,r,t",,,,8.006003618240356,hangman,2,compras,em_loja,6ec0c292107de08e
+2025-05-09T16:20:32,dressing room,o provador,True,0.3333333333333333,6,2,"d,r,e,s,s,i,n,g,r,o,o,m","p,h",,,30.022374868392944,hangman,7,compras,em_loja,6ec0c292107de08e
+2025-05-09T16:21:23,sales slip,o recibo,False,1.0,6,6,"s,a,e,s,s","v,w,b,r,c,f",,,50.038785457611084,hangman,12,compras,em_loja,6ec0c292107de08e
+2025-05-09T16:25:10,to buy,comprar,True,0.0,6,0,"t,o,b,u,y",,,,9.00912594795227,hangman,1,compras,em_loja,2918fbcdd192c99f
+2025-05-09T16:25:30,consumer,o consumidor,True,0.5,6,3,"c,o,n,s,u,m,e,r","d,p,i",,,19.02243661880493,hangman,8,compras,em_loja,2918fbcdd192c99f
+2025-05-09T16:25:54,stand,o expositor,False,1.0,6,6,"s,a","e,x,h,o,q,y",,,22.01637840270996,hangman,7,compras,em_loja,2918fbcdd192c99f
+2025-05-09T16:26:00,cart,o carrinho,True,0.0,6,0,"c,a,r,t",,,,3.0025038719177246,hangman,1,compras,em_loja,2918fbcdd192c99f
+2025-05-09T16:26:22,goods,os bens,True,0.0,6,0,"g,o,o,d,s",,,,21.013633728027344,hangman,1,compras,em_loja,2918fbcdd192c99f
+2025-05-09T16:27:12,store window,a montra,True,0.6666666666666666,6,4,"s,t,o,r,e,w,i,n,d,o,w","u,a,h,m",,,48.03071594238281,hangman,10,compras,em_loja,2918fbcdd192c99f
+2025-05-09T16:27:23,cost,o custo,True,0.0,6,0,"c,o,s,t",,,,9.004212617874146,hangman,1,compras,em_loja,2918fbcdd192c99f
+2025-05-09T16:27:29,to sell,vender,True,0.0,6,0,"t,o,s,e,l,l",,,,5.003945350646973,hangman,1,compras,em_loja,2918fbcdd192c99f
+2025-05-09T16:28:06,department,a secção,False,1.0,6,6,"e,a,t,e,t","o,w,c,f,s,l",,,35.0178759098053,hangman,10,compras,em_loja,2918fbcdd192c99f
