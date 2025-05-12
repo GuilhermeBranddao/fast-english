@@ -6,27 +6,8 @@ from app.games.hangman_game.main import HangmanGame
 from app.games.text_challenge.main import TextChallengeApp
 
 
-class BasePage(tk.Frame):
-    """Classe base para todas as páginas com métodos comuns."""
 
-    def __init__(self, parent, controller, **kwargs):
-        super().__init__(parent, **kwargs)
-        self.controller = controller
-
-    def centralize_widget(self, widget, rely):
-        """Centraliza um widget verticalmente."""
-        widget.place(relx=0.5, rely=rely, anchor=tk.CENTER)
-
-    def add_back_button(self, text="Voltar para a Inicial"):
-        """Adiciona um botão para voltar à página inicial."""
-        back_button = tk.Button(self, text=text, command=lambda: self.controller.show_frame("MainPage"))
-        self.centralize_widget(back_button, 0.85)
-
-    def add_stats_view(self):
-        pass
-
-
-class WordBaseApp(BasePage):
+class WordBaseApp(tk.Frame):
     def __init__(self, parent, controller, **kwargs):
         super().__init__(parent, controller, **kwargs)
 
@@ -99,8 +80,7 @@ class WordBaseApp(BasePage):
                             master,
                             text=f"   {sub}",
                             anchor="w",
-                            # command=lambda sub=sub, items=items: self.show_word_list(category=cat_name, subcategory=sub, words=items)
-                            command=lambda sub=sub, items=items: self.start_game(category=cat_name, subcategory=sub, words=items)
+                            command=lambda sub=sub, items=items: self.show_word_list(category=cat_name, subcategory=sub, words=items)
                         )
                         sub_btn.pack(fill="x")
                     var.set(True)
@@ -108,43 +88,13 @@ class WordBaseApp(BasePage):
             btn = tk.Button(cat_frame, text=category, anchor="w", command=toggle)
             btn.pack(fill="x")
 
-    def start_game(self, category, subcategory, words):
-        # Limpa conteúdo
-        for widget in self.content_frame.winfo_children():
-            widget.destroy()
-
-        # Título do menu principal
-        title_label = tk.Label(self, text="Menu Principal", font=("Arial", 16, "bold"))
-        title_label.pack(pady=20)
-
-        # Lista de botões e páginas correspondentes
-        games = [
-            ("Jogo de Vocabulário", VocabularyGame),
-            ("Jogo Da Forca", HangmanGame),
-            ("Game Color", ColorGame),
-            ("Desafio de Texto", TextChallengeApp)
-        ]
-
-        # Criação dinâmica de botões
-        for game_name, game_class in games:
-            button = tk.Button(self, text=game_name, width=25, height=2,
-                               command=lambda g=game_class: self.controller.show_game_frame(g))
-            button.pack(pady=10)
-
-        # Botão adicional
-        other_button = tk.Button(self, text="Ir para a Página 2", width=25, height=2,
-                                  command=lambda: self.controller.show_frame("PageTwo"))
-        other_button.pack(pady=10)
-        # Inicia o jogo da forca com as palavras selecionadas
-        # game = MainPage(self)
-        # game.start_game(category, subcategory, words)
-        # game.pack(expand=True, fill="both")
-
     def show_word_list(self, category, subcategory, words):
         # Limpa conteúdo
-        for widget in self.content_frame.winfo_children():
-            widget.destroy()
+
         
+        for widget in self.winfo_children():
+            widget.destroy()
+
         # Botão voltar
         back_btn = tk.Button(self, text="Voltar", command=self.build_ui)
         back_btn.pack(pady=10)
@@ -162,6 +112,26 @@ class WordBaseApp(BasePage):
             word_label = tk.Label(list_frame, text=word, anchor="w")
             word_label.pack(fill="x", padx=20, pady=2)
 
+
+
+class BasePage(tk.Frame):
+    """Classe base para todas as páginas com métodos comuns."""
+
+    def __init__(self, parent, controller, **kwargs):
+        super().__init__(parent, **kwargs)
+        self.controller = controller
+
+    def centralize_widget(self, widget, rely):
+        """Centraliza um widget verticalmente."""
+        widget.place(relx=0.5, rely=rely, anchor=tk.CENTER)
+
+    def add_back_button(self, text="Voltar para a Inicial"):
+        """Adiciona um botão para voltar à página inicial."""
+        back_button = tk.Button(self, text=text, command=lambda: self.controller.show_frame("MainPage"))
+        self.centralize_widget(back_button, 0.85)
+
+    def add_stats_view(self):
+        pass
 
 
 class MainPage(BasePage):
@@ -282,53 +252,53 @@ class PageMenuApapter(tk.Frame):
 
 
 
-# class PageController(tk.Tk):
-#     """Gerenciador principal para alternar entre páginas."""
+class PageController(tk.Tk):
+    """Gerenciador principal para alternar entre páginas."""
 
-#     def __init__(self, *args, **kwargs):
-#         super().__init__(*args, **kwargs)
-#         self.title("Aplicação com Múltiplas Páginas")
-#         self.geometry('700x500')
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.title("Aplicação com Múltiplas Páginas")
+        self.geometry('700x500')
 
-#         # Container para armazenar frames
-#         self.container = tk.Frame(self)
-#         self.container.pack(fill="both", expand=True)
+        # Container para armazenar frames
+        self.container = tk.Frame(self)
+        self.container.pack(fill="both", expand=True)
 
-#         # Dicionário para páginas
-#         self.frames = {}
-#         self.games = {}
+        # Dicionário para páginas
+        self.frames = {}
+        self.games = {}
 
-#         # Registra a página inicial e a página adicional
-#         self.register_frame("MainPage", MainPage)
-#         self.register_frame("PageTwo", PageTwo)
+        # Registra a página inicial e a página adicional
+        self.register_frame("MainPage", MainPage)
+        self.register_frame("PageTwo", PageTwo)
 
-#         # Exibe a página inicial
-#         self.show_frame("MainPage")
+        # Exibe a página inicial
+        self.show_frame("MainPage")
 
-#     def register_frame(self, name, page_class):
-#         """Registra um frame."""
-#         frame = page_class(self.container, self)
-#         self.frames[name] = frame
-#         frame.place(relwidth=1, relheight=1)
+    def register_frame(self, name, page_class):
+        """Registra um frame."""
+        frame = page_class(self.container, self)
+        self.frames[name] = frame
+        frame.place(relwidth=1, relheight=1)
 
-#     def register_game_frame(self, game_class):
-#         """Registra dinamicamente páginas de jogos."""
-#         if game_class not in self.games:
-#             frame = GamePage(self.container, self, game_class)
-#             self.games[game_class] = frame
-#             frame.place(relwidth=1, relheight=1)
+    def register_game_frame(self, game_class):
+        """Registra dinamicamente páginas de jogos."""
+        if game_class not in self.games:
+            frame = GamePage(self.container, self, game_class)
+            self.games[game_class] = frame
+            frame.place(relwidth=1, relheight=1)
 
-#     def show_frame(self, name):
-#         """Exibe a página pelo nome."""
-#         frame = self.frames[name]
-#         frame.tkraise()
+    def show_frame(self, name):
+        """Exibe a página pelo nome."""
+        frame = self.frames[name]
+        frame.tkraise()
 
-#     def show_game_frame(self, game_class):
-#         """Exibe uma página de jogo dinamicamente."""
-#         if game_class not in self.games:
-#             self.register_game_frame(game_class)
-#         self.games[game_class].tkraise()
-#         self.games[game_class].load_game()
+    def show_game_frame(self, game_class):
+        """Exibe uma página de jogo dinamicamente."""
+        if game_class not in self.games:
+            self.register_game_frame(game_class)
+        self.games[game_class].tkraise()
+        self.games[game_class].load_game()
 
 
 # if __name__ == "__main__":

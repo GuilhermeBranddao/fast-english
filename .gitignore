@@ -13,7 +13,7 @@ __pycache__/
 raw_images
 
 # Ignora tudo dentro da pasta
-extract_data_video/*
+database/extract_data_video/*
 
 # Mas não ignora a pasta data
 # !extract_data_video/data/
@@ -22,14 +22,14 @@ extract_data_video/*
 # extract_data_video/**
 
 # Exceto os diretórios específicos que você quer versionar
-!extract_data_video/data/extracted_data
+!database/extract_data_video/data/extracted_data
 #/words/data_organize/casa
-!extract_data_video/data/extracted_data/words/data_organize/compras/**
-!extract_data_video/data/extracted_data/words/data_organize/descrição_de_pessoas/**
-!extract_data_video/data/extracted_data/words/data_organize/verbos/**
+!database/extract_data_video/data/extracted_data/words/data_organize/compras/**
+!database/extract_data_video/data/extracted_data/words/data_organize/descrição_de_pessoas/**
+!database/extract_data_video/data/extracted_data/words/data_organize/verbos/**
 
-!extract_data_video/data/extracted_data/phrases/data_organize/compras/**
-!extract_data_video/data/extracted_data/phrases/data_organize/empregos/**
+!database/extract_data_video/data/extracted_data/phrases/data_organize/compras/**
+!database/extract_data_video/data/extracted_data/phrases/data_organize/empregos/**
 
 
 

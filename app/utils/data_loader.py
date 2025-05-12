@@ -6,8 +6,11 @@ class DataLoader:
     def __init__(self, base_path):
         self.base_path = Path(base_path)
 
-    def get_categories(self) -> list[Path]:
-        return [self.base_path / path for path in os.listdir(self.base_path)]
+    def get_categories(self, kind_return="list") -> list[Path]:
+        if kind_return == "list":
+            return [self.base_path / path for path in os.listdir(self.base_path)]
+        elif kind_return == "dict":
+            return {path: self.base_path / path for path in os.listdir(self.base_path)}
 
     def get_subcategories(self, category_path) -> list[Path]:
         return [category_path / path for path in os.listdir(category_path)]

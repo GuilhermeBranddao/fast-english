@@ -33,6 +33,10 @@ class HangmanGame(tk.Frame):
 
     def __init__(self, parent=None, **kwargs):
         super().__init__(parent, **kwargs)
+        print("Iniciando o jogo da forca...")
+        print(kwargs)
+        print("self.controller.category: ")
+
         self.parent = parent
         self.loader = DataLoader(base_path=DATA_PATH)
         self.list_data_words:list[dict] = self.loader.get_all_words(subcategory_name=SUBCATEGORY_NAME)

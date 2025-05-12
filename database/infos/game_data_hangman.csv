@@ -416,3 +416,13 @@ datetime,word,hint,won,difficulty,total_attempts,used_attempts,correct_guessed_l
 2025-05-09T16:27:23,cost,o custo,True,0.0,6,0,"c,o,s,t",,,,9.004212617874146,hangman,1,compras,em_loja,2918fbcdd192c99f
 2025-05-09T16:27:29,to sell,vender,True,0.0,6,0,"t,o,s,e,l,l",,,,5.003945350646973,hangman,1,compras,em_loja,2918fbcdd192c99f
 2025-05-09T16:28:06,department,a secção,False,1.0,6,6,"e,a,t,e,t","o,w,c,f,s,l",,,35.0178759098053,hangman,10,compras,em_loja,2918fbcdd192c99f
+2025-05-10T10:25:55,shopping,as compras,True,0.8333333333333334,6,5,"s,h,o,p,p,i,n,g","a,b,u,r,e",,,43.01419019699097,hangman,11,compras,em_loja,35e7280ad9531d0a
+2025-05-10T10:26:03,goods,os bens,True,0.0,6,0,"g,o,o,d,s",,,,5.00115704536438,hangman,1,compras,em_loja,35e7280ad9531d0a
+2025-05-11T08:23:31,to spend,gastar,False,1.0,6,6,"t,o,s,e","g,l,a,i,w,r",,,87.02705335617065,hangman,14,compras,em_loja,3803807f29480f8d
+2025-05-11T08:24:08,checkout,a caixa,True,0.5,6,3,"c,h,e,c,k,o,u,t","r,a,n",,,29.00864005088806,hangman,4,compras,em_loja,3803807f29480f8d
+2025-05-11T08:24:20,to buy,comprar,True,0.0,6,0,"t,o,b,u,y",,,,11.003218412399292,hangman,1,compras,em_loja,3803807f29480f8d
+2025-05-11T17:24:24,cart,o carrinho,True,0.0,6,0,"c,a,r,t",,,,5.0026655197143555,hangman,1,compras,em_loja,6b38cad2af536703
+2025-05-11T17:24:34,to spend,gastar,True,0.0,6,0,"t,o,s,p,e,n,d",,,,9.00345516204834,hangman,1,compras,em_loja,6b38cad2af536703
+2025-05-11T19:49:42,cost,o custo,True,0.0,6,0,"c,o,s,t",,,,5.001896619796753,hangman,1,compras,em_loja,246daf498418faf5
+2025-05-11T19:49:49,to spend,gastar,True,0.0,6,0,"t,o,s,p,e,n,d",,,,6.001556396484375,hangman,1,compras,em_loja,246daf498418faf5
+2025-05-11T19:50:33,scale,a balança,True,0.6666666666666666,6,4,"s,c,a,l,e","n,b,k,h",,,42.01319861412048,hangman,5,compras,em_loja,246daf498418faf5
