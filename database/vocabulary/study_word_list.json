@@ -1,0 +1,258 @@
+[
+    {
+        "path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\arrogance",
+        "files": "['audio.wav', 'image_figure.jpg', 'image_text.jpg', 'text_v2.json']",
+        "text_pt_br": "a arrogância",
+        "text_eng": "arrogance",
+        "audio_path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\arrogance\\audio.wav",
+        "image_figure": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\arrogance\\image_figure.jpg"
+    },
+    {
+        "path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\courage",
+        "files": "['audio.wav', 'image_figure.jpg', 'image_text.jpg', 'text_v2.json']",
+        "text_pt_br": "a audácia",
+        "text_eng": "courage",
+        "audio_path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\courage\\audio.wav",
+        "image_figure": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\courage\\image_figure.jpg"
+    },
+    {
+        "path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\devotion",
+        "files": "['audio.wav', 'image_figure.jpg', 'image_text.jpg', 'text_v2.json']",
+        "text_pt_br": "a devoção",
+        "text_eng": "devotion",
+        "audio_path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\devotion\\audio.wav",
+        "image_figure": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\devotion\\image_figure.jpg"
+    },
+    {
+        "path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\discrimination",
+        "files": "['audio.wav', 'image_figure.jpg', 'image_text.jpg', 'text_v2.json']",
+        "text_pt_br": "a discriminação",
+        "text_eng": "discrimination",
+        "audio_path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\discrimination\\audio.wav",
+        "image_figure": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\discrimination\\image_figure.jpg"
+    },
+    {
+        "path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\dishonesty",
+        "files": "['audio.wav', 'image_figure.jpg', 'image_text.jpg', 'text_v2.json']",
+        "text_pt_br": "a desonestidade",
+        "text_eng": "dishonesty",
+        "audio_path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\dishonesty\\audio.wav",
+        "image_figure": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\dishonesty\\image_figure.jpg"
+    },
+    {
+        "path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\disloyalty",
+        "files": "['audio.wav', 'image_figure.jpg', 'image_text.jpg', 'text_v2.json']",
+        "text_pt_br": "a deslealdade",
+        "text_eng": "disloyalty",
+        "audio_path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\disloyalty\\audio.wav",
+        "image_figure": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\disloyalty\\image_figure.jpg"
+    },
+    {
+        "path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\envy",
+        "files": "['audio.wav', 'image_figure.jpg', 'image_text.jpg', 'text_v2.json']",
+        "text_pt_br": "a inveja",
+        "text_eng": "envy",
+        "audio_path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\envy\\audio.wav",
+        "image_figure": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\envy\\image_figure.jpg"
+    },
+    {
+        "path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\equality",
+        "files": "['audio.wav', 'image_figure.jpg', 'image_text.jpg', 'text_v2.json']",
+        "text_pt_br": "a igualdade",
+        "text_eng": "equality",
+        "audio_path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\equality\\audio.wav",
+        "image_figure": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\equality\\image_figure.jpg"
+    },
+    {
+        "path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\friendship",
+        "files": "['audio.wav', 'image_figure.jpg', 'image_text.jpg', 'text_v2.json']",
+        "text_pt_br": "a amizade",
+        "text_eng": "friendship",
+        "audio_path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\friendship\\audio.wav",
+        "image_figure": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\friendship\\image_figure.jpg"
+    },
+    {
+        "path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\guilt",
+        "files": "['audio.wav', 'image_figure.jpg', 'image_text.jpg', 'text_v2.json']",
+        "text_pt_br": "a culpa",
+        "text_eng": "guilt",
+        "audio_path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\guilt\\audio.wav",
+        "image_figure": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\guilt\\image_figure.jpg"
+    },
+    {
+        "path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\honesty",
+        "files": "['audio.wav', 'image_figure.jpg', 'image_text.jpg', 'text_v2.json']",
+        "text_pt_br": "a honestidade",
+        "text_eng": "honesty",
+        "audio_path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\honesty\\audio.wav",
+        "image_figure": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\honesty\\image_figure.jpg"
+    },
+    {
+        "path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\honor",
+        "files": "['audio.wav', 'image_figure.jpg', 'image_text.jpg', 'text_v2.json']",
+        "text_pt_br": "a honra",
+        "text_eng": "honor",
+        "audio_path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\honor\\audio.wav",
+        "image_figure": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\honor\\image_figure.jpg"
+    },
+    {
+        "path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\impatience",
+        "files": "['audio.wav', 'image_figure.jpg', 'image_text.jpg', 'text_v2.json']",
+        "text_pt_br": "a impaciência",
+        "text_eng": "impatience",
+        "audio_path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\impatience\\audio.wav",
+        "image_figure": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\impatience\\image_figure.jpg"
+    },
+    {
+        "path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\jealousy",
+        "files": "['audio.wav', 'image_figure.jpg', 'image_text.jpg', 'text_v2.json']",
+        "text_pt_br": "o ciúme",
+        "text_eng": "jealousy",
+        "audio_path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\jealousy\\audio.wav",
+        "image_figure": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\jealousy\\image_figure.jpg"
+    },
+    {
+        "path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\kindness",
+        "files": "['audio.wav', 'image_figure.jpg', 'image_text.jpg', 'text_v2.json']",
+        "text_pt_br": "a bondade",
+        "text_eng": "kindness",
+        "audio_path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\kindness\\audio.wav",
+        "image_figure": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\kindness\\image_figure.jpg"
+    },
+    {
+        "path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\laziness",
+        "files": "['audio.wav', 'image_figure.jpg', 'image_text.jpg', 'text_v2.json']",
+        "text_pt_br": "a preguiça",
+        "text_eng": "laziness",
+        "audio_path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\laziness\\audio.wav",
+        "image_figure": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\laziness\\image_figure.jpg"
+    },
+    {
+        "path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\lie",
+        "files": "['audio.wav', 'image_figure.jpg', 'image_text.jpg', 'text_v2.json']",
+        "text_pt_br": "a mentira",
+        "text_eng": "lie",
+        "audio_path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\lie\\audio.wav",
+        "image_figure": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\lie\\image_figure.jpg"
+    },
+    {
+        "path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\loyalty",
+        "files": "['audio.wav', 'image_figure.jpg', 'image_text.jpg', 'text_v2.json']",
+        "text_pt_br": "a lealdade",
+        "text_eng": "loyalty",
+        "audio_path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\loyalty\\audio.wav",
+        "image_figure": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\loyalty\\image_figure.jpg"
+    },
+    {
+        "path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\patience",
+        "files": "['audio.wav', 'image_figure.jpg', 'image_text.jpg', 'text_v2.json']",
+        "text_pt_br": "a paciência",
+        "text_eng": "patience",
+        "audio_path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\patience\\audio.wav",
+        "image_figure": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\patience\\image_figure.jpg"
+    },
+    {
+        "path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\patriotism",
+        "files": "['audio.wav', 'image_figure.jpg', 'image_text.jpg', 'text_v2.json']",
+        "text_pt_br": "o patriotismo",
+        "text_eng": "patriotism",
+        "audio_path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\patriotism\\audio.wav",
+        "image_figure": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\patriotism\\image_figure.jpg"
+    },
+    {
+        "path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\power",
+        "files": "['audio.wav', 'image_figure.jpg', 'image_text.jpg', 'text_v2.json']",
+        "text_pt_br": "a energia",
+        "text_eng": "power",
+        "audio_path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\power\\audio.wav",
+        "image_figure": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\power\\image_figure.jpg"
+    },
+    {
+        "path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\purity",
+        "files": "['audio.wav', 'image_figure.jpg', 'image_text.jpg', 'text_v2.json']",
+        "text_pt_br": "a pureza",
+        "text_eng": "purity",
+        "audio_path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\purity\\audio.wav",
+        "image_figure": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\purity\\image_figure.jpg"
+    },
+    {
+        "path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\racism",
+        "files": "['audio.wav', 'image_figure.jpg', 'image_text.jpg', 'text_v2.json']",
+        "text_pt_br": "o racismo",
+        "text_eng": "racism",
+        "audio_path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\racism\\audio.wav",
+        "image_figure": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\racism\\image_figure.jpg"
+    },
+    {
+        "path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\responsibility",
+        "files": "['audio.wav', 'image_figure.jpg', 'image_text.jpg', 'text_v2.json']",
+        "text_pt_br": "a responsabilidade",
+        "text_eng": "responsibility",
+        "audio_path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\responsibility\\audio.wav",
+        "image_figure": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\responsibility\\image_figure.jpg"
+    },
+    {
+        "path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\revenge",
+        "files": "['audio.wav', 'image_figure.jpg', 'image_text.jpg', 'text_v2.json']",
+        "text_pt_br": "a vingança",
+        "text_eng": "revenge",
+        "audio_path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\revenge\\audio.wav",
+        "image_figure": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\revenge\\image_figure.jpg"
+    },
+    {
+        "path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\truth",
+        "files": "['audio.wav', 'image_figure.jpg', 'image_text.jpg', 'text_v2.json']",
+        "text_pt_br": "a verdade",
+        "text_eng": "truth",
+        "audio_path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\truth\\audio.wav",
+        "image_figure": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\truth\\image_figure.jpg"
+    },
+    {
+        "path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\value",
+        "files": "['audio.wav', 'image_figure.jpg', 'image_text.jpg', 'text_v2.json']",
+        "text_pt_br": "o valor",
+        "text_eng": "value",
+        "audio_path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\value\\audio.wav",
+        "image_figure": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\value\\image_figure.jpg"
+    },
+    {
+        "path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\vanity",
+        "files": "['audio.wav', 'image_figure.jpg', 'image_text.jpg', 'text_v2.json']",
+        "text_pt_br": "a vaidade",
+        "text_eng": "vanity",
+        "audio_path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\vanity\\audio.wav",
+        "image_figure": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\vanity\\image_figure.jpg"
+    },
+    {
+        "path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\vice",
+        "files": "['audio.wav', 'image_figure.jpg', 'image_text.jpg', 'text_v2.json']",
+        "text_pt_br": "o vício",
+        "text_eng": "vice",
+        "audio_path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\vice\\audio.wav",
+        "image_figure": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\vice\\image_figure.jpg"
+    },
+    {
+        "path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\virtue",
+        "files": "['audio.wav', 'image_figure.jpg', 'image_text.jpg', 'text_v2.json']",
+        "text_pt_br": "a virtude",
+        "text_eng": "virtue",
+        "audio_path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\virtue\\audio.wav",
+        "image_figure": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\virtue\\image_figure.jpg"
+    },
+    {
+        "path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\weakness",
+        "files": "['audio.wav', 'image_figure.jpg', 'image_text.jpg', 'text_v2.json']",
+        "text_pt_br": "a fraqueza",
+        "text_eng": "weakness",
+        "audio_path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\weakness\\audio.wav",
+        "image_figure": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\weakness\\image_figure.jpg"
+    },
+    {
+        "path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\wisdom",
+        "files": "['audio.wav', 'image_figure.jpg', 'image_text.jpg', 'text_v2.json']",
+        "text_pt_br": "a sabedoria",
+        "text_eng": "wisdom",
+        "audio_path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\wisdom\\audio.wav",
+        "image_figure": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\descrição_de_pessoas\\valores_e_vícios\\wisdom\\image_figure.jpg"
+    }
+]

@@ -19,7 +19,7 @@ database/extract_data_video/*
 # !extract_data_video/data/
 
 # Ignora tudo
-# extract_data_video/**
+extract_data_video/**
 
 # Exceto os diretórios específicos que você quer versionar
 !database/extract_data_video/data/extracted_data

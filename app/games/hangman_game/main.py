@@ -33,13 +33,12 @@ class HangmanGame(tk.Frame):
 
     def __init__(self, parent=None, **kwargs):
         super().__init__(parent, **kwargs)
-        print("Iniciando o jogo da forca...")
-        print(kwargs)
-        print("self.controller.category: ")
-
         self.parent = parent
-        self.loader = DataLoader(base_path=DATA_PATH)
-        self.list_data_words:list[dict] = self.loader.get_all_words(subcategory_name=SUBCATEGORY_NAME)
+        # self.loader = DataLoader(base_path=DATA_PATH)
+        # self.list_data_words:list[dict] = self.loader.get_all_words(subcategory_name=SUBCATEGORY_NAME)
+
+        self.list_data_words:list[dict] = self.open_json('database/vocabulary/study_word_list.json')
+        
         random.shuffle(self.list_data_words)
 
         self.timer = GameTimer(self)
@@ -65,6 +64,7 @@ class HangmanGame(tk.Frame):
         self.dict_info_words = self.list_data_words.pop(random.randint(0, len(self.list_data_words)-1))
 
         self.word_answer = self.dict_info_words.get("text_eng", None)
+        self.word_answer = self.word_answer.lower()
         
         self.word_question = self.dict_info_words.get("text_pt_br", None) 
 
@@ -210,13 +210,14 @@ class HangmanGame(tk.Frame):
 
         clicks_on_guess = self.clicks_on_guess
 
-        path_word = self.dict_info_words.get("path", None)
+        path_word = Path(self.dict_info_words.get("path", None))
+
         category = path_word.parts[-3]
         sub_category = path_word.parts[-2]
         # adjetivos/sobre_as_pessoas/unable
 
-        if not any([category == loader_category.name for loader_category in self.loader.get_categories()]):
-            print("Categoria Não Existe")
+        # if not any([category == loader_category.name for loader_category in self.loader.get_categories()]):
+        #     print("Categoria Não Existe")
 
         self.timer.reset_timer()
         self.clicks_on_guess = 0
@@ -256,6 +257,18 @@ class HangmanGame(tk.Frame):
         except Exception as e:
             print(f"Translation error: {e}")
             return "Translation unavailable"
+    
+    def open_json(self, filepath):
+        try:
+            with open(filepath, 'r', encoding="utf-8") as file:
+                data = json.load(file)
+                return data
+        except FileNotFoundError:
+            print(f"Error: File not found at {filepath}")
+            return None
+        except json.JSONDecodeError:
+            print(f"Error: Invalid JSON format in {filepath}")
+            return None
 
 if __name__ == "__main__":
     try:

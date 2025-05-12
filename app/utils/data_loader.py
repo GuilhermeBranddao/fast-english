@@ -3,7 +3,7 @@ import json
 import os
 
 class DataLoader:
-    def __init__(self, base_path):
+    def __init__(self, base_path=None):
         self.base_path = Path(base_path)
 
     def get_categories(self, kind_return="list") -> list[Path]:
@@ -27,8 +27,8 @@ class DataLoader:
                 for word_path in self.get_word_paths(subcat):
                     palavras.append(self._carregar_palavra(word_path))
         return palavras
-
-    def _carregar_palavra(self, path) -> dict:
+    
+    def _carregar_palavra(self, path:Path) -> dict:
         files = list(os.listdir(path))
         text_info = self._carregar_texto(path)
 
@@ -40,7 +40,7 @@ class DataLoader:
             "audio_path": path / "audio.wav",
             "image_figure": path / "image_figure.jpg",
         }
-
+    
     def _carregar_texto(self, path) -> dict:
         try:
             with open(path / "text_v2.json", "r", encoding="utf-8") as f:

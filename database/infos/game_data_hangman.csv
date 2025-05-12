@@ -426,3 +426,50 @@ datetime,word,hint,won,difficulty,total_attempts,used_attempts,correct_guessed_l
 2025-05-11T19:49:42,cost,o custo,True,0.0,6,0,"c,o,s,t",,,,5.001896619796753,hangman,1,compras,em_loja,246daf498418faf5
 2025-05-11T19:49:49,to spend,gastar,True,0.0,6,0,"t,o,s,p,e,n,d",,,,6.001556396484375,hangman,1,compras,em_loja,246daf498418faf5
 2025-05-11T19:50:33,scale,a balança,True,0.6666666666666666,6,4,"s,c,a,l,e","n,b,k,h",,,42.01319861412048,hangman,5,compras,em_loja,246daf498418faf5
+2025-05-12T10:26:53,item,o artigo,True,0.0,6,0,"i,t,e,m",,,,5.003188848495483,hangman,1,compras,compras_online,73994c97daacc80a
+2025-05-12T14:40:02,How does it look?,Como é que fica?,False,1.0,6,6,"e,s,i","h,m,u,j,a,n",,,30.01286029815674,hangman,9,compras,roupas,3635f3f8d2f363b2
+2025-05-12T14:46:15,how much is it?,Quanto é que custa?,True,0.16666666666666666,6,1,"h,o,w,m,u,c,h,i,s,i,t",a,,,45.02505302429199,hangman,7,compras,cuidados_pessoais,48e82769598ffafd
+2025-05-12T14:48:32,how much is the bread?,Quanto custa o pão?,True,0.16666666666666666,6,1,"h,o,w,m,u,c,h,i,s,t,h,e,b,r,e,a,d",l,,,135.08774328231812,hangman,20,compras,no_supermercado,48e82769598ffafd
+2025-05-12T14:51:29,how late are you open on weekdays?,Até que horas estão abertos durante a semana?,False,1.0,6,6,"h,o,w,a,t,e,a,r,e,y,o,u,o,p,e,n,o,n,w,e,e,k,d,a,y,s","z,q,b,c,m,i",,,164.07924008369446,hangman,24,compras,no_loja_de_departamentos,48e82769598ffafd
+2025-05-12T14:53:44,will you show me how to operate it?,Pode mostrar-me como o utilizar?,True,0.3333333333333333,6,2,"w,i,l,l,y,o,u,s,h,o,w,m,e,h,o,w,t,o,o,p,e,r,a,t,e,i,t","c,n",,,77.03909683227539,hangman,10,compras,dispositivos_eletrónicos,48e82769598ffafd
+2025-05-12T14:55:41,how do they feel?,eee ee Como se sente com eles?,False,1.0,6,6,"h,o,w,o,t,h,e,y,f,e,e,l","z,k,p,s,g,r",,,109.05648994445801,hangman,15,compras,sapatos,48e82769598ffafd
+2025-05-12T14:56:48,how many eggs do you need?,Quantos ovos precisa?,True,0.16666666666666666,6,1,"h,o,w,m,a,n,y,e,g,g,s,d,o,y,o,u,n,e,e,d",f,,,38.01801824569702,hangman,6,compras,no_supermercado,48e82769598ffafd
+2025-05-12T14:58:43,how does it look?,Como é que fica?,False,1.0,6,6,"h,o,w,d,o,e,s,i,t,l,o,o","c,m,u,f,g,a",,,112.05824446678162,hangman,20,compras,roupas,48e82769598ffafd
+2025-05-12T14:59:05,how does it look?,Como é que fica?,True,0.0,6,0,"h,o,w,d,o,e,s,i,t,l,o,o,k",,,,15.00700068473816,hangman,1,compras,roupas,48e82769598ffafd
+2025-05-12T14:59:24,how much do you need?,De quanto precisa?,True,0.16666666666666666,6,1,"h,o,w,m,u,c,h,d,o,y,o,u,n,e,e,d",a,,,17.01113247871399,hangman,2,compras,no_supermercado,48e82769598ffafd
+2025-05-12T14:59:48,how many eggs do you need?,Quantos ovos precisa?,True,0.0,6,0,"h,o,w,m,a,n,y,e,g,g,s,d,o,y,o,u,n,e,e,d",,,,22.01151394844055,hangman,2,compras,no_supermercado,48e82769598ffafd
+2025-05-12T15:01:29,how does this work?,Como funciona isto?,False,1.0,6,6,"h,o,w,d,o,e,s,t,h,i,s,w,o,r","c,u,l,y,a,n",,,99.05049777030945,hangman,19,compras,dispositivos_eletrónicos,48e82769598ffafd
+2025-05-12T15:03:00,how wide is this cloth?,Quão grande é este tecido?,False,1.0,6,6,"h,o,w,w,i,d,e,i,s,t,h,i,s,l,o,t,h","z,b,f,g,j,n",,,77.06251287460327,hangman,19,compras,outros_produtos,48e82769598ffafd
+2025-05-12T17:19:17,dissatisfied,insatisfeito,True,0.8333333333333334,6,5,"d,i,s,s,a,t,i,s,f,i,e,d","m,u,o,r,n",,,70.06432628631592,hangman,12,descrição_de_pessoas,estados_emocionais,1b153157fd1d455e
+2025-05-12T17:19:41,depressed,deprimido,True,0.5,6,3,"d,e,p,r,e,s,s,e,d","i,c,m",,,18.01198148727417,hangman,7,descrição_de_pessoas,estados_emocionais,1b153157fd1d455e
+2025-05-12T17:20:24,sad,triste,True,0.6666666666666666,6,4,"s,a,d","f,p,b,m",,,39.02354979515076,hangman,6,descrição_de_pessoas,estados_emocionais,1b153157fd1d455e
+2025-05-12T17:20:31,emotional,emocional,True,0.0,6,0,"e,m,o,t,i,o,n,a,l",,,,5.002191543579102,hangman,1,descrição_de_pessoas,estados_emocionais,1b153157fd1d455e
+2025-05-12T17:21:52,thankful,agradecida,False,1.0,6,6,"t,h,a,n,k,f","d,p,m,i,o,e",,,78.03914952278137,hangman,10,descrição_de_pessoas,estados_emocionais,1b153157fd1d455e
+2025-05-12T17:22:50,relaxed,descontraída,True,0.8333333333333334,6,5,"r,e,l,a,x,e,d","c,s,f,o,n",,,52.02644205093384,hangman,14,descrição_de_pessoas,estados_emocionais,1b153157fd1d455e
+2025-05-12T17:23:20,jealous,ciumenta,False,1.0,6,6,"j,e,a","v,b,c,m,i,n",,,28.012585878372192,hangman,9,descrição_de_pessoas,estados_emocionais,1b153157fd1d455e
+2025-05-12T17:23:53,afraid,receosa,True,0.5,6,3,"a,f,r,a,i,d","s,g,e",,,27.011119604110718,hangman,8,descrição_de_pessoas,estados_emocionais,1b153157fd1d455e
+2025-05-12T17:24:18,satisfied,satisfeito,True,0.16666666666666666,6,1,"s,a,t,i,s,f,i,e,d",c,,,21.011252880096436,hangman,4,descrição_de_pessoas,estados_emocionais,1b153157fd1d455e
+2025-05-12T17:24:41,nervous,hervosa,True,0.0,6,0,"n,e,r,v,o,u,s",,,,21.01414394378662,hangman,8,descrição_de_pessoas,estados_emocionais,1b153157fd1d455e
+2025-05-12T17:25:18,fearful,receosa,True,0.5,6,3,"f,e,a,r,f,u,l","s,d,m",,,35.018171548843384,hangman,10,descrição_de_pessoas,estados_emocionais,1b153157fd1d455e
+2025-05-12T17:25:37,calm,calma,True,0.0,6,0,"c,a,l,m",,,,14.008744955062866,hangman,4,descrição_de_pessoas,estados_emocionais,1b153157fd1d455e
+2025-05-12T17:25:44,lost,perdido,True,0.0,6,0,"l,o,s,t",,,,4.003529071807861,hangman,1,descrição_de_pessoas,estados_emocionais,1b153157fd1d455e
+2025-05-12T17:26:31,miserable,miserável,True,0.16666666666666666,6,1,"m,i,s,e,r,a,b,l,e",v,,,45.025091886520386,hangman,10,descrição_de_pessoas,estados_emocionais,1b153157fd1d455e
+2025-05-12T17:26:37,happy,feliz,True,0.0,6,0,"h,a,p,p,y",,,,4.002594232559204,hangman,1,descrição_de_pessoas,estados_emocionais,1b153157fd1d455e
+2025-05-12T17:26:50,motivated,motivado,True,0.0,6,0,"m,o,t,i,v,a,t,e,d",,,,10.005266904830933,hangman,2,descrição_de_pessoas,estados_emocionais,1b153157fd1d455e
+2025-05-12T17:27:07,interested,interessado,True,0.0,6,0,"i,n,t,e,r,e,s,t,e,d",,,,15.009453296661377,hangman,3,descrição_de_pessoas,estados_emocionais,1b153157fd1d455e
+2025-05-12T17:27:26,excited,entusiasmado,False,1.0,6,6,i,"h,m,s,u,a,n",,,13.00772476196289,hangman,7,descrição_de_pessoas,estados_emocionais,1b153157fd1d455e
+2025-05-12T17:28:11,angry,zangado,False,1.0,6,6,"a,r","p,m,s,u,f,t",,,41.03680872917175,hangman,8,descrição_de_pessoas,estados_emocionais,1b153157fd1d455e
+2025-05-12T17:28:47,desperate,desesperado,True,0.0,6,0,"d,e,s,p,e,r,a,t,e",,,,31.013173818588257,hangman,5,descrição_de_pessoas,estados_emocionais,1b153157fd1d455e
+2025-05-12T17:28:56,unhappy,infeliz,True,0.0,6,0,"u,n,h,a,p,p,y",,,,6.001827716827393,hangman,1,descrição_de_pessoas,estados_emocionais,1b153157fd1d455e
+2025-05-12T17:29:39,hopeless,desesperançada,False,1.0,6,6,"o,p,e,e,s,s","r,d,x,u,a,n",,,39.030746936798096,hangman,11,descrição_de_pessoas,estados_emocionais,1b153157fd1d455e
+2025-05-12T17:30:23,jealous,ciumenta,False,1.0,6,6,"j,e,a,s","b,c,m,i,g,n",,,35.020577907562256,hangman,13,descrição_de_pessoas,estados_emocionais,1b153157fd1d455e
+2025-05-12T17:31:16,lonely,solitário,False,1.0,6,6,"l,o,l,y","h,s,i,u,a,t",,,45.02435111999512,hangman,7,descrição_de_pessoas,estados_emocionais,1b153157fd1d455e
+2025-05-12T17:31:46,jealous,ciumenta,True,0.16666666666666666,6,1,"j,e,a,l,o,u,s",n,,,11.006711721420288,hangman,1,descrição_de_pessoas,estados_emocionais,1b153157fd1d455e
+2025-05-12T17:33:01,bored,entediado,False,1.0,6,6,"o,e,d","h,i,x,a,t,n",,,58.03298091888428,hangman,9,descrição_de_pessoas,estados_emocionais,1b153157fd1d455e
+2025-05-12T17:34:02,eager,ansioso,False,1.0,6,6,"e,a,e,r","h,d,i,w,j,n",,,55.03116846084595,hangman,10,descrição_de_pessoas,estados_emocionais,1b153157fd1d455e
+2025-05-12T17:34:55,joyful,jubiloso,False,1.0,6,6,"j,o,f,u,l","k,b,m,s,i,a",,,43.02081656455994,hangman,11,descrição_de_pessoas,estados_emocionais,1b153157fd1d455e
+2025-05-12T17:36:02,impressed,impressionada,True,0.5,6,3,"i,m,p,r,e,s,s,e,d","n,t,y",,,54.03134298324585,hangman,11,descrição_de_pessoas,estados_emocionais,1b153157fd1d455e
+2025-05-12T17:36:37,thankful,agradecida,False,1.0,6,6,"h,a,f,u,l","d,v,p,i,x,y",,,30.01574397087097,hangman,9,descrição_de_pessoas,estados_emocionais,1b153157fd1d455e
+2025-05-12T17:37:12,furious,furioso,False,1.0,6,6,"u,i,o,u,s","h,d,p,b,w,a",,,30.01823353767395,hangman,11,descrição_de_pessoas,estados_emocionais,1b153157fd1d455e
+2025-05-12T17:38:03,surprised,surpreso,True,0.3333333333333333,6,2,"s,u,r,p,r,i,s,e,d","o,a",,,48.02588391304016,hangman,5,descrição_de_pessoas,estados_emocionais,1b153157fd1d455e
+2025-05-12T17:41:51,truth,a verdade,False,1.0,6,6,"t,r,u,t","d,s,i,l,e,y",,,74.06207704544067,hangman,7,descrição_de_pessoas,valores_e_vícios,6369277419981724
