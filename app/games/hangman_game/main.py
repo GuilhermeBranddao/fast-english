@@ -6,15 +6,19 @@ import pandas as pd
 from PIL import Image, ImageTk
 import json
 import pygame
-import random
+# import random
 from datetime import datetime
 from deep_translator import GoogleTranslator
-from random import randint
-
+# from random import randint
 
 from app.utils.data_loader import DataLoader
 from app.utils.game_timer import GameTimer
 from app.utils.save_data import save_game_data
+
+import numpy as np
+from numpy import random
+
+# np.random.seed(42)
 
 # Inicializa o mixer do pygame
 pygame.mixer.init()
@@ -27,7 +31,6 @@ SMALL_FONT = ("Arial", 12)
 DATA_PATH = Path("database/vocabulary/words/data_organize")
 SUBCATEGORY_NAME = "em_loja"
 
-
 class HangmanGame(tk.Frame):
     MAX_ATTEMPTS = 6
 
@@ -39,7 +42,7 @@ class HangmanGame(tk.Frame):
 
         self.list_data_words:list[dict] = self.open_json('database/vocabulary/study_word_list.json')
         
-        random.shuffle(self.list_data_words)
+        # random.shuffle(self.list_data_words)
 
         self.timer = GameTimer(self)
 
@@ -61,6 +64,7 @@ class HangmanGame(tk.Frame):
             self.parent.quit()
             return
 
+        self.list_of_typed_letters = []
         self.dict_info_words = self.list_data_words.pop(random.randint(0, len(self.list_data_words)-1))
 
         self.word_answer = self.dict_info_words.get("text_eng", None)
@@ -113,6 +117,10 @@ class HangmanGame(tk.Frame):
         self.guess_button = tk.Button(self.input_frame, text="Adivinhar", command=self.check_guess)
         self.guess_button.pack(side="left", padx=5)
 
+        self.btn_editar = tk.Button(self, text="✏️ Editar")
+        self.btn_editar.config(command=self.editar_json)
+        self.btn_editar.place(relx=0.0, rely=0.5, anchor="w")
+
         self.update_ui()
 
     def update_ui(self):
@@ -124,10 +132,6 @@ class HangmanGame(tk.Frame):
         self.guessed_label.config(text=f"Letras tentadas: {', '.join(sorted(self.guessed_letters))}")
         self.hint_label.config(text=f"Dica: {self.word_question}")
 
-        # if not img_path.exists():
-        #     print(f"[ERRO] Caminho da imagem não encontrado: {img_path}")
-
-        # if not hasattr(self.image_label, 'current_image_path') or self.image_label.current_image_path != img_path:
 
         image_figure = self.dict_info_words.get("image_figure", None)
 
@@ -152,6 +156,11 @@ class HangmanGame(tk.Frame):
             messagebox.showwarning("Letra inválida", "Digite apenas letras.")
             return
 
+        # Repedindo para garantir que todas as letras sejam adicionadas
+        for letter in guess:
+            self.list_of_typed_letters.append(letter.lower())
+            
+
         for letter in guess:
             if letter in self.guessed_letters:
                 continue
@@ -167,6 +176,52 @@ class HangmanGame(tk.Frame):
                 return
 
         self.update_ui()
+    
+    def editar_json(self):
+        path_text_json = Path(self.dict_info_words.get("path", "")) / "text_v2.json"
+
+        if not path_text_json.exists():
+            messagebox.showerror("Erro", f"Arquivo não encontrado: {path_text_json}")
+            return
+
+        # Abre os dados do JSON
+        try:
+            with open(path_text_json, 'r', encoding="utf-8") as f:
+                json_data = json.load(f)
+        except Exception as e:
+            messagebox.showerror("Erro ao abrir JSON", str(e))
+            return
+
+        # Cria nova janela
+        editor_window = tk.Toplevel(self)
+        editor_window.title("Editar texto")
+
+        entries = {}  # Armazena os campos editáveis
+
+        row = 0
+        for key, value in json_data.items():
+            tk.Label(editor_window, text=key, font=SMALL_FONT).grid(row=row, column=0, padx=10, pady=5, sticky="e")
+            entry = tk.Entry(editor_window, width=60)
+            entry.insert(0, value)
+            entry.grid(row=row, column=1, padx=10, pady=5, sticky="w")
+            entries[key] = entry
+            row += 1
+
+        def salvar_alteracoes():
+            for key in json_data:
+                json_data[key] = entries[key].get()
+
+            try:
+                with open(path_text_json, 'w', encoding="utf-8") as f:
+                    json.dump(json_data, f, ensure_ascii=False, indent=4)
+                messagebox.showinfo("Sucesso", "Arquivo salvo com sucesso.")
+                editor_window.destroy()
+            except Exception as e:
+                messagebox.showerror("Erro ao salvar JSON", str(e))
+
+        # Botão para salvar
+        salvar_btn = tk.Button(editor_window, text="Salvar", command=salvar_alteracoes, font=SMALL_FONT)
+        salvar_btn.grid(row=row, column=0, columnspan=2, pady=10)
 
     def reveal_letters(self, letter):
         for idx, char in enumerate(self.word_answer):
@@ -241,6 +296,7 @@ class HangmanGame(tk.Frame):
             "clicks_on_guess": clicks_on_guess,
             "correct_guessed_letters": correct_guessed_letters,
             "incorrect_guessed_letters": incorrect_guessed_letters,
+            "list_of_typed_letters":self.list_of_typed_letters,
             # "correct_guesses": correct_guesses,
             # "incorrect_guesses": incorrect_guesses,
             "time_taken": time_taken,
