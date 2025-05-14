@@ -12,23 +12,6 @@ class WordBaseApp(tk.Frame):
         super().__init__(parent, controller, **kwargs)
 
         self.current_type = "words"
-        self.data = {
-            "words": {
-                "Casa": {
-                    "Partes": ["porta", "janela", "telhado"],
-                    "Cômodos": ["sala", "quarto", "cozinha"]
-                },
-                "Trabalho": {
-                    "Profissões": ["engenheiro", "professor"]
-                }
-            },
-            "phrases": {
-                "Saudações": {
-                    "Informal": ["Oi!", "E aí?"],
-                    "Formal": ["Bom dia", "Como vai?"]
-                }
-            }
-        }
 
         self.build_ui()
 

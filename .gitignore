@@ -31,7 +31,7 @@ extract_data_video/**
 !database/extract_data_video/data/extracted_data/phrases/data_organize/compras/**
 !database/extract_data_video/data/extracted_data/phrases/data_organize/empregos/**
 
-
+*.gz
 
 .venv
 # Distribution / packaging

@@ -29,6 +29,13 @@ class DataLoader:
         return palavras
     
     def _carregar_palavra(self, path:Path) -> dict:
+        if not path.exists():
+            raise FileNotFoundError(f"Path {path} does not exist.")
+        if not path.is_dir():
+            raise NotADirectoryError(f"Path {path} is not a directory.")
+        if not (path / "text_v2.json").exists():
+            raise FileNotFoundError(f"File text_v2.json not found in {path}.")
+        
         files = list(os.listdir(path))
         text_info = self._carregar_texto(path)
 

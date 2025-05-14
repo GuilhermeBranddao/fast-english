@@ -5,7 +5,7 @@ from app.games.hangman_game.main import HangmanGame
 from app.games.text_challenge.main import TextChallengeApp
 from app.utils.data_loader import DataLoader
 import json
-
+import os
 from pathlib import Path
 
 
@@ -32,8 +32,8 @@ class WordBaseApp(BasePage):
     def __init__(self, parent, controller, **kwargs):
         super().__init__(parent, controller, **kwargs)
 
-        self.data_path = "database/extract_data_video/data/extracted_data/{kind}/data_organize"
-        self.save_path_study_word_list = 'database/vocabulary/study_word_list.json'
+        self.data_path = os.path.join("database", "extract_data_video", "data", "extracted_data", "{kind}", "data_organize")
+        self.save_path_study_word_list = os.path.join("database", "vocabulary", "study_word_list.json")
         self.current_type = "words"
 
         self.data = self.create_estructure()
@@ -83,7 +83,7 @@ class WordBaseApp(BasePage):
 
         if type_name == "database":
             # Caminho da pasta com os arquivos
-            folder = Path("database/vocabulary/save_words")
+            folder = Path(os.path.join("database", "vocabulary", "save_words"))
             if not folder.exists():
                 folder.mkdir(parents=True)
 
@@ -171,7 +171,7 @@ class WordBaseApp(BasePage):
         # back_btn.pack(pady=10)
 
         ## Salvando lista de nomes
-        study_word_list = [self.loader._carregar_palavra(path=Path(path)) for path in words]
+        study_word_list = [self.loader._carregar_palavra(path=Path(path.replace("\\", "/"))) for path in words]
 
         # Convert WindowsPath objects to strings in the study_word_list
         serializable_study_word_list = [

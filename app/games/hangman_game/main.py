@@ -76,6 +76,7 @@ class HangmanGame(tk.Frame):
         self.remaining_attempts = self.MAX_ATTEMPTS
         self.guessed_letters = set()
 
+        self.timer.reset_timer()
         self.timer.play()
 
     def hide_text(self, text: str) -> str:
@@ -118,10 +119,15 @@ class HangmanGame(tk.Frame):
         self.guess_button.pack(side="left", padx=5)
 
         self.btn_editar = tk.Button(self, text="✏️ Editar")
-        self.btn_editar.config(command=self.editar_json)
+        self.btn_editar.config(command=lambda: self.editar_json(dict_info_words=self.dict_info_words))
         self.btn_editar.place(relx=0.0, rely=0.5, anchor="w")
 
+        self.btn_editar = tk.Button(self, text="🎲 Embaralhar")
+        self.btn_editar.config(command=self.restart_game)
+        self.btn_editar.place(relx=0.0, rely=0.56, anchor="w")
+
         self.update_ui()
+
 
     def update_ui(self):
         
@@ -177,14 +183,16 @@ class HangmanGame(tk.Frame):
 
         self.update_ui()
     
-    def editar_json(self):
-        path_text_json = Path(self.dict_info_words.get("path", "")) / "text_v2.json"
+    def editar_json(self, dict_info_words):
+        SMALL_FONT = ("Arial", 10)  # ou use a fonte que desejar
+        path_base = Path(dict_info_words.get("path", ""))
+        path_text_json = path_base / "text_v2.json"
+        path_image = path_base / "image_text.jpg"
 
         if not path_text_json.exists():
             messagebox.showerror("Erro", f"Arquivo não encontrado: {path_text_json}")
             return
 
-        # Abre os dados do JSON
         try:
             with open(path_text_json, 'r', encoding="utf-8") as f:
                 json_data = json.load(f)
@@ -196,16 +204,30 @@ class HangmanGame(tk.Frame):
         editor_window = tk.Toplevel(self)
         editor_window.title("Editar texto")
 
-        entries = {}  # Armazena os campos editáveis
+        current_row = 0
 
-        row = 0
+        # Exibe imagem no topo (se existir)
+        if path_image.exists():
+            try:
+                img = Image.open(path_image).resize((200, 200))
+                photo = ImageTk.PhotoImage(img)
+
+                img_label = tk.Label(editor_window, image=photo)
+                img_label.image = photo  # evitar que o garbage collector apague
+                img_label.grid(row=current_row, column=0, columnspan=2, pady=10)
+                current_row += 1
+            except Exception as e:
+                messagebox.showwarning("Imagem", f"Erro ao carregar imagem: {e}")
+
+        entries = {}
+
         for key, value in json_data.items():
-            tk.Label(editor_window, text=key, font=SMALL_FONT).grid(row=row, column=0, padx=10, pady=5, sticky="e")
+            tk.Label(editor_window, text=key, font=SMALL_FONT).grid(row=current_row, column=0, padx=10, pady=5, sticky="e")
             entry = tk.Entry(editor_window, width=60)
             entry.insert(0, value)
-            entry.grid(row=row, column=1, padx=10, pady=5, sticky="w")
+            entry.grid(row=current_row, column=1, padx=10, pady=5, sticky="w")
             entries[key] = entry
-            row += 1
+            current_row += 1
 
         def salvar_alteracoes():
             for key in json_data:
@@ -219,19 +241,130 @@ class HangmanGame(tk.Frame):
             except Exception as e:
                 messagebox.showerror("Erro ao salvar JSON", str(e))
 
-        # Botão para salvar
         salvar_btn = tk.Button(editor_window, text="Salvar", command=salvar_alteracoes, font=SMALL_FONT)
-        salvar_btn.grid(row=row, column=0, columnspan=2, pady=10)
+        salvar_btn.grid(row=current_row, column=0, columnspan=2, pady=10)
 
     def reveal_letters(self, letter):
         for idx, char in enumerate(self.word_answer):
             if char == letter:
                 self.guessed_word[idx] = letter
 
+    def exibir_fim_de_jogo(self):
+        # Cria uma nova janela
+        fim_window = tk.Toplevel(self)
+        fim_window.title("Fim de jogo")
+        fim_window.grab_set()  # modal
+        fim_window.configure(bg="white")
+
+        # Ícone de erro
+        icon_label = tk.Label(fim_window, text="❌", font=("Arial", 40), bg="white", fg="red")
+        icon_label.pack(pady=(15, 0))
+
+        # Mensagem da palavra correta
+        msg_label = tk.Label(
+            fim_window,
+            text=f"A palavra era: {self.word_answer}",
+            font=("Arial", 12, "bold"),
+            bg="white",
+            fg="black",
+            wraplength=300,
+            justify="center"
+        )
+        msg_label.pack(padx=20, pady=10)
+
+        # Frame para os botões
+        btn_frame = tk.Frame(fim_window, bg="white")
+        btn_frame.pack(pady=(0, 15))
+
+        # Botão Editar
+        btn_editar = tk.Button(
+            btn_frame,
+            text="✏️ Editar",
+            font=("Arial", 10),
+            width=15,
+            command=lambda: [fim_window.destroy(), self.editar_json(self.last_word)]
+        )
+        btn_editar.pack(side="left", padx=10)
+
+        # Botão OK
+        btn_ok = tk.Button(
+            btn_frame,
+            text="✅ OK",
+            font=("Arial", 10),
+            width=15,
+            command=fim_window.destroy
+            # command=lambda: [fim_window.destroy(), self.restart_game()]
+        )
+        btn_ok.pack(side="left", padx=10)
+
+        # Centraliza a janela
+        fim_window.update_idletasks()
+        w = fim_window.winfo_width()
+        h = fim_window.winfo_height()
+        x = (fim_window.winfo_screenwidth() // 2) - (w // 2)
+        y = (fim_window.winfo_screenheight() // 2) - (h // 2)
+        fim_window.geometry(f"{w}x{h}+{x}+{y}")
+
+    def exibir_vitoria(self):
+        vitoria_window = tk.Toplevel(self)
+        vitoria_window.title("Você venceu!")
+        vitoria_window.grab_set()
+        vitoria_window.configure(bg="white")
+
+        # Ícone e mensagem
+        icon_label = tk.Label(vitoria_window, text="🎉", font=("Arial", 40), bg="white", fg="green")
+        icon_label.pack(pady=(15, 0))
+
+        msg_label = tk.Label(
+            vitoria_window,
+            text=f"Você venceu!\nA palavra era: {self.word_answer}",
+            font=("Arial", 12, "bold"),
+            bg="white",
+            fg="black",
+            wraplength=300,
+            justify="center"
+        )
+        msg_label.pack(padx=20, pady=10)
+
+        # Frame para os botões
+        btn_frame = tk.Frame(vitoria_window, bg="white")
+        btn_frame.pack(pady=(0, 15))
+
+        # Botão Editar
+        btn_editar = tk.Button(
+            btn_frame,
+            text="✏️ Editar",
+            font=("Arial", 10),
+            width=15,
+            command=lambda: [vitoria_window.destroy(), self.editar_json(self.last_word)]
+        )
+        btn_editar.pack(side="left", padx=10)
+
+        # Botão OK
+        btn_ok = tk.Button(
+            vitoria_window,
+            text="OK",
+            font=("Arial", 10),
+            width=15,
+            command=vitoria_window.destroy
+            # command=lambda: [vitoria_window.destroy(), self.restart_game()]
+        )
+        btn_ok.pack(pady=(0, 15))
+
+        # Centraliza
+        vitoria_window.update_idletasks()
+        w = vitoria_window.winfo_width()
+        h = vitoria_window.winfo_height()
+        x = (vitoria_window.winfo_screenwidth() // 2) - (w // 2)
+        y = (vitoria_window.winfo_screenheight() // 2) - (h // 2)
+        vitoria_window.geometry(f"{w}x{h}+{x}+{y}")
+
     def check_game_end(self) -> bool:
         if "_" not in self.guessed_word:
             self.save_score(True)
-            messagebox.showinfo("Você venceu!", f"A palavra era: {self.word_answer}")
+            # messagebox.showinfo("Você venceu!", f"A palavra era: {self.word_answer}")
+            # self.restart_game()
+            self.exibir_vitoria()
             self.restart_game()
             return True
 
@@ -241,7 +374,8 @@ class HangmanGame(tk.Frame):
             # Coloca a palavra de volta na lista
             self.list_data_words.append(self.dict_info_words)
             
-            messagebox.showerror("Fim de jogo", f"A palavra era: {self.word_answer}")
+            # messagebox.showerror("Fim de jogo", f"A palavra era: {self.word_answer}")
+            self.exibir_fim_de_jogo()
             self.restart_game()
             return True
 
