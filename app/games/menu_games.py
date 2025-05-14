@@ -171,7 +171,7 @@ class WordBaseApp(BasePage):
         # back_btn.pack(pady=10)
 
         ## Salvando lista de nomes
-        study_word_list = [self.loader._carregar_palavra(path=Path(path.replace("\\", "/"))) for path in words]
+        study_word_list = [self.loader._carregar_palavra(path=Path(str(path).replace("\\", "/"))) for path in words]
 
         # Convert WindowsPath objects to strings in the study_word_list
         serializable_study_word_list = [
@@ -182,7 +182,6 @@ class WordBaseApp(BasePage):
         # Save the updated list to the JSON file
         with open(self.save_path_study_word_list, 'w', encoding="utf-8") as json_file:
             json.dump(serializable_study_word_list, json_file, ensure_ascii=False, indent=4)
-
 
         self.controller.show_frame("MainPage")
 

@@ -1,42 +1,45 @@
+from concurrent.futures import ThreadPoolExecutor
+import os
 from pathlib import Path
 import json
-import os
 
 class DataLoader:
     def __init__(self, base_path=None):
         self.base_path = Path(base_path)
 
-    def get_categories(self, kind_return="list") -> list[Path]:
-        if kind_return == "list":
-            return [self.base_path / path for path in os.listdir(self.base_path)]
-        elif kind_return == "dict":
-            return {path: self.base_path / path for path in os.listdir(self.base_path)}
-
-    def get_subcategories(self, category_path) -> list[Path]:
-        return [category_path / path for path in os.listdir(category_path)]
-
-    def get_word_paths(self, subcategory_path) -> list[Path]:
-        return [subcategory_path / path for path in os.listdir(subcategory_path)]
-
     def get_all_words(self, subcategory_name=None) -> list[dict]:
-        palavras = []
-        for categoria in self.get_categories():
-            for subcat in self.get_subcategories(categoria):
-                if subcategory_name and subcat.name != subcategory_name:
+        word_paths = []
+
+        for categoria in os.scandir(self.base_path):
+            if not categoria.is_dir():
+                continue
+            for subcat in os.scandir(categoria.path):
+                if not subcat.is_dir():
                     continue
-                for word_path in self.get_word_paths(subcat):
-                    palavras.append(self._carregar_palavra(word_path))
-        return palavras
-    
-    def _carregar_palavra(self, path:Path) -> dict:
-        if not path.exists():
-            raise FileNotFoundError(f"Path {path} does not exist.")
-        if not path.is_dir():
-            raise NotADirectoryError(f"Path {path} is not a directory.")
+                if subcategory_name and Path(subcat).name != subcategory_name:
+                    continue
+                for word_dir in os.scandir(subcat.path):
+                    if word_dir.is_dir():
+                        word_paths.append(Path(word_dir.path))
+
+        # Carrega os dados em paralelo
+        with ThreadPoolExecutor() as executor:
+            palavras = list(executor.map(self._carregar_palavra_safe, word_paths))
+
+        # Remove os que falharam (retornaram None)
+        return [p for p in palavras if p]
+
+    def _carregar_palavra_safe(self, path: Path) -> dict | None:
+        try:
+            return self._carregar_palavra(path)
+        except Exception:
+            return None
+
+    def _carregar_palavra(self, path: Path) -> dict:
         if not (path / "text_v2.json").exists():
             raise FileNotFoundError(f"File text_v2.json not found in {path}.")
-        
-        files = list(os.listdir(path))
+
+        files = os.listdir(path)
         text_info = self._carregar_texto(path)
 
         return {
@@ -47,7 +50,7 @@ class DataLoader:
             "audio_path": path / "audio.wav",
             "image_figure": path / "image_figure.jpg",
         }
-    
+
     def _carregar_texto(self, path) -> dict:
         try:
             with open(path / "text_v2.json", "r", encoding="utf-8") as f:

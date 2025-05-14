@@ -27,22 +27,15 @@ TITLE_FONT = ("Arial", 20)
 LABEL_FONT = ("Arial", 14)
 SMALL_FONT = ("Arial", 12)
 
-# DATA_PATH = Path("extract_data_video/data/extracted_data/words/data_organize")
-DATA_PATH = Path("database/vocabulary/words/data_organize")
-SUBCATEGORY_NAME = "em_loja"
-
 class HangmanGame(tk.Frame):
     MAX_ATTEMPTS = 6
 
     def __init__(self, parent=None, **kwargs):
         super().__init__(parent, **kwargs)
         self.parent = parent
-        # self.loader = DataLoader(base_path=DATA_PATH)
-        # self.list_data_words:list[dict] = self.loader.get_all_words(subcategory_name=SUBCATEGORY_NAME)
 
         self.list_data_words:list[dict] = self.open_json('database/vocabulary/study_word_list.json')
-        
-        # random.shuffle(self.list_data_words)
+        random.shuffle(self.list_data_words)
 
         self.timer = GameTimer(self)
 
@@ -122,9 +115,9 @@ class HangmanGame(tk.Frame):
         self.btn_editar.config(command=lambda: self.editar_json(dict_info_words=self.dict_info_words))
         self.btn_editar.place(relx=0.0, rely=0.5, anchor="w")
 
-        self.btn_editar = tk.Button(self, text="🎲 Embaralhar")
-        self.btn_editar.config(command=self.restart_game)
-        self.btn_editar.place(relx=0.0, rely=0.56, anchor="w")
+        self.btn_shuffle = tk.Button(self, text="🎲 Embaralhar")
+        self.btn_shuffle.config(command=self.restart_game)
+        self.btn_shuffle.place(relx=0.0, rely=0.56, anchor="w")
 
         self.update_ui()
 
@@ -403,6 +396,7 @@ class HangmanGame(tk.Frame):
 
         category = path_word.parts[-3]
         sub_category = path_word.parts[-2]
+        word_folder = path_word.parts[-1]
         # adjetivos/sobre_as_pessoas/unable
 
         # if not any([category == loader_category.name for loader_category in self.loader.get_categories()]):
@@ -422,6 +416,7 @@ class HangmanGame(tk.Frame):
             "word": self.word_answer,
             "category":category,
             "sub_category":sub_category,
+            "word_folder":word_folder,
             "hint": self.word_question,
             "won": won,
             "difficulty": difficulty,
