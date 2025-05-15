@@ -3,6 +3,27 @@ import csv
 import os
 
 
+def del_game_task(id_game_task: str, game_name: str):
+    file_path = f"database/infos/game_data_{game_name}.csv"
+    # Descobre o nome do jogo a partir do id, se necessário (ou ajuste conforme seu uso)
+    # Exemplo: file_path = file_path.format(game_name="nome_do_jogo")
+    # if "{game_name}" in file_path:
+    #     raise ValueError("Você deve fornecer file_path já formatado com o nome do jogo.")
+
+    if not os.path.isfile(file_path):
+        return  # Arquivo não existe, nada a fazer
+
+    with open(file_path, "r", encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        rows = [row for row in reader if row.get("id_game_task") != id_game_task]
+        fieldnames = reader.fieldnames
+
+    # Reescreve o arquivo sem a linha removida
+    with open(file_path, "w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(rows)
+
 def save_game_data(data: Dict[str, Union[str, int, float, List[str], bool]], 
                    file_path: str = "database/infos/game_data_{game_name}.csv") -> None:
     

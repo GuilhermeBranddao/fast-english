@@ -29,6 +29,18 @@ class DataLoader:
         # Remove os que falharam (retornaram None)
         return [p for p in palavras if p]
 
+    def get_categories(self, kind_return="list") -> list[Path]:
+        if kind_return == "list":
+            return [self.base_path / path for path in os.listdir(self.base_path)]
+        elif kind_return == "dict":
+            return {path: self.base_path / path for path in os.listdir(self.base_path)}
+        
+    def get_subcategories(self, category_path) -> list[Path]:
+        return [category_path / path for path in os.listdir(category_path)]
+    
+    def get_word_paths(self, subcategory_path) -> list[Path]:
+        return [subcategory_path / path for path in os.listdir(subcategory_path)]
+
     def _carregar_palavra_safe(self, path: Path) -> dict | None:
         try:
             return self._carregar_palavra(path)
