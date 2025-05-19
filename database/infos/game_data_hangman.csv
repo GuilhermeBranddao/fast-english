@@ -752,3 +752,4 @@ datetime,word,hint,won,difficulty,total_attempts,used_attempts,correct_guessed_l
 2025-05-14T12:49:32,good,bom,True,0.0,6,0,"g,o,o,d",,,,4.001434803009033,hangman,1,descrição_de_pessoas,opiniões_das_pessoas,3d74906112fb8163,"g,o,o,d",good
 2025-05-14T12:49:42,to head,comandar,True,0.0,6,0,"t,o,h,e,a,d",,,,9.336730003356934,hangman,1,verbos,gestão,3d74906112fb8163,"t,o,h,e,a,d",to_head
 2025-05-14T12:50:26,she,ela,True,0.0,6,0,"s,h,e",,,,4.039291620254517,hangman,1,outras_partes_do_discurso,pronomes,3d74906112fb8163,"s,h,e",she
+2025-05-18T20:22:43,single,solteiro,True,0.16666666666666666,6,1,"s,i,n,g,l,e",a,,,29.01960802078247,hangman,5,pessoas,amor_e_amizade,43a08fc1b7611a1f,"a,l,s,i,n,g,e",single

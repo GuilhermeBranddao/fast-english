@@ -51,6 +51,7 @@ class WordBaseApp(BasePage):
                 for subcat in self.loader.get_subcategories(categoria):
                     estrutura[kind][categoria.name][subcat.name] = []
                     for word_path in self.loader.get_word_paths(subcat):
+                        word_path = Path(str(word_path).replace("\\", "/"))
                         estrutura[kind][categoria.name][subcat.name].append(word_path)
         return estrutura
 

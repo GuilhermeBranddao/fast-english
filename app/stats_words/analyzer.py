@@ -33,8 +33,14 @@ class WordStatsAnalyzer:
 
         return df
     
-    def get_word_info(self, word: str) -> pd.DataFrame:
+    def get_word_info(self, word: str, return_dict:bool=False) -> pd.DataFrame:
         result = self.stats_grouped[self.stats_grouped["word"] == word]
+
+        if return_dict:
+            if result.empty:
+                return {}
+            else:
+                return result.to_dict("records")[0]
 
         if result.empty:
             # print(f"A palavra '{word}' não foi encontrada.")
