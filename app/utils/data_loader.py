@@ -59,6 +59,7 @@ class DataLoader:
             "files": files,
             "text_pt_br": text_info.get("pergunta_pt-br", ""),
             "text_eng": text_info.get("tradução_en", ""),
+            "status": text_info.get("status", ""),
             "audio_path": path / "audio.wav",
             "image_figure": path / "image_figure.jpg",
         }
