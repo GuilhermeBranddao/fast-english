@@ -1,13 +1,18 @@
 import tkinter as tk
+from tkinter import ttk
 from app.games.vocabulary_game.main import VocabularyGame
 from app.games.game_color.main import ColorGame
 from app.games.hangman_game.main import HangmanGame
+from app.games.word_shuffle_game.main import WordShuffleGame 
 from app.games.text_challenge.main import TextChallengeApp
+from app.games.text_reader_app.main import TextReaderApp
 from app.utils.data_loader import DataLoader
 import json
 import os
 from pathlib import Path
+import numpy as np
 
+from app.stats_words.analyzer import WordStatsAnalyzer, WordLearningAnalyzer
 
 class BasePage(tk.Frame):
     """Classe base para todas as páginas com métodos comuns."""
@@ -35,6 +40,13 @@ class WordBaseApp(BasePage):
         self.data_path = os.path.join("database", "extract_data_video", "data", "extracted_data", "{kind}", "data_organize")
         self.save_path_study_word_list = os.path.join("database", "vocabulary", "study_word_list.json")
         self.current_type = "words"
+
+        word_stats_analyzer = WordStatsAnalyzer(list_game_name=["game_data_hangman", "game_data_word_shuffle_game"])
+        df = word_stats_analyzer.stats_grouped
+        self.word_accuracy_map = dict(zip(df['word'].str.lower(), df['acuracia']))
+
+        self.word_stats_analyzer = WordLearningAnalyzer(word_stats_analyzer.stats_grouped)
+        
 
         self.data = self.create_estructure()
 
@@ -129,44 +141,128 @@ class WordBaseApp(BasePage):
         return data
         # print(f"Arquivo {path.name} carregado com sucesso!")
         # ou: self.start_game(category="database", subcategory=path.stem, words=data)
-
+    
     def draw_categories(self):
+        # TODO: Colocar icones
         for widget in self.content_frame.winfo_children():
             widget.destroy()
 
+        # Scrollable Canvas
+        canvas = tk.Canvas(self.content_frame)
+        scrollbar = ttk.Scrollbar(self.content_frame, orient="vertical", command=canvas.yview)
+        scrollable_frame = tk.Frame(canvas)
+
+        scrollable_frame.bind(
+            "<Configure>",
+            lambda e: canvas.configure(
+                scrollregion=canvas.bbox("all")
+            )
+        )
+
+        canvas.create_window((0, 0), window=scrollable_frame, anchor="nw")
+        canvas.configure(yscrollcommand=scrollbar.set)
+
+        canvas.pack(side="left", fill="both", expand=True)
+        scrollbar.pack(side="right", fill="both")
+
         categories = self.data.get(self.current_type, {})
 
-        for category, subcats in categories.items():
-            cat_frame = tk.Frame(self.content_frame)
-            cat_frame.pack(fill="x", padx=10, pady=5)
+        category_colors = [
+            "#FFC1C1", "#C1FFD7", "#C1D4FF", "#FFF5C1", "#E1C1FF", "#C1F0FF",
+            "#A8D5BA",  # Verde menta
+            "#F9E79F",  # Amarelo claro
+            "#AED6F1",  # Azul bebê
+            "#F5CBA7",  # Pêssego
+            "#D7BDE2",  # Lavanda
+            "#FADBD8",  # Rosa claro
+            "#D5F5E3",  # Verde claro
+            "#FDEBD0",  # Creme
+            "#E8DAEF",  # Lilás
+            "#F6DDCC",  # Bege
+            "#D6EAF8",  # Azul claro
+            "#FCF3CF",  # Amarelo pastel
+            "#E5E8E8",  # Cinza claro
+            "#FDEDEC",  # Rosa muito claro
+            "#EBDEF0",  # Roxo claro
+        ]
 
-            is_expanded = tk.BooleanVar(value=False)
+        all_maps, learned_per_category = self.word_stats_analyzer.generate_learning_maps(categories)
+        
+        for i, (category, subcats) in enumerate(categories.items()):
+            category_color = category_colors[i % len(category_colors)]
 
-            def toggle(sub_frame=subcats, var=is_expanded, master=cat_frame, cat_name=category):
-                if var.get():
-                    for widget in master.winfo_children()[1:]:
-                        widget.destroy()
-                    var.set(False)
+            # Frame principal da categoria
+            cat_outer_frame = tk.Frame(scrollable_frame, bg="white", bd=2, relief="groove")
+            cat_outer_frame.pack(fill="x", padx=10, pady=10)
+
+            # Quadrado branco com nome e info da categoria
+            cat_info_frame = tk.Frame(cat_outer_frame, bg=category_color, bd=5,)
+            cat_info_frame.pack(fill="x", padx=10, pady=5)
+
+            tk.Label(cat_info_frame, text=category, font=("Helvetica", 14, "bold"), bg=category_color, anchor="w").pack(anchor="w")
+
+            total_words = sum(len(words) for words in subcats.values())
+
+            learned_words = learned_per_category.get(category, 0)  # Atualize com os dados reais futuramente
+            tk.Label(cat_info_frame, text=f"{learned_words}/{total_words} palavras", bg="white", font=("Helvetica", 10), anchor="w").pack(anchor="w")
+
+            # sub_progress = self.get_accuracy_for_words(word_list)
+
+            # Barra de progresso da categoria
+            progress = (learned_words / total_words) * 100 if total_words else 0
+            cat_bar = tk.Canvas(cat_info_frame, height=10, bg="#ddd", highlightthickness=0)
+            cat_bar.pack(fill="x", pady=(5, 0))
+            cat_bar.create_rectangle(0, 0, cat_bar.winfo_reqwidth() * progress / 100, 10, fill="#4caf50", width=0)
+
+            # Subcategorias dentro da categoria (inicialmente ocultas)
+            sub_frame = tk.Frame(cat_outer_frame, bg="white")
+            # sub_frame.pack(fill="x", padx=10, pady=5)
+
+            def toggle_subcategories(frame=sub_frame, items=subcats, category_name=category):
+                if frame.winfo_ismapped():
+                    frame.pack_forget()
                 else:
-                    for sub, items in sub_frame.items():
-                        sub_btn = tk.Button(
-                            master,
-                            text=f"   {sub}",
-                            anchor="w",
-                            command=lambda items=items: self.start_game(words=items)
-                            # command=lambda: self.controller.show_frame("MainPage")
-                        )
-                        sub_btn.pack(fill="x")
-                    var.set(True)
+                    # Se frame ainda está vazio, cria as subcategorias
+                    if not frame.winfo_children():
+                        for j, (sub_name, word_list) in enumerate(items.items()):
+                            sub_color = "#f9f9f9" if j % 2 == 0 else "#eeeeee"
 
-            btn = tk.Button(cat_frame, text=category, anchor="w", command=toggle)
-            btn.pack(fill="x")
+                            sub_box = tk.Frame(frame, bg=sub_color, bd=1, relief="solid")
+                            sub_box.pack(fill="x", pady=5)
+
+                            tk.Label(sub_box, text=sub_name, font=("Helvetica", 12, "bold"),
+                                    bg=sub_color, anchor="w").pack(anchor="w", padx=5, pady=(5, 0))
+                            
+                            # Barra de progresso da subcategoria
+                            category_map = all_maps.get(category_name, {})
+                            sub_learned = category_map.get(sub_name, {}).get("learned", 0)
+                            # print(sub_name, category_map)
+                            sub_progress = (sub_learned / len(word_list)) * 100 if word_list else 0
+
+                            tk.Label(sub_box, text=f"{sub_learned}/{len(word_list)} palavras", bg=sub_color,
+                                    font=("Helvetica", 10), anchor="w").pack(anchor="w", padx=5)
+
+                            sub_bar = tk.Canvas(sub_box, height=10, bg="#ddd", highlightthickness=0)
+                            sub_bar.pack(fill="x", padx=5, pady=(5, 0))
+                            sub_bar.create_rectangle(0, 0, sub_bar.winfo_reqwidth() * sub_progress / 100,
+                                                    10, fill="#2196f3", width=0)
+
+                            tk.Button(sub_box, text="Estudar",
+                                    command=lambda words=word_list: self.start_game(words)
+                                    ).pack(pady=5, anchor="e", padx=5)
+
+                    frame.pack(fill="x", padx=10, pady=5)
+
+            # Botão de expandir/retrair subcategorias
+            toggle_button = tk.Button(cat_info_frame, text="Mostrar / Ocultar", command=toggle_subcategories)
+            toggle_button.pack(anchor="e", pady=(5, 0))
+
 
     def start_game(self, words):
         # Limpa conteúdo
         # for widget in self.content_frame.winfo_children():
         #     widget.destroy()
-
+        # Cristiana / cristina Campos
         # Botão voltar
         # back_btn = tk.Button(self, text="Voltar", command=self.build_ui)
         # back_btn.pack(pady=10)
@@ -201,8 +297,10 @@ class MainPage(BasePage):
         games = [
             ("Jogo de Vocabulário", VocabularyGame),
             ("Jogo Da Forca", HangmanGame),
+            ("Word Shuffle Game", WordShuffleGame),
+            ("Text Reader App", TextReaderApp),
             ("Game Color", ColorGame),
-            ("Desafio de Texto", TextChallengeApp)
+            ("Desafio de Texto", TextChallengeApp),
         ]
 
         # Criação dinâmica de botões
@@ -304,3 +402,17 @@ class PageMenuApapter(tk.Frame):
         self.games[game_class].tkraise()
         self.games[game_class].load_game()
 
+# Iniciar app
+if __name__ == "__main__":
+    try:
+        root = tk.Tk()
+        game = PageMenuApapter(root)
+        game.pack(expand=True, fill="both")
+        root.title("PageMenuApapter")
+        root.geometry("840x520")
+        root.mainloop()
+
+    except Exception as e:
+        print(f"Error {e}")
+    finally:
+        root.destroy()

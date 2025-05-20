@@ -254,7 +254,7 @@
     {
         "path": "database\\extract_data_video\\data\\extracted_data\\phrases\\data_organize\\outro_transporte\\táxi\\sorry,_there_are_none_available_at_the_moment",
         "files": "['audio.wav', 'image_figure.jpg', 'image_text.jpg', 'text_v2.json']",
-        "text_pt_br": "Sorry, there are none available at the moment.",
+        "text_pt_br": "Desculpe, não há nenhuma disponível no momento.",
         "text_eng": "Sorry, there are none available at the moment.",
         "status": "revised",
         "audio_path": "database\\extract_data_video\\data\\extracted_data\\phrases\\data_organize\\outro_transporte\\táxi\\sorry,_there_are_none_available_at_the_moment\\audio.wav",
@@ -372,7 +372,7 @@
         "path": "database\\extract_data_video\\data\\extracted_data\\phrases\\data_organize\\viagem\\dar_indicações\\t_the_end_of_th_street",
         "files": "['audio.wav', 'image_figure.jpg', 'image_text.jpg', 'text_v2.json']",
         "text_pt_br": "No final da rua.",
-        "text_eng": "At the end of th street.",
+        "text_eng": "At the end of the street.",
         "status": "revised",
         "audio_path": "database\\extract_data_video\\data\\extracted_data\\phrases\\data_organize\\viagem\\dar_indicações\\t_the_end_of_th_street\\audio.wav",
         "image_figure": "database\\extract_data_video\\data\\extracted_data\\phrases\\data_organize\\viagem\\dar_indicações\\t_the_end_of_th_street\\image_figure.jpg"
@@ -866,7 +866,7 @@
     {
         "path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\compras\\produtos_para_o_lar\\garbage_can",
         "files": "['audio.wav', 'image_figure.jpg', 'image_text.jpg', 'text_v2.json']",
-        "text_pt_br": "Caixote do lixo",
+        "text_pt_br": "\nLata de lixo",
         "text_eng": "Garbage can",
         "status": "revised",
         "audio_path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\compras\\produtos_para_o_lar\\garbage_can\\audio.wav",
@@ -1001,8 +1001,8 @@
     {
         "path": "database\\extract_data_video\\data\\extracted_data\\phrases\\data_organize\\compras\\outros_produtos\\i_would_like_an_interesting_game_for_a_boy",
         "files": "['audio.wav', 'image_figure.jpg', 'image_text.jpg', 'text_v2.json']",
-        "text_pt_br": "queria um jogo interessante para um rapaz.",
-        "text_eng": "i would like an interesting game for a boy.",
+        "text_pt_br": "Queria ver um jogo interessante para menino.",
+        "text_eng": "I would like an interesting game for a boy.",
         "status": "revised",
         "audio_path": "database\\extract_data_video\\data\\extracted_data\\phrases\\data_organize\\compras\\outros_produtos\\i_would_like_an_interesting_game_for_a_boy\\audio.wav",
         "image_figure": "database\\extract_data_video\\data\\extracted_data\\phrases\\data_organize\\compras\\outros_produtos\\i_would_like_an_interesting_game_for_a_boy\\image_figure.jpg"
@@ -1055,9 +1055,9 @@
     {
         "path": "database\\extract_data_video\\data\\extracted_data\\phrases\\data_organize\\viagem\\dar_indicações\\across_from_the_post_office",
         "files": "['audio.wav', 'image_figure.jpg', 'image_text.jpg', 'text_v2.json']",
-        "text_pt_br": "Do outro lado dos correios.",
+        "text_pt_br": "Em frente aos correios.",
         "text_eng": "Across from the post office.",
-        "status": "pending",
+        "status": "revised",
         "audio_path": "database\\extract_data_video\\data\\extracted_data\\phrases\\data_organize\\viagem\\dar_indicações\\across_from_the_post_office\\audio.wav",
         "image_figure": "database\\extract_data_video\\data\\extracted_data\\phrases\\data_organize\\viagem\\dar_indicações\\across_from_the_post_office\\image_figure.jpg"
     },
@@ -1092,7 +1092,7 @@
         "path": "database\\extract_data_video\\data\\extracted_data\\phrases\\data_organize\\viagem\\no_posto_de_turismo\\where_is_the_best_place_to_go_fora_stroll",
         "files": "['audio.wav', 'image_figure.jpg', 'image_text.jpg', 'text_v2.json']",
         "text_pt_br": "\nOnde é o melhor lugar para ir para um passeio?",
-        "text_eng": "Where is the best place to go fora stroll?",
+        "text_eng": "Where is the best place to go for a stroll?",
         "status": "revised",
         "audio_path": "database\\extract_data_video\\data\\extracted_data\\phrases\\data_organize\\viagem\\no_posto_de_turismo\\where_is_the_best_place_to_go_fora_stroll\\audio.wav",
         "image_figure": "database\\extract_data_video\\data\\extracted_data\\phrases\\data_organize\\viagem\\no_posto_de_turismo\\where_is_the_best_place_to_go_fora_stroll\\image_figure.jpg"
@@ -2531,7 +2531,7 @@
     {
         "path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\advérbios\\palavras_interrogativas_e_ligação\\even",
         "files": "['audio.wav', 'image_figure.jpg', 'image_text.jpg', 'text_v2.json']",
-        "text_pt_br": "Eté | Mesmo | Ainda",
+        "text_pt_br": "Até | mesmo | ainda",
         "text_eng": "Even",
         "status": "revised",
         "audio_path": "database\\extract_data_video\\data\\extracted_data\\words\\data_organize\\advérbios\\palavras_interrogativas_e_ligação\\even\\audio.wav",
