@@ -133,7 +133,7 @@ class App:
         topo = tk.Frame(self.root, height=60, bg=COR_TOPO)
         topo.pack(side="top", fill="x")
 
-        titulo = tk.Label(topo, text="Meu Sistema", bg=COR_TOPO, fg=COR_TEXTO,
+        titulo = tk.Label(topo, text="Fast English", bg=COR_TOPO, fg=COR_TEXTO,
                           font=("Helvetica", 18, "bold"))
         titulo.pack(pady=10)
 
