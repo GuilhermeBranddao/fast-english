@@ -3,7 +3,7 @@ import random
 import json
 from tkinter import messagebox
 from pathlib import Path
-from app.utils.toolkit import read_json, normalize_text
+from app.toolkit.utils.toolkit import read_json, normalize_text
 
 class VocabularyModel:
     def __init__(self, data_folder:Path="database/vocabulary_json", image_folder:Path="database/images/time_expressions"):

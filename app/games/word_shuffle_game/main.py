@@ -7,10 +7,10 @@ import os
 import string
 from datetime import datetime
 from pathlib import Path
-from app.utils.save_data import save_game_data, del_game_task
+from app.toolkit.utils.save_data import save_game_data, del_game_task
 from app.stats_words.analyzer import WordStatsAnalyzer
 import json
-from app.toolkit import utils
+from app.toolkit import word_utils
 
 # Inicializa áudio
 pygame.mixer.init()
@@ -36,11 +36,11 @@ class WordShuffleGame(tk.Frame):
 
         self.word_stats_analyzer = WordStatsAnalyzer(list_game_name=["game_data_hangman", "game_data_word_shuffle_game"])
 
-        self.list_data_words = utils.open_json('database/vocabulary/study_word_list.json')
+        self.list_data_words = word_utils.open_json('database/vocabulary/study_word_list.json')
 
         random.shuffle(self.list_data_words)
 
-        self.list_unknown_words = utils.filter_unknown_words(self.list_data_words, 
+        self.list_unknown_words = word_utils.filter_unknown_words(self.list_data_words, 
                                                             self.word_stats_analyzer, 
                                                             acc_min=60,
                                                             # filter_specific_word="i/l"
@@ -77,7 +77,7 @@ class WordShuffleGame(tk.Frame):
         )
         btn_editar.pack(side="left", padx=5)
 
-        self.id_game = utils.gerar_hash_id()
+        self.id_game = word_utils.gerar_hash_id()
 
         self.clicks_on_guess = {}
 
@@ -202,7 +202,7 @@ class WordShuffleGame(tk.Frame):
                     json.dump(json_data, f, ensure_ascii=False, indent=4)
 
                 if delete_var.get():
-                    from app.utils.save_data import del_game_task
+                    from app.toolkit.utils.save_data import del_game_task
                     del_game_task(
                         id_game_task=self.id_game_task,
                         game_name="word_shuffle_game"
@@ -300,7 +300,7 @@ class WordShuffleGame(tk.Frame):
         for i, word in enumerate(words):
             word_stats = self.word_stats_analyzer.get_word_info(word, return_dict=True)
             
-            shuffled = utils.shuffle_word(word)
+            shuffled = word_utils.shuffle_word(word)
             check = tk.Button(self.frame, text="✅", command=lambda idx=i: self.check_single_answer(idx))
             check.grid(row=i + 2, column=0, padx=1, pady=2)
 
@@ -351,7 +351,7 @@ class WordShuffleGame(tk.Frame):
         # self.submit_btn.config(state='normal')
         self.next_btn.config(state='disabled')
 
-        self.id_game_task = utils.gerar_hash_id()
+        self.id_game_task = word_utils.gerar_hash_id()
 
         self.check_all_answers()
 

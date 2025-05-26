@@ -11,9 +11,9 @@ from datetime import datetime
 from deep_translator import GoogleTranslator
 # from random import randint
 
-from app.utils.data_loader import DataLoader
-from app.utils.game_timer import GameTimer
-from app.utils.save_data import save_game_data
+from app.toolkit.utils.data_loader import DataLoader
+from app.toolkit.utils.game_timer import GameTimer
+from app.toolkit.utils.save_data import save_game_data
 
 import numpy as np
 from numpy import random

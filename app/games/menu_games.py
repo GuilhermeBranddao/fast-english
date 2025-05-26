@@ -6,7 +6,7 @@ from app.games.hangman_game.main import HangmanGame
 from app.games.word_shuffle_game.main import WordShuffleGame 
 from app.games.text_challenge.main import TextChallengeApp
 from app.games.text_reader_app.main import TextReaderApp
-from app.utils.data_loader import DataLoader
+from app.toolkit.utils.data_loader import DataLoader
 import json
 import os
 from pathlib import Path
