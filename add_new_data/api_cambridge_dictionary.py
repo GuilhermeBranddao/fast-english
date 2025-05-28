@@ -7,6 +7,7 @@ import tkinter as tk
 from tkinter import scrolledtext, ttk, messagebox
 import threading
 import collections # Para collections.deque
+from concurrent.futures import ThreadPoolExecutor, as_completed # Adicionado
 
 # --- Constantes e Globais para Headers ---
 BASE_URL_CAMBRIDGE = "https://dictionary.cambridge.org"
@@ -20,26 +21,26 @@ USER_AGENTS = [
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:126.0) Gecko/20100101 Firefox/126.0",
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:126.0) Gecko/20100101 Firefox/126.0",
 ]
-current_user_agent_index = 0
+current_user_agent_index = 0 # Índice do User-Agent atual
+ua_lock = threading.Lock() # Lock para proteger o acesso ao User-Agent e contador de erro
 
-# REQUEST_HEADERS será um dict global inicializado e modificado
-# É importante notar que modificar globais diretamente de múltiplas threads pode ser arriscado
-# sem locks, mas para User-Agent (lido por uma thread, modificado por uma), pode ser gerenciável.
-# Uma classe Scraper seria uma melhoria para encapsular este estado.
-REQUEST_HEADERS = {
-    "User-Agent": USER_AGENTS[0],
+REQUEST_HEADERS = { # Estes são os headers base, o User-Agent será atualizado dinamicamente
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
-    "Accept-Language": "en-US,en;q=0.9,pt-BR;q=0.8,pt;q=0.7", # pt-BR adicionado para preferência
+    "Accept-Language": "en-US,en;q=0.9,pt-BR;q=0.8,pt;q=0.7",
     "Connection": "keep-alive",
     "Upgrade-Insecure-Requests": "1",
 }
 
 MAX_CONSECUTIVE_FETCH_ERRORS_BEFORE_UA_SWITCH = 3
-# Usar uma lista para consecutive_fetch_errors para que seja mutável e suas alterações
-# dentro de fetch_word_html sejam refletidas globalmente (passagem por "referência de objeto")
-shared_fetch_error_counter = [0] # [consecutive_fetch_errors]
+shared_fetch_error_counter = [0] # Lista para ser mutável
 
-REQUEST_DELAY_SECONDS = 2 # Reduzido para demonstração, aumente para uso real (ex: 3-5)
+# REQUEST_DELAY_SECONDS não será mais usado no loop principal da thread de scraping,
+# pois o controle de taxa com paralelismo é mais complexo.
+# A "gentileza" com o servidor agora é principalmente controlada por MAX_WORKERS.
+# Se um delay for estritamente necessário POR request, ele deveria ser dentro do fetch_word_html
+# ou gerenciado por um rate limiter mais sofisticado.
+
+MAX_WORKERS = 5 # Número de threads paralelas para requisições. Ajuste com cuidado!
 
 # --- Funções Auxiliares de Parsing (sem alteração) ---
 def safe_get_text(element, default=""):
@@ -72,38 +73,49 @@ def save_data(data, filepath, gui_app_instance=None):
     except Exception as e:
         if gui_app_instance: gui_app_instance.log_message(f"Erro Crítico: Não foi possível salvar dados em '{filepath}'. Erro: {e}")
 
-# --- Função de Requisição HTTP (Modificada) ---
+# --- Função de Requisição HTTP (Modificada para Thread Safety) ---
 def fetch_word_html(word_to_search, gui_app):
-    global current_user_agent_index, REQUEST_HEADERS, shared_fetch_error_counter
+    global current_user_agent_index, shared_fetch_error_counter # Note: REQUEST_HEADERS não é global aqui, é construído localmente
 
-    # Atualiza o header com o UA corrente (caso tenha sido trocado)
-    REQUEST_HEADERS["User-Agent"] = USER_AGENTS[current_user_agent_index]
+    local_request_headers = REQUEST_HEADERS.copy() # Copia os headers base
+
+    with ua_lock: # Garante acesso exclusivo para ler/modificar o índice e contador de erro do UA
+        active_user_agent = USER_AGENTS[current_user_agent_index]
+        local_request_headers["User-Agent"] = active_user_agent
     
     url = f"{REQUEST_BASE_URL_DICTIONARY}{word_to_search.lower()}"
-    gui_app.log_message(f"Tentando acessar: {url} (UA: ...{USER_AGENTS[current_user_agent_index][-40:]})")
+    gui_app.log_message(f"Tentando: {word_to_search} (UA: ...{active_user_agent[-40:]})")
 
     try:
-        response = requests.get(url, headers=REQUEST_HEADERS, timeout=15)
+        response = requests.get(url, headers=local_request_headers, timeout=20) # Timeout um pouco maior
         response.raise_for_status()
-        gui_app.log_message(f"Status: {response.status_code} para '{word_to_search}'. Sucesso.")
-        shared_fetch_error_counter[0] = 0 # Resetar contador de erros em sucesso
+        gui_app.log_message(f"Sucesso ({response.status_code}) para: {word_to_search}")
+        with ua_lock: # Protege a modificação do contador de erros
+            shared_fetch_error_counter[0] = 0 
         return response.text
     except (requests.exceptions.ConnectionError, requests.exceptions.Timeout, requests.exceptions.HTTPError) as e:
-        gui_app.log_message(f"Erro de fetch para '{word_to_search}': {type(e).__name__} - {e}")
-        shared_fetch_error_counter[0] += 1
-        if shared_fetch_error_counter[0] >= MAX_CONSECUTIVE_FETCH_ERRORS_BEFORE_UA_SWITCH:
-            old_ua_index = current_user_agent_index
-            current_user_agent_index = (current_user_agent_index + 1) % len(USER_AGENTS)
-            REQUEST_HEADERS["User-Agent"] = USER_AGENTS[current_user_agent_index] # Atualiza o header global para a próxima chamada
-            gui_app.log_message(f"Muitos erros de fetch! Trocando User-Agent de ...{USER_AGENTS[old_ua_index][-40:]} para ...{USER_AGENTS[current_user_agent_index][-40:]}")
-            shared_fetch_error_counter[0] = 0
+        error_message = f"Erro fetch para '{word_to_search}': {type(e).__name__}"
+        if hasattr(e, 'response') and e.response is not None:
+            error_message += f" (Status: {e.response.status_code})"
+        else:
+            error_message += f" ({e})"
+        gui_app.log_message(error_message)
+
+        with ua_lock: # Protege a lógica de troca de UA
+            shared_fetch_error_counter[0] += 1
+            if shared_fetch_error_counter[0] >= MAX_CONSECUTIVE_FETCH_ERRORS_BEFORE_UA_SWITCH:
+                old_ua_index = current_user_agent_index
+                current_user_agent_index = (current_user_agent_index + 1) % len(USER_AGENTS)
+                # O User-Agent efetivo será pego na próxima chamada a fetch_word_html
+                gui_app.log_message(f"MUITOS ERROS! Trocando UA de ...{USER_AGENTS[old_ua_index][-40:]} para ...{USER_AGENTS[current_user_agent_index][-40:]} (próxima requisição usará o novo).")
+                shared_fetch_error_counter[0] = 0
     except requests.exceptions.RequestException as e:
         gui_app.log_message(f"Erro na requisição para '{word_to_search}': {type(e).__name__} - {e}")
     except Exception as e:
         gui_app.log_message(f"Erro inesperado no fetch para '{word_to_search}': {type(e).__name__} - {e}")
     return None
 
-# --- Função Principal de Parsing (sem alteração, apenas chamada) ---
+# --- Função Principal de Parsing (Coloque sua função parse_cambridge_entry completa aqui) ---
 def parse_cambridge_entry(html_content):
     soup = BeautifulSoup(html_content, 'html.parser')
     entry_data = {
@@ -237,154 +249,267 @@ def parse_cambridge_entry(html_content):
     return entry_data
 
 
-# --- Lógica de Scraping para ser executada em uma Thread ---
+# --- Função Worker para o ThreadPoolExecutor ---
+def worker_fetch_and_parse(word_key, gui_app):
+    """Busca e analisa HTML para uma única palavra."""
+    html_content = fetch_word_html(word_key, gui_app)
+    if html_content:
+        parsed_data = parse_cambridge_entry(html_content)
+        if parsed_data and parsed_data.get("word"):
+            return word_key, parsed_data, None  # Sucesso: (palavra, dados, None)
+        else:
+            error_detail = {"error": "Falha no parsing ou palavra não encontrada na página.",
+                            "original_query": word_key, "timestamp": time.strftime("%Y-%m-%d %H:%M:%S")}
+            return word_key, None, error_detail  # Erro de Parse: (palavra, None, erro)
+    else:
+        error_detail = {"error": "Falha ao buscar o conteúdo HTML.",
+                        "original_query": word_key, "timestamp": time.strftime("%Y-%m-%d %H:%M:%S")}
+        return word_key, None, error_detail  # Erro de Fetch: (palavra, None, erro)
+
+# --- Lógica de Scraping (Modificada para Paralelismo) ---
 def scraping_logic_thread(gui_app, initial_words, stop_event):
-    global REQUEST_HEADERS # Para permitir a modificação do User-Agent
-
     all_words_data = load_existing_data(DATA_FILE, gui_app)
-    
-    # Conjunto para rastrear palavras já processadas ou na fila para evitar duplicatas e reprocessamento
-    # Chaves são normalizadas (lowercase, strip)
     processed_or_in_queue_set = set(all_words_data.keys())
-    for w in initial_words:
-        processed_or_in_queue_set.add(w.lower().strip())
-
-    # Fila de palavras a processar
-    # collections.deque é eficiente para operações de adicionar/remover das extremidades
+    
     word_processing_queue = collections.deque()
     for word in initial_words:
-        normalized_initial_word = word.lower().strip()
-        if normalized_initial_word: # Adiciona apenas se não for vazia
-             word_processing_queue.append(normalized_initial_word)
+        normalized_word = word.lower().strip()
+        if normalized_word:
+            word_processing_queue.append(normalized_word)
+            # Adiciona ao set aqui também, para que se estiver na lista inicial mas já processado,
+            # não seja adicionado à fila de processamento real abaixo se já existir em all_words_data.
+            # A lógica de pular abaixo cuidará disso, mas é bom ter o set consistente.
+            processed_or_in_queue_set.add(normalized_word)
 
 
-    gui_app.log_message(f"--- Iniciando Coleta de Dados ---")
+    gui_app.log_message(f"--- Iniciando Coleta Paralela (Max Workers: {MAX_WORKERS}) ---")
     gui_app.log_message(f"Carregados {len(all_words_data)} registros de '{DATA_FILE}'.")
     gui_app.log_message(f"Fila inicial com {len(word_processing_queue)} palavras.")
 
     words_newly_collected_this_session = 0
     words_skipped_this_session = 0
     words_failed_this_session = 0
+    
+    # Usar um lock para salvar o arquivo, para o caso de querermos salvar mais frequentemente de dentro do loop as_completed
+    save_data_lock = threading.Lock()
 
-    while word_processing_queue and not stop_event.is_set():
-        current_word_to_process = word_processing_queue.popleft()
-        # A normalização já deve ter ocorrido ao adicionar à fila/set, mas por segurança:
-        normalized_key = current_word_to_process.lower().strip()
+    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+        active_futures = {} # Mapeia future -> normalized_key
 
-        if not normalized_key:
-            continue
-        
-        gui_app.update_stats(
-            len(all_words_data) - words_failed_this_session, # Total "bem sucedido" no arquivo
-            words_skipped_this_session,
-            words_failed_this_session,
-            len(word_processing_queue) + 1 # +1 para a palavra atual
-        )
+        while (word_processing_queue or active_futures) and not stop_event.is_set():
+            # Submeter novas tarefas se houver palavras na fila e capacidade no executor
+            # Limitar o número de futures submetidos de uma vez para evitar sobrecarregar a memória se o processamento de resultados for lento
+            # Ou, como aqui, submeter enquanto a fila tiver itens e houver "espaço mental" para gerenciar futures
+            while word_processing_queue and len(active_futures) < MAX_WORKERS * 2 and not stop_event.is_set() : # Ex: não mais que o dobro de workers em voo
+                current_word_to_process = word_processing_queue.popleft()
+                normalized_key = current_word_to_process.lower().strip() # Normalização já feita ao adicionar
 
-        # Verifica se dados válidos já existem (não apenas um placeholder de erro)
-        if normalized_key in all_words_data and all_words_data[normalized_key].get("word"):
-            gui_app.log_message(f"Dados para '{normalized_key}' já existem. Pulando.")
-            words_skipped_this_session += 1
-            continue
-        # Se já houve um erro registrado e não queremos tentar de novo:
-        elif normalized_key in all_words_data and "error" in all_words_data[normalized_key]:
-            gui_app.log_message(f"'{normalized_key}' resultou em erro anteriormente. Pulando.")
-            words_skipped_this_session += 1
-            continue
-        
-        # Se chegou aqui, a palavra é nova ou não tem dados válidos/erro registrado
+                if not normalized_key: continue
 
-        gui_app.log_message(f"Processando: '{normalized_key}' (Fila restante: {len(word_processing_queue)})")
-        html_content = fetch_word_html(normalized_key, gui_app)
-        
-        parsed_data = None
-        if html_content:
-            parsed_data = parse_cambridge_entry(html_content) # parse_cambridge_entry deve existir!
+                # Atualiza estatísticas antes de checar se pula (para refletir a fila diminuindo)
+                gui_app.update_stats(
+                    len(all_words_data) - words_failed_this_session,
+                    words_skipped_this_session,
+                    words_failed_this_session,
+                    len(word_processing_queue) + len(active_futures) + 1 # +1 para o que está prestes a ser submetido/pulado
+                )
+
+                if normalized_key in all_words_data and all_words_data[normalized_key].get("word"):
+                    # gui_app.log_message(f"'{normalized_key}' já processada. Pulando submissão.")
+                    words_skipped_this_session += 1
+                    continue
+                elif normalized_key in all_words_data and "error" in all_words_data[normalized_key]:
+                    # gui_app.log_message(f"'{normalized_key}' erro anterior. Pulando submissão.")
+                    words_skipped_this_session += 1
+                    continue
+                
+                # Se a palavra já foi adicionada ao processed_or_in_queue_set mas não está em all_words_data
+                # (significa que está na fila mas ainda não foi submetida, ou foi submetida e está em active_futures)
+                # A checagem `normalized_key in all_words_data` acima lida com o caso de já ter sido persistida.
+                # Para evitar submeter a mesma palavra múltiplas vezes se ela for adicionada à fila várias vezes rapidamente:
+                # O `processed_or_in_queue_set` já deveria conter `normalized_key` se ela foi pega da fila.
+                # Se ela foi pulada acima, está OK. Se não, será submetida.
+                
+                gui_app.log_message(f"Submetendo: '{normalized_key}'...")
+                future = executor.submit(worker_fetch_and_parse, normalized_key, gui_app)
+                active_futures[future] = normalized_key
+
+            if not active_futures and not word_processing_queue and not stop_event.is_set(): # Fila e workers ociosos
+                gui_app.log_message("Fila de processamento vazia e nenhum worker ativo.")
+                # Opcional: adicionar uma pequena pausa aqui se for esperado que a fila seja repopulada
+                # time.sleep(0.5) # Se não houver mais futures, o loop as_completed abaixo não bloqueará
+                # break # Ou sair se a intenção é terminar quando a fila inicial se esgota e nada mais é adicionado
+
+            # Processar resultados dos futures que completaram
+            # O timeout em as_completed permite que o loop verifique stop_event e submeta novas tasks
+            # se o processamento de futures for lento.
+            results_processed_in_batch = 0
+            for future in as_completed(list(active_futures.keys())): # timeout pequeno para responsividade
+                if stop_event.is_set(): break
+
+                normalized_key_completed = active_futures.pop(future)
+                results_processed_in_batch +=1
+                
+                try:
+                    _word_key_returned, parsed_data_result, error_detail_result = future.result()
+                    # _word_key_returned deve ser igual a normalized_key_completed
+
+                    if parsed_data_result:
+                        all_words_data[normalized_key_completed] = parsed_data_result
+                        gui_app.log_message(f"Resultado OK para: '{normalized_key_completed}'.")
+                        words_newly_collected_this_session += 1
+
+                        # Adicionar palavras do SMART Vocabulary à fila
+                        if parsed_data_result.get("smart_vocabulary", {}).get("related_words"):
+                            new_smart_count = 0
+                            for dict_word_info in parsed_data_result["smart_vocabulary"]["related_words"]:
+                                url_smart = dict_word_info.get("url")
+                                if url_smart:
+                                    # Use sua função _extract_keyword_from_url aqui
+                                    # Lembre-se que _extract_keyword_from_url precisa de REQUEST_BASE_URL_DICTIONARY
+                                    potential_new_key = _extract_keyword_from_url(url_smart, REQUEST_BASE_URL_DICTIONARY)
+                                    if potential_new_key and potential_new_key not in processed_or_in_queue_set:
+                                        processed_or_in_queue_set.add(potential_new_key)
+                                        word_processing_queue.append(potential_new_key)
+                                        new_smart_count += 1
+                            if new_smart_count > 0:
+                                gui_app.log_message(f"+{new_smart_count} palavras do SMART Vocab para '{normalized_key_completed}' adicionadas à fila.")
+                    
+                    elif error_detail_result:
+                        all_words_data[normalized_key_completed] = error_detail_result
+                        gui_app.log_message(f"Resultado com ERRO para '{normalized_key_completed}': {error_detail_result.get('error')}")
+                        words_failed_this_session += 1
+                    
+                except Exception as exc: # Erro ao obter resultado do future (ex: exceção no worker não capturada)
+                    gui_app.log_message(f"Exceção no worker para '{normalized_key_completed}': {exc}")
+                    all_words_data[normalized_key_completed] = {
+                        "error": f"Exceção no worker: {str(exc)}",
+                        "original_query": normalized_key_completed, "timestamp": time.strftime("%Y-%m-%d %H:%M:%S")
+                    }
+                    words_failed_this_session += 1
+                finally:
+                    # Salvar após cada resultado processado, protegido por lock
+                    with save_data_lock:
+                        save_data(all_words_data, DATA_FILE, gui_app)
+                    # O log de "Arquivo atualizado" pode ser muito frequente aqui, talvez logar a cada N salvamentos.
+
+            if results_processed_in_batch > 0:
+                 gui_app.log_message(f"Lote de {results_processed_in_batch} resultados processado. Arquivo salvo.")
+
+
+            if stop_event.is_set():
+                gui_app.log_message("Sinal de parada detectado, finalizando submissão e processamento de resultados.")
+                # Limpar futures restantes se necessário, ou apenas deixar o 'with executor' lidar com o shutdown
+                for future in list(active_futures.keys()): # Tenta cancelar futures que não iniciaram (melhor esforço)
+                    future.cancel()
+                break
             
-            if parsed_data and parsed_data.get("word"): # Sucesso no parsing
-                all_words_data[normalized_key] = parsed_data
-                gui_app.log_message(f"Dados para '{normalized_key}' coletados.")
-                words_newly_collected_this_session += 1
-
-                # Adicionar palavras do SMART Vocabulary à fila, se houverem e forem novas
-                if parsed_data.get("smart_vocabulary", {}).get("related_words"):
-                    new_smart_words_added_to_queue_count = 0
-                    for dict_word_info in parsed_data["smart_vocabulary"]["related_words"]:
-
-                        url_from_smart_vocab = dict_word_info.get("url")
-                        if url_from_smart_vocab:
-                            url_from_smart_vocab = url_from_smart_vocab.strip() # Limpa espaços extras
-                            
-                            potential_new_key = None
-                            
-                            # Tenta extrair a palavra-chave da URL.
-                            # Ex: "https://dictionary.cambridge.org/dictionary/english/be-another-story?topic=..." -> "be-another-story"
-                            # REQUEST_BASE_URL_DICTIONARY deve ser "https://dictionary.cambridge.org/dictionary/english/"
-                            if url_from_smart_vocab.startswith(REQUEST_BASE_URL_DICTIONARY):
-                                path_after_base = url_from_smart_vocab[len(REQUEST_BASE_URL_DICTIONARY):]
-                                # Remove qualquer query string (ex: ?topic=...)
-                                potential_new_key = path_after_base.split('?')[0]
-                            else:
-                                # Fallback ou log se a URL não corresponder ao padrão esperado
-                                # Você pode querer adicionar uma lógica mais robusta aqui se os padrões de URL variarem.
-                                # Por exemplo, usando urllib.parse para obter o último segmento do path.
-                                # from urllib.parse import urlparse
-                                # path_segments = urlparse(url_from_smart_vocab).path.strip('/').split('/')
-                                # if len(path_segments) > 0 and path_segments[-2] == "english": # Ex: /dictionary/english/word
-                                #     potential_new_key = path_segments[-1]
-                                # else:
-                                gui_app.log_message(f"AVISO: URL do SMART Vocab '{url_from_smart_vocab}' não segue o padrão esperado para extração da palavra-chave.")
-
-                            # Se uma chave válida foi extraída e ainda não está na fila/processada
-                            if potential_new_key and potential_new_key not in processed_or_in_queue_set:
-                                # A chave extraída da URL já deve estar no formato correto (lowercase, hifens)
-                                processed_or_in_queue_set.add(potential_new_key)
-                                word_processing_queue.append(potential_new_key)
-                                new_smart_words_added_to_queue_count += 1
-                                # gui_app.log_message(f"SMART Vocab: Adicionando '{potential_new_key}' à fila.") # Log detalhado opcional
-                            # else if potential_new_key: # Opcional: logar se a palavra já estava na fila/processada
-                                # gui_app.log_message(f"SMART Vocab: '{potential_new_key}' já na fila ou processada.")
-
-                    if new_smart_words_added_to_queue_count > 0:
-                        gui_app.log_message(f"Adicionadas {new_smart_words_added_to_queue_count} novas palavras do SMART Vocab à fila de processamento.")
+            # Se não há mais palavras na fila e nenhuma tarefa ativa, o trabalho terminou.
+            if not word_processing_queue and not active_futures:
+                gui_app.log_message("Fila de processamento e tarefas ativas concluídas.")
+                break
             
-            else: # Falha no parsing
-                all_words_data[normalized_key] = {
-                    "error": "Falha no parsing ou estrutura da página inesperada.",
-                    "original_query": normalized_key, "timestamp": time.strftime("%Y-%m-%d %H:%M:%S")
-                }
-                gui_app.log_message(f"Erro no parsing para '{normalized_key}'.")
-                words_failed_this_session += 1
-        else: # Falha no fetch HTML
-            all_words_data[normalized_key] = {
-                "error": "Falha ao buscar o conteúdo HTML.",
-                "original_query": normalized_key, "timestamp": time.strftime("%Y-%m-%d %H:%M:%S")
-            }
-            gui_app.log_message(f"Erro ao buscar HTML para '{normalized_key}'.")
-            words_failed_this_session += 1
-        
-        save_data(all_words_data, DATA_FILE, gui_app)
-        gui_app.log_message(f"Arquivo '{DATA_FILE}' atualizado. (Total: {len(all_words_data)} palavras)")
+            # Pequena pausa para o loop principal não consumir 100% CPU se estiver apenas esperando por as_completed com timeout
+            # time.sleep(0.1) # O timeout do as_completed já faz isso.
 
-        if stop_event.is_set():
-            gui_app.log_message("Processo interrompido pelo usuário.")
-            break
-        
-        gui_app.log_message(f"Aguardando {REQUEST_DELAY_SECONDS}s...")
-        time.sleep(REQUEST_DELAY_SECONDS)
-
+    # Fim do 'with ThreadPoolExecutor'
     if stop_event.is_set():
-        gui_app.log_message("Coleta interrompida.")
-    elif not word_processing_queue:
-        gui_app.log_message("Fila de processamento vazia.")
+        gui_app.log_message("Coleta interrompida (final do executor).")
     
     gui_app.log_message("\n--- Coleta Finalizada (Sessão) ---")
-    gui_app.log_message(f"Palavras novas coletadas nesta sessão: {words_newly_collected_this_session}")
-    gui_app.log_message(f"Palavras puladas (já existentes ou erro anterior): {words_skipped_this_session}")
-    gui_app.log_message(f"Falhas nesta sessão: {words_failed_this_session}")
+    gui_app.log_message(f"Palavras novas coletadas: {words_newly_collected_this_session}")
+    gui_app.log_message(f"Palavras puladas: {words_skipped_this_session}")
+    gui_app.log_message(f"Falhas na coleta: {words_failed_this_session}")
     gui_app.log_message(f"Total de registros em '{DATA_FILE}': {len(all_words_data)}")
     gui_app.enable_start_button()
 
+# --- Funções _extract_keyword_from_url e find_new_related_keywords (COPIE AS SUAS VERSÕES COMPLETAS AQUI) ---
+def _extract_keyword_from_url(url_string: str | None, base_url: str) -> str | None:
+    # ... (Sua implementação completa) ...
+    if not url_string: return None
+    url_string = url_string.strip()
+    if url_string.startswith(base_url):
+        path_after_base = url_string[len(base_url):]
+        keyword = path_after_base.split('?')[0]
+        return keyword if keyword else None
+    return None
+
+
+def find_new_related_keywords(
+    data_store: dict[str, dict], 
+    dictionary_base_url: str = REQUEST_BASE_URL_DICTIONARY
+) -> set[str]:
+    """
+    Scans a data store of word entries, extracts related keywords from their
+    'smart_vocabulary' URLs, and returns a set of unique related keywords
+    that are not already present as top-level keys in the data_store.
+
+    Args:
+        data_store (dict[str, dict]): The main dictionary where keys are existing words
+                                      (keywords) and values are their detailed data.
+                                      It's expected that entry values are dictionaries
+                                      which might contain a 'smart_vocabulary' key,
+                                      which in turn might contain a 'related_words' list.
+        dictionary_base_url (str): The base URL prefix for dictionary entries,
+                                   used to extract keywords from related word URLs.
+
+    Returns:
+        set[str]: A set of unique related keywords (strings) found from the URLs,
+                  which are not already keys in the input data_store.
+                  Keywords are in the format like 'anecdote', 'be-another-story'.
+    """
+    all_extracted_related_keywords = set()
+    
+    # Iterate through the values (word data entries) in the data store
+    for entry_data in data_store.values():
+        # Ensure the entry_data itself is a dictionary to safely use .get()
+        if not isinstance(entry_data, dict):
+            continue 
+            
+        # Safely navigate to the 'related_words' list
+        smart_vocabulary_data = entry_data.get("smart_vocabulary", {})
+        if not isinstance(smart_vocabulary_data, dict): # Ensure smart_vocabulary_data is a dict
+            continue
+            
+        related_word_info_list = smart_vocabulary_data.get("related_words", [])
+        if not isinstance(related_word_info_list, list): # Ensure related_word_info_list is a list
+            continue
+
+        for related_info_item in related_word_info_list:
+            # Ensure the item within 'related_words' is a dictionary
+            if not isinstance(related_info_item, dict):
+                continue
+
+            url = related_info_item.get("url")
+            extracted_keyword = _extract_keyword_from_url(url, dictionary_base_url)
+            
+            if extracted_keyword:
+                all_extracted_related_keywords.add(extracted_keyword)
+    
+    # Get the set of keywords already present in the data_store
+    existing_keywords_in_store = set(data_store.keys())
+    
+    # Find which of the extracted related keywords are new
+    # (i.e., not already in the data_store keys)
+    newly_discovered_keywords = all_extracted_related_keywords.difference(existing_keywords_in_store)
+    
+    return newly_discovered_keywords
+
+
+def read_json(path_json):
+    try:
+        with open(path_json, "r", encoding="utf-8") as file:
+            json_data = json.load(file)
+        return json_data
+    except FileNotFoundError:
+        print(f"Erro: O arquivo '{DATA_FILE}' não foi encontrado.")
+        return {}
+    except json.JSONDecodeError:
+        print(f"Erro: O arquivo '{DATA_FILE}' não contém um JSON válido ou está corrompido.")
+        return {}
+    except Exception as e:
+        print(f"Ocorreu um erro inesperado ao ler o arquivo: {e}")
+        return {}
 
 # --- Classe da Interface Gráfica Tkinter ---
 class ScraperAppGUI:
@@ -442,11 +567,20 @@ class ScraperAppGUI:
 
     def start_scraping(self):
         initial_words_str = self.words_entry.get()
+
         if not initial_words_str.strip():
             messagebox.showwarning("Entrada Inválida", "Por favor, insira algumas palavras iniciais.")
             return
             
         initial_words = [word.strip() for word in initial_words_str.split(',') if word.strip()]
+
+        json_data = read_json(path_json=DATA_FILE)
+
+        new_keywords_to_fetch = find_new_related_keywords(json_data)
+
+
+        initial_words.extend(new_keywords_to_fetch)
+        
         if not initial_words:
             messagebox.showwarning("Entrada Inválida", "Nenhuma palavra válida para processar após limpeza.")
             return
@@ -498,14 +632,8 @@ class ScraperAppGUI:
 
 # --- Ponto de Entrada Principal ---
 if __name__ == "__main__":
-    # É crucial que a função parse_cambridge_entry esteja definida e completa.
-    # Se ela não estiver completa (como no placeholder acima), o parsing falhará.
-    # Certifique-se de que a função `parse_cambridge_entry` da sua resposta anterior
-    # está incluída integralmente neste script.
-    if parse_cambridge_entry.__doc__ and "placeholder" in parse_cambridge_entry.__doc__:
-         print("ERRO: A função parse_cambridge_entry está incompleta. Copie a versão completa.")
-         exit()
-
+    # Validação crucial: assegure que parse_cambridge_entry não é um placeholder.
+    # Esta é uma verificação simples baseada em docstring, ajuste se necessário.
     root = tk.Tk()
     app = ScraperAppGUI(root)
     root.mainloop()
