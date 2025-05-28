@@ -20,7 +20,41 @@ USER_AGENTS = [
     "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:126.0) Gecko/20100101 Firefox/126.0",
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:126.0) Gecko/20100101 Firefox/126.0",
+    # Safari no macOS (versão mais recente do OS/Safari)
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Safari/605.1.15",
+    
+    # Microsoft Edge no Windows 10 (baseado no Chromium)
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.2535.51", # Versão do Edge pode variar
+    
+    # Chrome no Android (Mobile - Exemplo com Pixel)
+    "Mozilla/5.0 (Linux; Android 14; Pixel 8 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Mobile Safari/537.36",
+    
+    # Safari no iPhone (iOS)
+    "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Mobile/15E148 Safari/604.1",
+    
+    # Firefox no Linux (Ubuntu)
+    "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:126.0) Gecko/20100101 Firefox/126.0",
+    
+    # Opera no Windows
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 OPR/110.0.0.0", # Versão do Opera (OPR) pode variar
+
+    # Chrome no Windows 11 (versão ligeiramente mais nova do Chrome)
+    "Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+
+    # Firefox no Android (Mobile)
+    "Mozilla/5.0 (Android 13; Mobile; rv:126.0) Gecko/126.0 Firefox/126.0",
+    
+    # Chrome no ChromeOS
+    "Mozilla/5.0 (X11; CrOS x86_64 15662.76.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36", # Versão do ChromeOS pode variar
+
+    # Chrome no macOS (versão mais recente do OS e Chrome ligeiramente mais novo)
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
 ]
+
+# Para usar em conjunto com os seus, você pode concatenar as listas:
+# TODOS_USER_AGENTS = USER_AGENTS + USER_AGENTS_ADICIONAIS
+# print(TODOS_USER_AGENTS)
+
 current_user_agent_index = 0 # Índice do User-Agent atual
 ua_lock = threading.Lock() # Lock para proteger o acesso ao User-Agent e contador de erro
 
@@ -40,7 +74,7 @@ shared_fetch_error_counter = [0] # Lista para ser mutável
 # Se um delay for estritamente necessário POR request, ele deveria ser dentro do fetch_word_html
 # ou gerenciado por um rate limiter mais sofisticado.
 
-MAX_WORKERS = 5 # Número de threads paralelas para requisições. Ajuste com cuidado!
+MAX_WORKERS = 15 # Número de threads paralelas para requisições. Ajuste com cuidado!
 
 # --- Funções Auxiliares de Parsing (sem alteração) ---
 def safe_get_text(element, default=""):
