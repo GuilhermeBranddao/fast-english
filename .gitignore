@@ -9,13 +9,15 @@ __pycache__/
 
 # C extensions
 *.so
-
+database/*
 .venv/*
 
 raw_images
 
 # Ignora tudo dentro da pasta
 database/extract_data_video/*
+database/vocabulary_json/*
+database/vocabulary/*
 
 # Mas não ignora a pasta data
 # !extract_data_video/data/
