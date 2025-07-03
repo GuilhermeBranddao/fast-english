@@ -9,15 +9,18 @@ __pycache__/
 
 # C extensions
 *.so
-database/*
 .venv/*
 
 raw_images
 
 # Ignora tudo dentro da pasta
+# database_antigo/*
+# !database_antigo/*
+# database/*
 database/extract_data_video/*
 database/vocabulary_json/*
 database/vocabulary/*
+database/images/*
 
 # Mas não ignora a pasta data
 # !extract_data_video/data/
@@ -26,14 +29,14 @@ database/vocabulary/*
 extract_data_video/**
 
 # Exceto os diretórios específicos que você quer versionar
-!database/extract_data_video/data/extracted_data
-#/words/data_organize/casa
-!database/extract_data_video/data/extracted_data/words/data_organize/compras/**
-!database/extract_data_video/data/extracted_data/words/data_organize/descrição_de_pessoas/**
-!database/extract_data_video/data/extracted_data/words/data_organize/verbos/**
+# !database/extract_data_video/data/extracted_data
+# #/words/data_organize/casa
+# !database/extract_data_video/data/extracted_data/words/data_organize/compras/**
+# !database/extract_data_video/data/extracted_data/words/data_organize/descrição_de_pessoas/**
+# !database/extract_data_video/data/extracted_data/words/data_organize/verbos/**
 
-!database/extract_data_video/data/extracted_data/phrases/data_organize/compras/**
-!database/extract_data_video/data/extracted_data/phrases/data_organize/empregos/**
+# !database/extract_data_video/data/extracted_data/phrases/data_organize/compras/**
+# # !database/extract_data_video/data/extracted_data/phrases/data_organize/empregos/**
 
 *.gz
 
