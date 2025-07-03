@@ -68,11 +68,11 @@ class VocabularyController:
         self.model.words = {} # Reset words when going back
         # self.view.controller.mostrar_frame(PageGame)
 
-# import tkinter as tk
+import tkinter as tk
 # from tkinter import ttk, messagebox
-# import random
-# import json
-# import os
+import random
+import json
+import os
 # from app.vocabulary_builder.model.vocabulary_model import VocabularyModel
 # from app.vocabulary_builder.view.vocabulary_view import VocabularyView
 

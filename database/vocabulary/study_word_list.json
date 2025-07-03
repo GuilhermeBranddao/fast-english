@@ -1,7 +1,7 @@
 [
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/verbos/eficácia/to_make_a_mistake",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "cometer um erro",
         "text_eng": "to make a mistake",
         "status": "pending",
@@ -10,7 +10,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/tempo_de_lazer/campismo/to_light_a_fire",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "acender",
         "text_eng": "to light a fire",
         "status": "pending",
@@ -19,7 +19,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/corpo/ações/to_look",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Olhar | Olhada",
         "text_eng": "Look",
         "status": "revised",
@@ -28,7 +28,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/moda/salão_de_beleza/look",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Aparência | Olhar | Olhada",
         "text_eng": "look",
         "status": "revised",
@@ -37,7 +37,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/advérbios/de_tempo_e_frequência/ever",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Sempre | Já | Alguma vez",
         "text_eng": "Ever",
         "status": "revised",
@@ -46,7 +46,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/restaurante_e_bar/durante_a_refeição/do_you_ever_eat_fast_food",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Você já comeu fast food?",
         "text_eng": "Do you ever eat fast food?",
         "status": "revised",
@@ -55,7 +55,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/advérbios/de_tempo_e_frequência/since",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "desde",
         "text_eng": "since",
         "status": "pending",
@@ -64,7 +64,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/meios_de_comunicação/carta/it's_been_such_a_long_time_since_we_had_any_contact",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Já há muito tempo que não nos falamos.",
         "text_eng": "It's been such a long time since we had any contact.",
         "status": "pending",
@@ -73,7 +73,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/educação/matematica/sion_i",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "O sinal de divisão",
         "text_eng": "division sign",
         "status": "pending",
@@ -82,7 +82,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/viagem/no_posto_de_turismo/where_can_i_find_a_sandwich_store",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Onde posso encontrar um restaurante de sanduíches?",
         "text_eng": "Where can I find a sandwich store?",
         "status": "revised",
@@ -91,7 +91,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/restaurante_e_bar/pagar_a_conta/that_was_excellent",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "\nIsso foi excelente.",
         "text_eng": "That was excellent.",
         "status": "revised",
@@ -100,7 +100,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/restaurante_e_bar/pagar_a_conta/was_everything_all_right",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Estava tudo bem?",
         "text_eng": "Was everything all right?",
         "status": "pending",
@@ -109,7 +109,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/sistemas/numerais_cardinais/thirteen",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Treze",
         "text_eng": "Thirteen",
         "status": "revised",
@@ -118,7 +118,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/educação/números_e_cores/eleven,_twelve,_thirteen",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Onze, doze, treze.",
         "text_eng": "Eleven, twelve, thirteen.",
         "status": "revised",
@@ -127,7 +127,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/compras/pagamento_&_devoluções/the_transaction_has_not_been_approved",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "A transação não foi aprovada.",
         "text_eng": "The transaction has not been approved.",
         "status": "revised",
@@ -136,7 +136,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/restaurante_e_bar/reclamações/we_have_been_waiting_for_over_an_hour",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Estamos esperando há mais de uma hora.",
         "text_eng": "We have been waiting for over an hour.",
         "status": "revised",
@@ -145,7 +145,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/compras/outros_produtos/i'm_looking_for_paintings_by_well-known_belgian_artists",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Estou à procura de quadros de artistas belgas famosos.",
         "text_eng": "I'm looking for paintings by well-known Belgian artists.",
         "status": "revised",
@@ -154,7 +154,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/compras/pagamento_&_devoluções/can_i_pay_by_card",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Posso pagar com cartão?",
         "text_eng": "Can I pay by card?",
         "status": "pending",
@@ -163,7 +163,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/saude/lesões/to_hurt",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Ferir | Machucar | Doer",
         "text_eng": "Hurt",
         "status": "revised",
@@ -172,7 +172,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/saúde/no_médico/does_it_hurt_when_you_swallow",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Dói quando você engole?",
         "text_eng": "Does it hurt when you swallow?",
         "status": "revised",
@@ -181,7 +181,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/frases_básicas/melhores_votos/i_hope_all_your_dreams_come_true",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Espero que todos os teus sonhos se transformem em realidade.",
         "text_eng": "I hope all your dreams come true.",
         "status": "pending",
@@ -190,7 +190,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/esportes/esportes_de_verão/track_and_field",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "o atletismo",
         "text_eng": "track and field",
         "status": "pending",
@@ -199,7 +199,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/cidades/hotel/bed_and_breakfast",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "cama e café da manhã\n",
         "text_eng": "bed and breakfast",
         "status": "pending",
@@ -208,7 +208,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/serviços/no_banco/this_is_a_fake_bill",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Esta nota é falsa.",
         "text_eng": "This is a fake bill.",
         "status": "pending",
@@ -217,7 +217,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/outras_partes_do_discurso/pronomes/who",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "quem",
         "text_eng": "who.",
         "status": "pending",
@@ -226,7 +226,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/viagem/excursões/who_will_be_our_guide",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "\nQuem será nosso guia?",
         "text_eng": "Who will be our guide?",
         "status": "revised",
@@ -235,7 +235,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/outras_partes_do_discurso/conjunções/but",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "mas",
         "text_eng": "but",
         "status": "pending",
@@ -244,7 +244,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/compras/pagamento_&_devoluções/it's_good,_but_it's_a_little_expensive",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "É boa, mas é um pouco cara.",
         "text_eng": "It's good, but it's a little expensive.",
         "status": "revised",
@@ -253,8 +253,8 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/outro_transporte/táxi/sorry,_there_are_none_available_at_the_moment",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
-        "text_pt_br": "Sorry, there are none available at the moment.",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
+        "text_pt_br": "Desculpe, não há nenhuma disponível no momento.",
         "text_eng": "Sorry, there are none available at the moment.",
         "status": "revised",
         "audio_path": "database/extract_data_video/data/extracted_data/phrases/data_organize/outro_transporte/táxi/sorry,_there_are_none_available_at_the_moment/audio.wav",
@@ -262,7 +262,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/descrição_de_pessoas/sentimentos/sense_of_humor",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Senso de humor",
         "text_eng": "Sense of humor",
         "status": "revised",
@@ -271,7 +271,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/nomes/comunicação/piece_of_advice",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Um conselho",
         "text_eng": "piece of advice",
         "status": "revised",
@@ -280,7 +280,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/outras_partes_do_discurso/expressão_de_quantidades/that",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "essa",
         "text_eng": "that",
         "status": "pending",
@@ -289,7 +289,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/outras_partes_do_discurso/conjunções/so_that",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "para que",
         "text_eng": "so that",
         "status": "pending",
@@ -298,7 +298,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/viagem/no_posto_de_turismo/could_you_book_accommodations_for_me",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Você poderia reservar acomodações para mim?",
         "text_eng": "Could you book accommodations for me?",
         "status": "revised",
@@ -307,7 +307,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/viagem/excursões/could_you_print_the_photos_from_this_memory_card",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Poderia imprimir as fotos a partir deste cartão de memória?",
         "text_eng": "Could you print the photos from this memory card?",
         "status": "pending",
@@ -316,7 +316,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/outras_partes_do_discurso/pronomes/me",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "eu",
         "text_eng": "me",
         "status": "pending",
@@ -325,7 +325,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/viagem/no_posto_de_turismo/please_give_me_a_map_of_the_city",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Por favor, dême um mapa da cidade.",
         "text_eng": "Please give me a map of the city.",
         "status": "pending",
@@ -334,7 +334,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/segurança/polícia/police",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "a polícia",
         "text_eng": "police",
         "status": "pending",
@@ -343,7 +343,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/segurança/polícia/police_car",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "o carro de polícia",
         "text_eng": "police car",
         "status": "pending",
@@ -352,7 +352,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/viagem/no_posto_de_turismo/where's_the_cathedral",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Onde fica a catedral?",
         "text_eng": "Where's the cathedral?",
         "status": "revised",
@@ -361,7 +361,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/viagem/no_posto_de_turismo/what_are_the_main_points_of_interest",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Quais são os principais pontos de interesse?",
         "text_eng": "What are the main points of interest?",
         "status": "revised",
@@ -370,7 +370,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/viagem/dar_indicações/t_the_end_of_th_street",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "No final da rua.",
         "text_eng": "At the end of the street.",
         "status": "revised",
@@ -379,7 +379,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/viagem/excursões/an_i_get_off_at_t_hotel",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Posso sair no hotel?",
         "text_eng": "Can I get off at the hotel?",
         "status": "pending",
@@ -388,7 +388,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/animais/sons_dos_animais/to_chirp",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Piar | Gorjeio | Chilro",
         "text_eng": "Chirp",
         "status": "revised",
@@ -397,7 +397,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/moda/calçado/high_heels",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "\nSalto alto",
         "text_eng": "High heels",
         "status": "revised",
@@ -406,7 +406,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/sistemas/tamanhos_e_formas/high",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Alto | Elevado | Grande",
         "text_eng": "high",
         "status": "revised",
@@ -415,7 +415,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/educação/escola/school",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "a escola",
         "text_eng": "school",
         "status": "pending",
@@ -424,7 +424,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/animais/grupos_de_animais/school",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "o cardume",
         "text_eng": "school",
         "status": "pending",
@@ -433,7 +433,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/adjetivos/descrição_de_objetos/new",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "novo",
         "text_eng": "new",
         "status": "pending",
@@ -442,7 +442,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/educação/astronomia/new_moon",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "a lua nova",
         "text_eng": "new moon",
         "status": "pending",
@@ -451,7 +451,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/corpo/ações/to_wake_up",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "acordar",
         "text_eng": "to wake up",
         "status": "pending",
@@ -460,7 +460,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/avião/no_avião/could_you_wake_me_for_the_meal,_please",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Poderia acordar-me para a refeição, por favor?",
         "text_eng": "Could you wake me for the meal, please?",
         "status": "pending",
@@ -469,7 +469,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/corpo/ações/to_wake_up",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "acordar",
         "text_eng": "to wake up",
         "status": "pending",
@@ -478,7 +478,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/corpo/ações/to_stand_up",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "levantar-se",
         "text_eng": "to stand up",
         "status": "pending",
@@ -487,7 +487,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/verbos/expressão_de_sentimentos/to_like",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "gostar",
         "text_eng": "to like",
         "status": "pending",
@@ -496,7 +496,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/outras_partes_do_discurso/preposições/like",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "como",
         "text_eng": "like",
         "status": "pending",
@@ -505,7 +505,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/viagem/pedir_indicações/i_wonder_if_someone_could_tell_me_the_direction",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Gostaria de saber se alguém poderia me dizer a direção.",
         "text_eng": "I wonder if someone could tell me the direction.",
         "status": "revised",
@@ -514,7 +514,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/restaurante_e_bar/pedir_comida/i'm_waiting_for_someone",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Estou esperando por alguém.",
         "text_eng": "I'm waiting for someone.",
         "status": "revised",
@@ -523,7 +523,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/hotel/reclamações/i_booked_a_double_bed,_but_i_got_a_twin",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Reservei uma cama de casal, mas me deram uma de solteiro.",
         "text_eng": "I booked a double bed, but I got a twin.",
         "status": "pending",
@@ -532,7 +532,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/educação/na_universidade/what_departments_has_this_university_got",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Quais são os departamentos que esta universidade tem?",
         "text_eng": "What departments has this university got?",
         "status": "pending",
@@ -541,7 +541,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/outras_partes_do_discurso/pronomes/something",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "algo",
         "text_eng": "something",
         "status": "pending",
@@ -550,7 +550,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/compras/sapatos/did_you_find_something_you_like",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Encontrou algo que gostasse?",
         "text_eng": "Did you find something you like?",
         "status": "pending",
@@ -559,7 +559,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/pessoas/idade_e_eventos_da_vida/to_be_born",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "nascer",
         "text_eng": "to be born",
         "status": "pending",
@@ -568,7 +568,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/pessoas/idade_e_eventos_da_vida/to_age",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Idade | Era | Epoca",
         "text_eng": "Age",
         "status": "revised",
@@ -577,7 +577,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/verbos/comunicação/to_say",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "dizer",
         "text_eng": "to say",
         "status": "pending",
@@ -586,7 +586,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/encontros/elogios/that's_very_kind_of_you_to_say_so,_thank_you",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "É muito gentil da sua parte dizer isso, obrigado.",
         "text_eng": "That's very kind of you to say so, thank you.",
         "status": "revised",
@@ -595,7 +595,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/outras_partes_do_discurso/pronomes/they",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "eles",
         "text_eng": "they",
         "status": "pending",
@@ -604,7 +604,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/compras/sapatos/they_pinch_me",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Eles me apertam.",
         "text_eng": "They pinch me.",
         "status": "revised",
@@ -613,7 +613,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/outras_partes_do_discurso/expressão_de_quantidades/all",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "todos",
         "text_eng": "all",
         "status": "pending",
@@ -622,7 +622,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/compras/outros_produtos/that's_all_we_have",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Isto é tudo o que temos.",
         "text_eng": "That's all we have.",
         "status": "pending",
@@ -631,7 +631,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/outras_partes_do_discurso/expressão_de_quantidades/no",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Não | Nenhum",
         "text_eng": "No",
         "status": "revised",
@@ -640,7 +640,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/restaurante_e_bar/pedir_comida/could_you_please_prepare_the_dish_with_no_salt",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Poderia, por favor, preparar o prato sem sal?",
         "text_eng": "Could you please prepare the dish with no salt?",
         "status": "revised",
@@ -649,7 +649,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/tempo_de_lazer/jogos/to_play",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Brincar | Jogar | Folgar",
         "text_eng": "Play",
         "status": "revised",
@@ -658,7 +658,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/tempo_de_lazer/teatro/play",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "jogar | brincar",
         "text_eng": "Play",
         "status": "revised",
@@ -667,7 +667,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/viagem/dar_indicações/it's_not_too_far",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "\nNão é tão longe.",
         "text_eng": "It's not too far.",
         "status": "revised",
@@ -676,7 +676,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/viagem/dar_indicações/sorry,_i'm_not_from_around_here",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Lamento, eu não sou daqui.",
         "text_eng": "Sorry, I'm not from around here.",
         "status": "pending",
@@ -685,7 +685,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/pessoas/amor_e_amizade/to_fall_in_love",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "apaixonar-se",
         "text_eng": "to fall in love",
         "status": "pending",
@@ -694,7 +694,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/transportes/transportes_aéreos/to_check_in",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "fazer o check-in",
         "text_eng": "to check in",
         "status": "pending",
@@ -703,7 +703,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/viagem/excursões/i'd_like_to_pick_up_my_photos",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Gostaria de vir buscar minhas fotos.",
         "text_eng": "I'd like to pick up my photos.",
         "status": "revised",
@@ -712,7 +712,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/viagem/pedir_indicações/i'm_having_trouble_finding_my_way_around",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Estou com dificuldade para encontrar meu caminho.",
         "text_eng": "I'm having trouble finding my way around.",
         "status": "revised",
@@ -721,7 +721,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/cidade/regiões/city",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "a cidade",
         "text_eng": "city",
         "status": "pending",
@@ -730,7 +730,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/cidades/atrações_turisticas/city_hall",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Prefeitura",
         "text_eng": "City hall",
         "status": "revised",
@@ -739,7 +739,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/cidades/ruas/way",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "o caminho",
         "text_eng": "way",
         "status": "pending",
@@ -748,7 +748,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/educação/astronomia/milky_way",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "a Via Láctea",
         "text_eng": "Milky Way",
         "status": "pending",
@@ -757,7 +757,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/verbos/ações_1/to_go_up",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "subir",
         "text_eng": "to go up",
         "status": "pending",
@@ -766,7 +766,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/verbos/ações_1/to_go_down",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "descer",
         "text_eng": "to go down",
         "status": "pending",
@@ -775,7 +775,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/casa/partes_da_casa/outside",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Fora | Exterior",
         "text_eng": "Outside",
         "status": "revised",
@@ -784,7 +784,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/outras_partes_do_discurso/preposições/outside",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Fora | Exterior",
         "text_eng": "Outside",
         "status": "revised",
@@ -793,7 +793,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/verbos/ações_1/to_get",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "receber",
         "text_eng": "to get",
         "status": "pending",
@@ -802,7 +802,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/viagem/no_posto_de_turismo/how_do_we_get_to_the_theater",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Como fazemos para chegar ao teatro?",
         "text_eng": "How do we get to the theater?",
         "status": "revised",
@@ -811,7 +811,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/viagem/dar_indicações/continue_straight_on_past_some_stoplights",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Continue em frente passando por alguns semáforos.",
         "text_eng": "Continue straight on past some stoplights.",
         "status": "revised",
@@ -820,7 +820,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/viagem/excursões/will_there_be_an_opportunity_to_take_some_photographs",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Haverá oportunidade para tirar algumas fotos?",
         "text_eng": "Will there be an opportunity to take some photographs?",
         "status": "revised",
@@ -829,7 +829,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/educação/astronomia/sun",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Sol",
         "text_eng": "Sun",
         "status": "revised",
@@ -838,7 +838,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/restaurante_e_bar/reservar_uma_mesa/could_we_sit_in_the_sun",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "\nPoderíamos sentar no sol?",
         "text_eng": "Could we sit in the sun?",
         "status": "revised",
@@ -847,7 +847,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/sistemas/cores/shade",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Tom | Tonalidade | Sombra",
         "text_eng": "Shade",
         "status": "revised",
@@ -856,7 +856,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/casa/decoração/window_shade",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Persiana",
         "text_eng": "Window shade",
         "status": "revised",
@@ -865,7 +865,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/compras/produtos_para_o_lar/garbage_can",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "\nLata de lixo",
         "text_eng": "Garbage can",
         "status": "revised",
@@ -874,7 +874,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/compras/loja_de_utensilios_de_cozinha/can",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "a lata",
         "text_eng": "can",
         "status": "pending",
@@ -883,7 +883,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/verbos/verbos_de_estado/to_keep",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Guardar | Manter | Continuar",
         "text_eng": "Keep",
         "status": "revised",
@@ -892,7 +892,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/viagem/dar_indicações/keep_going_for_another_two_hundred_meters",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Continue por mais duzentos metros.",
         "text_eng": "Keep going for another two hundred meters.",
         "status": "revised",
@@ -901,7 +901,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/transportes/estradas/lane",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Faixa | Pista | Travessa",
         "text_eng": "Lane",
         "status": "revised",
@@ -910,7 +910,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/carro/sinais_de_estrada/bus_lane",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Faixa de ônibus",
         "text_eng": "Bus lane",
         "status": "revised",
@@ -919,7 +919,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/outras_partes_do_discurso/pronomes/it",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Isto | lhe | ele ela",
         "text_eng": "it",
         "status": "pending",
@@ -928,7 +928,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/viagem/no_posto_de_turismo/how_many_stars_does_it_have",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "\nQuantas estrelas ele tem?",
         "text_eng": "How many stars does it have?",
         "status": "revised",
@@ -937,7 +937,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/outras_partes_do_discurso/conjunções/so_that",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "para que",
         "text_eng": "so that",
         "status": "pending",
@@ -946,7 +946,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/tempo_e_clima/dizendo_a_hora/is_it_really_so_late",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "É realmente assim tão tarde?",
         "text_eng": "Is it really so late?",
         "status": "pending",
@@ -955,7 +955,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/educação/na_universidade/i'm_doing_a_phd_in_chemistry",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "\nEstou fazendo doutorado em química.",
         "text_eng": "I'm doing a PhD in chemistry.",
         "status": "revised",
@@ -964,7 +964,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/educação/na_universidade/i'm_doing_a_master's_in_law",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Estou fazendo mestrado em direito.",
         "text_eng": "I'm doing a master's in law.",
         "status": "revised",
@@ -973,7 +973,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/pessoas/idade_e_eventos_da_vida/young",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "jovem",
         "text_eng": "young",
         "status": "pending",
@@ -982,7 +982,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/fazer_amigos/apresentações/who_is_this_young_lady",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Quem é esta jovem?",
         "text_eng": "Who is this young lady?",
         "status": "pending",
@@ -991,7 +991,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/pessoas/amor_e_amizade/boy",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "rapaz | garoto",
         "text_eng": "boy",
         "status": "pending",
@@ -1000,7 +1000,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/compras/outros_produtos/i_would_like_an_interesting_game_for_a_boy",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Queria ver um jogo interessante para menino.",
         "text_eng": "I would like an interesting game for a boy.",
         "status": "revised",
@@ -1009,7 +1009,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/outras_partes_do_discurso/pronomes/he",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "ele",
         "text_eng": "he",
         "status": "pending",
@@ -1018,7 +1018,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/restaurante_e_bar/pagar_a_conta/he_will_pay_the_check",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Ele paga a conta.",
         "text_eng": "He will pay the check.",
         "status": "pending",
@@ -1027,7 +1027,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/restaurante_e_bar/pedir_comida/i_would_like_my_meat_well_done",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Queria a minha carne bem passada.",
         "text_eng": "I would like my meat well done.",
         "status": "revised",
@@ -1036,7 +1036,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/saúde/tratamento/i've_had_that_test_done_before",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Eu já fiz esse exame antes.",
         "text_eng": "I've had that test done before.",
         "status": "pending",
@@ -1045,7 +1045,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/outras_partes_do_discurso/preposições/from",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "de",
         "text_eng": "from",
         "status": "pending",
@@ -1054,7 +1054,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/viagem/dar_indicações/across_from_the_post_office",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Em frente aos correios.",
         "text_eng": "Across from the post office.",
         "status": "revised",
@@ -1063,7 +1063,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/compras/loja_de_eletrodomesticos/range",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Faixa",
         "text_eng": "Range",
         "status": "revised",
@@ -1072,7 +1072,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/educação/geografia/mountain_range",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Cordilheira | Serra",
         "text_eng": "Mountain range",
         "status": "revised",
@@ -1081,7 +1081,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/viagem/no_posto_de_turismo/what's_the_best_way_of_getting_around_the_city",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Qual é a melhor maneira de andar pela cidade?",
         "text_eng": "What's the best way of getting around the city?",
         "status": "revised",
@@ -1090,7 +1090,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/viagem/no_posto_de_turismo/where_is_the_best_place_to_go_fora_stroll",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "\nOnde é o melhor lugar para ir para um passeio?",
         "text_eng": "Where is the best place to go for a stroll?",
         "status": "revised",
@@ -1099,7 +1099,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/verbos/expressão_de_sentimentos/to_believe",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Acreditar | Crer | Pensar",
         "text_eng": "Believe",
         "status": "revised",
@@ -1108,7 +1108,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/restaurante_e_bar/pagar_a_conta/i_believe_the_check_is_added_up_wrong",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Acho que a conta não está correta.",
         "text_eng": "I believe the check is added up wrong.",
         "status": "revised",
@@ -1117,7 +1117,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/avião/controlo_de_passaporte_e_alfândega/m_staying_at_th_four_seasons_hotel",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Estou hospedado no quatro temporadas Hotel",
         "text_eng": "\nI am staying at the Four Seasons Hotel",
         "status": "pending",
@@ -1126,7 +1126,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/outras_partes_do_discurso/pronomes/same",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "mesmo",
         "text_eng": "same",
         "status": "pending",
@@ -1135,7 +1135,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/compras/roupas/are_they_the_same",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "São iguais?",
         "text_eng": "Are they the same?",
         "status": "pending",
@@ -1144,7 +1144,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/compras/na_livraria_e_florista/d_like_a_bunch_«_daffodils",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "\nEu gostaria de um buquê de narcisos.",
         "text_eng": "I'd like a bunch of daffodils.",
         "status": "revised",
@@ -1153,7 +1153,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/compras/na_livraria_e_florista/d_like_a_bunch_«_magnolias",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "\nEu gostaria de um buquê de magnólias.",
         "text_eng": "i'd like a bunch of magnolias.",
         "status": "revised",
@@ -1162,7 +1162,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/outras_partes_do_discurso/pronomes/you",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "você | tu",
         "text_eng": "you",
         "status": "pending",
@@ -1171,7 +1171,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/viagem/no_posto_de_turismo/can_you_recommend_a_good_bar_near_here",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "\nVocê pode recomendar um bom bar aqui perto?",
         "text_eng": "Can you recommend a good bar near here?",
         "status": "revised",
@@ -1180,7 +1180,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/viagem/excursões/re_there_any_dé_trips",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Há algum passeio de um dia?",
         "text_eng": "Are there any day trips?",
         "status": "revised",
@@ -1189,7 +1189,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/fazer_amigos/descrever_pessoas/he_has_curly_re_hair",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Ele tem cabelo ruivo cacheado.",
         "text_eng": "He has curly red hair.",
         "status": "revised",
@@ -1198,7 +1198,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/outras_partes_do_discurso/expressão_de_quantidades/this",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "esta",
         "text_eng": "this",
         "status": "pending",
@@ -1207,7 +1207,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/viagem/no_posto_de_turismo/is_there_a_theater_in_this_town",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Há um teatro nesta cidade?",
         "text_eng": "Is there a theater in this town?",
         "status": "revised",
@@ -1216,7 +1216,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/viagem/no_posto_de_turismo/is_there_a_subway_station_nearby",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Há alguma estação de metro perto daqui?",
         "text_eng": "Is there a subway station nearby?",
         "status": "pending",
@@ -1225,7 +1225,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/viagem/no_posto_de_turismo/is_there_a_bar_in_the_town",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Há algum bar na cidade?",
         "text_eng": "Is there a bar in the town?",
         "status": "pending",
@@ -1234,7 +1234,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/viagem/no_posto_de_turismo/how_do_we_get_to_the_theater",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Como fazemos para chegar ao teatro?",
         "text_eng": "How do we get to the theater?",
         "status": "revised",
@@ -1243,7 +1243,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/viagem/no_posto_de_turismo/do_you_have_any_brochures",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "\nVocê tem algum folheto?",
         "text_eng": "Do you have any brochures?",
         "status": "revised",
@@ -1252,7 +1252,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/verbos/ensinar_e_aprender/to_spell",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "soletrar",
         "text_eng": "to spell",
         "status": "pending",
@@ -1261,7 +1261,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/cultura/sobrenatural/spell",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "o feitiço",
         "text_eng": "spell",
         "status": "pending",
@@ -1270,7 +1270,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/viagem/pedir_indicações/please_point_out_where_i_am_on_this_map",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Por favor, indique aqui no mapa onde estou.",
         "text_eng": "Please point out where I am on this map.",
         "status": "revised",
@@ -1279,7 +1279,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/compras/outros_produtos/we_are_out_of_stock",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "\nNão temos no estoque.",
         "text_eng": "We are out of stock.",
         "status": "revised",
@@ -1288,7 +1288,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/outras_partes_do_discurso/preposições/for",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "para",
         "text_eng": "for",
         "status": "pending",
@@ -1297,7 +1297,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/viagem/no_posto_de_turismo/could_you_book_accommodations_for_me",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Você poderia reservar acomodações para mim?",
         "text_eng": "Could you book accommodations for me?",
         "status": "revised",
@@ -1306,7 +1306,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/outras_partes_do_discurso/expressão_de_quantidades/these",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "estas",
         "text_eng": "these",
         "status": "pending",
@@ -1315,7 +1315,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/viagem/excursões/i_would_like_these_photographs_enlarged",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Queria ampliar estas fotos.",
         "text_eng": "I would like these photographs enlarged.",
         "status": "revised",
@@ -1324,7 +1324,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/adjetivos/sobre_as_pessoas/weak",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Fraco | Frágil | Débil",
         "text_eng": "Weak",
         "status": "revised",
@@ -1333,7 +1333,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/saúde/no_oculista/these_eyeglasses_are_too_weak_for_me",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "\nEstes óculos são muito fracos para mim.",
         "text_eng": "These eyeglasses are too weak for me.",
         "status": "revised",
@@ -1342,7 +1342,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/viagem/no_posto_de_turismo/what_are_the_main_points_of_interest",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Quais são os principais pontos de interesse?",
         "text_eng": "What are the main points of interest?",
         "status": "revised",
@@ -1351,7 +1351,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/viagem/no_posto_de_turismo/where_are_the_ruins",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Onde ficam as ruínas?",
         "text_eng": "Where are the ruins?",
         "status": "revised",
@@ -1360,7 +1360,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/descrição_de_pessoas/opiniões_das_pessoas/bad",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "mau",
         "text_eng": "bad",
         "status": "pending",
@@ -1369,7 +1369,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/restaurante_e_bar/reclamações/that_smells_bad",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Isso cheira mal.",
         "text_eng": "That smells bad.",
         "status": "revised",
@@ -1378,7 +1378,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/descrição_de_pessoas/sentimentos/mood",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Humor",
         "text_eng": "Mood",
         "status": "revised",
@@ -1387,7 +1387,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/conversa_geral/expressar_sentimentos/i'm_in_a_bad_mood",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Estou de mau humor",
         "text_eng": "I'm in a bad mood.",
         "status": "revised",
@@ -1396,7 +1396,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/tempo_de_lazer/desporto/what_is_the_inimum_bet_i_c_place",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Qual é a aposta mínima que posso fazer?",
         "text_eng": "What is the minimum bet I can place?",
         "status": "revised",
@@ -1405,7 +1405,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/tempo_de_lazer/desporto/would_you_like_to_place_a_bet",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Quer fazer uma aposta?",
         "text_eng": "Would you like to place a bet?",
         "status": "pending",
@@ -1414,7 +1414,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/comida_e_bebidas/condimentos/y_sal",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Molho de soja",
         "text_eng": "Soy sauce",
         "status": "revised",
@@ -1423,7 +1423,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/meios_de_comunicação/telefone/y_battery's_abo_to_run_out",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Minha bateria está prestes a acabar.",
         "text_eng": "my battery's about to run out.",
         "status": "revised",
@@ -1432,7 +1432,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/viagem/dar_indicações/‘ou'd_better_tak_the_bus",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Seria melhor você pegar o ônibus.",
         "text_eng": "You'd better take the bus.",
         "status": "revised",
@@ -1441,7 +1441,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/viagem/dar_indicações/‘ou'd_better_tak_the_trolley",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "É melhor você pegar o carrinho.",
         "text_eng": "You'd better take the trolley.",
         "status": "revised",
@@ -1450,7 +1450,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/corpo/ações/to_watch",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "assistir",
         "text_eng": "to watch",
         "status": "pending",
@@ -1459,7 +1459,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/moda/acessórios/watch",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "o relógio",
         "text_eng": "watch",
         "status": "pending",
@@ -1468,7 +1468,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/viagem/dar_indicações/it_will_be_on_your_left",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Estará à sua esquerda.",
         "text_eng": "It will be on your left.",
         "status": "pending",
@@ -1477,7 +1477,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/compras/sapatos/this_is_not_your_size",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Este não é do seu tamanho.",
         "text_eng": "This is not your size.",
         "status": "revised",
@@ -1486,7 +1486,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/casa/partes_da_casa/step",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Etapa",
         "text_eng": "Step",
         "status": "revised",
@@ -1495,7 +1495,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/animais/crias_de_animais/kid",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Criança | Menino",
         "text_eng": "Kid",
         "status": "revised",
@@ -1504,7 +1504,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/educação/escola/test",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "o teste",
         "text_eng": "test",
         "status": "pending",
@@ -1513,7 +1513,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/verbos/ensinar_e_aprender/to_test",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "testar",
         "text_eng": "to test",
         "status": "pending",
@@ -1522,7 +1522,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/restaurante_e_bar/durante_a_refeição/he's_coming_soon",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Ele virá em breve.",
         "text_eng": "He's coming soon.",
         "status": "revised",
@@ -1531,7 +1531,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/encontros/casamento/thank_you_for_coming_here_today",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "\nObrigado por vir aqui hoje.",
         "text_eng": "Thank you for coming here today.",
         "status": "revised",
@@ -1540,7 +1540,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/verbos/ensinar_e_aprender/to_correct",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Correto | Corrigir",
         "text_eng": "Correct",
         "status": "revised",
@@ -1549,7 +1549,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/tempo_e_clima/dizendo_a_hora/does_your_watch_tell_the_correct_time",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "\nO seu relógio marca as horas corretamente?",
         "text_eng": "Does your watch tell the correct time?",
         "status": "revised",
@@ -1558,7 +1558,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/advérbios/advérbios_de_modo_1/really",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "realmente",
         "text_eng": "really",
         "status": "pending",
@@ -1567,7 +1567,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/restaurante_e_bar/reclamações/i_really_apologize_for_this_mistake",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Lamento imenso o engano.",
         "text_eng": "I really apologize for this mistake.",
         "status": "pending",
@@ -1576,7 +1576,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/advérbios/de_lugar/there",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "ali",
         "text_eng": "there",
         "status": "pending",
@@ -1585,7 +1585,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/viagem/no_posto_de_turismo/is_there_a_subway_station_nearby",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Há alguma estação de metro perto daqui?",
         "text_eng": "Is there a subway station nearby?",
         "status": "pending",
@@ -1594,7 +1594,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/educação/na_escola/s_better_than_tl_last_time",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "está melhor que da última vez.",
         "text_eng": "it's better than the last time.",
         "status": "pending",
@@ -1603,7 +1603,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/outro_transporte/no_terminal_de_camionetas/s_this_the_bus_t_moscow",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Este é o autocarro para Moscovo?",
         "text_eng": "Is this the bus to Moscow?",
         "status": "pending",
@@ -1612,7 +1612,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/viagem/no_posto_de_turismo/what's_the_best_way_of_getting_around_the_city",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Qual é a melhor maneira de andar pela cidade?",
         "text_eng": "What's the best way of getting around the city?",
         "status": "revised",
@@ -1621,7 +1621,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/encontros/perguntar_a_alguém_se_quer_sair/do_you_feel_like_getting_a_bite_to_eat",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Você está com vontade de comer alguma coisa?",
         "text_eng": "Do you feel like getting a bite to eat?",
         "status": "revised",
@@ -1630,7 +1630,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/descrição_de_pessoas/opiniões_das_pessoas/right",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "correto",
         "text_eng": "right",
         "status": "pending",
@@ -1639,7 +1639,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/advérbios/de_lugar/right",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "direita",
         "text_eng": "right",
         "status": "pending",
@@ -1648,7 +1648,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/compras/no_loja_de_departamentos/the_stores_are_open_till_two_oclock",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "As lojas ficam abertas até às duas horas.",
         "text_eng": "The stores are open till two o'clock.",
         "status": "revised",
@@ -1657,7 +1657,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/hotel/fazer_o_check_in/breakfast_is_served_from_8_am_till_10_am",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "O pequeno-almoço é servido entre as 08.00 e as 10.00 da manhã.",
         "text_eng": "Breakfast is served from 8 A.M. till 10 A.M.",
         "status": "pending",
@@ -1666,7 +1666,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/advérbios/de_lugar/left",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "esquerda",
         "text_eng": "left",
         "status": "pending",
@@ -1675,7 +1675,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/viagem/dar_indicações/left",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Esquerda",
         "text_eng": "Left",
         "status": "pending",
@@ -1684,7 +1684,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/advérbios/advérbios_de_modo_1/well",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Bem",
         "text_eng": "Well",
         "status": "revised",
@@ -1693,7 +1693,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/restaurante_e_bar/pedir_comida/i_would_like_my_meat_well_done",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Queria a minha carne bem passada.",
         "text_eng": "I would like my meat well done.",
         "status": "revised",
@@ -1702,7 +1702,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/adjetivos/pares_1/real",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "real",
         "text_eng": "real",
         "status": "pending",
@@ -1711,7 +1711,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/casa/imobiliaria/real_estate",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Imobiliária",
         "text_eng": "Real estate",
         "status": "revised",
@@ -1720,7 +1720,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/verbos/ensinar_e_aprender/to_think",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "pensar",
         "text_eng": "to think",
         "status": "pending",
@@ -1729,7 +1729,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/viagem/excursões/i_think_some_of_these_photos_are_underexposed",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Acho que algumas destas fotos estão mal reveladas.",
         "text_eng": "I think some of these photos are underexposed.",
         "status": "revised",
@@ -1738,7 +1738,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/nomes/substantivos_abstratos_1/change",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "a mudança",
         "text_eng": "change",
         "status": "pending",
@@ -1747,7 +1747,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/verbos/eficácia/to_change",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "mudar",
         "text_eng": "to change",
         "status": "pending",
@@ -1756,7 +1756,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/advérbios/de_tempo_e_frequência/never",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "nunca",
         "text_eng": "never",
         "status": "pending",
@@ -1765,7 +1765,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/saúde/doenças/i_never_had_this_disease_before",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Nunca tive este problema antes.",
         "text_eng": "I never had this disease before.",
         "status": "pending",
@@ -1774,7 +1774,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/descrição_de_pessoas/valores_e_vícios/lie",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "a mentira",
         "text_eng": "lie",
         "status": "pending",
@@ -1783,7 +1783,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/verbos/ações_1/to_lie_down",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "deitar",
         "text_eng": "to lie down",
         "status": "pending",
@@ -1792,7 +1792,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/viagem/pedir_indicações/i_wonder_if_someone_could_tell_me_the_direction",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Gostaria de saber se alguém poderia me dizer a direção.",
         "text_eng": "I wonder if someone could tell me the direction.",
         "status": "revised",
@@ -1801,7 +1801,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/encontros/perguntar_a_alguém_se_quer_sair/do_you_mind_if_i_join_you",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Você se importa se eu me juntar a você?",
         "text_eng": "Do you mind if I join you?",
         "status": "revised",
@@ -1810,7 +1810,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/corpo/cabeça_e_rosto/face",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Face | Rosto | Cara",
         "text_eng": "Face",
         "status": "revised",
@@ -1819,7 +1819,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/compras/cuidados_pessoais/of_face_powder,_please",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Me dê uma caixa de pó facial, por favor.",
         "text_eng": "Give me a box of face powder, please.",
         "status": "revised",
@@ -1828,7 +1828,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/fazer_amigos/idade_nacionalidade_e_religião/do_you_believe_in_god",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Acreditas em Deus?",
         "text_eng": "Do you believe in God?",
         "status": "revised",
@@ -1837,7 +1837,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/advérbios/palavras_interrogativas_e_ligação/how",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "como",
         "text_eng": "how",
         "status": "pending",
@@ -1846,7 +1846,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/viagem/no_posto_de_turismo/how_do_we_get_to_the_theater",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Como fazemos para chegar ao teatro?",
         "text_eng": "How do we get to the theater?",
         "status": "revised",
@@ -1855,7 +1855,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/verbos/expressão_de_sentimentos/to_feel",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "sentir",
         "text_eng": "to feel",
         "status": "pending",
@@ -1864,7 +1864,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/compras/sapatos/how_do_they_feel",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "\nComo eles se sentem?",
         "text_eng": "How do they feel?",
         "status": "pending",
@@ -1873,7 +1873,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/tempo_de_lazer/desporto/you_can't_beat_this_record",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Você não pode bater esse recorde.",
         "text_eng": "You can't beat this record.",
         "status": "revised",
@@ -1882,7 +1882,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/sistemas/hora/day",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "o dia",
         "text_eng": "day",
         "status": "pending",
@@ -1891,8 +1891,8 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/compras/cuidados_pessoais/do_you_have_a_day_cream",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
-        "text_pt_br": "Tem um creme diurno?",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
+        "text_pt_br": "Você tem um creme para o dia?",
         "text_eng": "Do you have a day cream?",
         "status": "revised",
         "audio_path": "database/extract_data_video/data/extracted_data/phrases/data_organize/compras/cuidados_pessoais/do_you_have_a_day_cream/audio.wav",
@@ -1900,7 +1900,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/sistemas/numerais_cardinais/one_hundred_thousand",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Cem mil",
         "text_eng": "One hundred thousand",
         "status": "revised",
@@ -1909,7 +1909,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/sistemas/numerais_cardinais/one",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "um",
         "text_eng": "one",
         "status": "pending",
@@ -1918,7 +1918,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/verbos/expressão_de_sentimentos/to_hate",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Odiar | Aversão | Detestar",
         "text_eng": "Hate",
         "status": "revised",
@@ -1927,7 +1927,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/conversa_geral/expressar_sentimentos/i_hate_you",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Eu te odeio.",
         "text_eng": "I hate you.",
         "status": "revised",
@@ -1936,7 +1936,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/hotel/reclamações/one_of_the_lights_isn't_working",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Uma das luzes não funciona.",
         "text_eng": "One of the lights isn't working.",
         "status": "pending",
@@ -1945,7 +1945,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/tempo_e_clima/calendário/is_this_saturday_a_working_day",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Este sábado é dia de trabalho?",
         "text_eng": "Is this Saturday a working day?",
         "status": "pending",
@@ -1954,7 +1954,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/sistemas/numerais_cardinais/two",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Dois",
         "text_eng": "Two",
         "status": "revised",
@@ -1963,7 +1963,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/viagem/dar_indicações/keep_going_for_another_two_hundred_meters",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Continue por mais duzentos metros.",
         "text_eng": "Keep going for another two hundred meters.",
         "status": "revised",
@@ -1972,7 +1972,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/adjetivos/sobre_as_pessoas/rich",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "rica",
         "text_eng": "rich",
         "status": "pending",
@@ -1981,7 +1981,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/sistemas/numerais_cardinais/three",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "três",
         "text_eng": "three",
         "status": "pending",
@@ -1990,7 +1990,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/compras/na_livraria_e_florista/give_me_three_roses,_please",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Dê-me três rosas, por favor.",
         "text_eng": "Give me three roses, please.",
         "status": "revised",
@@ -1999,7 +1999,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/conversa_geral/idiomas/i_learned_it_in_school",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Aprendi isso na escola.",
         "text_eng": "I learned it in school.",
         "status": "revised",
@@ -2008,7 +2008,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/comunicações/tv_e_rádio/to_turn_on",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "ligar",
         "text_eng": "to turn on",
         "status": "pending",
@@ -2017,7 +2017,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/verbos/habilidades_interpessoais/to_rely_on",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Confie em",
         "text_eng": "Rely on",
         "status": "revised",
@@ -2026,7 +2026,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/encontros/perguntar_a_alguém_se_quer_sair/are_you_on_your_own",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Está sozinha?",
         "text_eng": "Are you on your own?",
         "status": "pending",
@@ -2035,7 +2035,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/empregos/ocupação/i_just_started_my_own_company",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Acabei de lançar a minha própria empresa.",
         "text_eng": "I just started my own company.",
         "status": "pending",
@@ -2044,7 +2044,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/advérbios/palavras_interrogativas_e_ligação/what",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "o quê",
         "text_eng": "what",
         "status": "pending",
@@ -2053,7 +2053,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/viagem/no_posto_de_turismo/what_are_the_main_points_of_interest",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Quais são os principais pontos de interesse?",
         "text_eng": "What are the main points of interest?",
         "status": "revised",
@@ -2062,7 +2062,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/verbos/ensinar_e_aprender/to_teach",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Ensinar",
         "text_eng": "Teach",
         "status": "revised",
@@ -2071,7 +2071,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/educação/na_universidade/what_course_do_you_teach",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Que curso você ensina?",
         "text_eng": "What course do you teach?",
         "status": "revised",
@@ -2080,7 +2080,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/educação/biologia/clone",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Clone",
         "text_eng": "Clone",
         "status": "revised",
@@ -2089,7 +2089,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/corpo/ações/to_see",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "ver",
         "text_eng": "to see",
         "status": "pending",
@@ -2098,7 +2098,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/viagem/no_posto_de_turismo/i_would_like_to_see_the_old_town",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "\nGostaria de ver o centro histórico.",
         "text_eng": "I would like to see the old town.",
         "status": "revised",
@@ -2107,7 +2107,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/outras_partes_do_discurso/preposições/with",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "com",
         "text_eng": "with",
         "status": "pending",
@@ -2116,7 +2116,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/compras/acessórios/please_show_me_a_tie_with_stripes",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Me mostra uma gravata com listras, por favor.",
         "text_eng": "Please show me a tie with stripes.",
         "status": "revised",
@@ -2125,7 +2125,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/educação/astronomia/telescope",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Telescópio",
         "text_eng": "Telescope",
         "status": "revised",
@@ -2134,7 +2134,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/educação/biologia/microscope",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Microscópio",
         "text_eng": "Microscope",
         "status": "revised",
@@ -2143,7 +2143,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/sistemas/cores/dark",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "escuro",
         "text_eng": "dark",
         "status": "pending",
@@ -2152,7 +2152,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/comida_e_bebidas/doces/dark_chocolate",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "o chocolate preto",
         "text_eng": "dark chocolate",
         "status": "pending",
@@ -2161,7 +2161,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/encontros/num_encontro/i_like_you_a_lot",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Eu gosto muito de ti.",
         "text_eng": "I like you a lot.",
         "status": "pending",
@@ -2170,7 +2170,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/saúde/doenças/i'm_in_a_lot_of_pain",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Eu estou com muitas dores.",
         "text_eng": "I'm in a lot of pain.",
         "status": "pending",
@@ -2179,7 +2179,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/compras/no_loja_de_departamentos/the_cash_register_is_over_there",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "O caixa registradora está logo adiante.",
         "text_eng": "The cash register is over there.",
         "status": "revised",
@@ -2188,7 +2188,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/compras/roupas/you_may_find_it_over_there",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Pode encontrá-la ali.",
         "text_eng": "You may find it over there.",
         "status": "pending",
@@ -2197,7 +2197,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/nomes/substantivos_concretos_1/smoke",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "o fumo",
         "text_eng": "smoke",
         "status": "pending",
@@ -2206,7 +2206,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/verbos/ações_2/to_smoke",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "fumar",
         "text_eng": "to smoke",
         "status": "pending",
@@ -2215,7 +2215,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/comida_e_bebidas/doces/white_chocolate",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "o chocolate branco",
         "text_eng": "white chocolate",
         "status": "pending",
@@ -2224,7 +2224,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/comida_e_bebidas/pães/white_bread",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "o pão branco",
         "text_eng": "white bread",
         "status": "pending",
@@ -2233,7 +2233,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/fazer_amigos/descrever_pessoas/what_is_emma_like",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Como é a Emma?",
         "text_eng": "What is Emma like?",
         "status": "revised",
@@ -2242,7 +2242,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/cultura/livros/saying",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Ditado",
         "text_eng": "Saying",
         "status": "revised",
@@ -2251,7 +2251,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/frases_básicas/agradecimentos/thank_you_for_saying_so",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Obrigado por dizer isso.",
         "text_eng": "Thank you for saying so.",
         "status": "revised",
@@ -2260,7 +2260,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/advérbios/de_tempo_e_frequência/just",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "apenas | simplesmente",
         "text_eng": "just",
         "status": "pending",
@@ -2269,7 +2269,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/compras/roupas/it's_just_right",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "\nEstá perfeito",
         "text_eng": "It's just right",
         "status": "pending",
@@ -2278,7 +2278,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/descrição_de_pessoas/opiniões_das_pessoas/great",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Otimo | Exelente",
         "text_eng": "Great",
         "status": "revised",
@@ -2287,7 +2287,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/compras/roupas/it_looks_great_on_you!",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Ficou ótimo em você!",
         "text_eng": "It looks great on you!",
         "status": "revised",
@@ -2296,7 +2296,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/descrição_de_pessoas/caracteristicas_2/mean",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "mau | cruel | agressivo | mesquinho | ruim",
         "text_eng": "mean",
         "status": "pending",
@@ -2305,7 +2305,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/verbos/comunicação/to_mean",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "significar",
         "text_eng": "to mean",
         "status": "pending",
@@ -2314,7 +2314,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/compras/no_loja_de_departamentos/anyplace_else_i_could_try",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Você conhece algum outro lugar onde eu possa tentar?",
         "text_eng": "Do you know anyplace else I could try?",
         "status": "revised",
@@ -2323,7 +2323,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/compras/pagamento_&_devoluções/i_saw_this_for_10_euros_someplace_else",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Eu vi isto por 10 euros em outro sitio.",
         "text_eng": "I saw this for ten euros someplace else.",
         "status": "revised",
@@ -2332,7 +2332,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/pessoas/idade_e_eventos_da_vida/to_be_born",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "nascer",
         "text_eng": "to be born",
         "status": "pending",
@@ -2341,7 +2341,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/verbos/verbos_de_estado/to_be_able",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Ser capaz | Estar habilitado",
         "text_eng": "Be able",
         "status": "revised",
@@ -2350,7 +2350,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/verbos/ensinar_e_aprender/to_know",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "saber",
         "text_eng": "to know",
         "status": "pending",
@@ -2359,7 +2359,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/viagem/no_posto_de_turismo/do_you_know_the_number_to_call_a_cab",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Você sabe o número para chamar um táxi?",
         "text_eng": "Do you know the number to call a cab?",
         "status": "pending",
@@ -2368,7 +2368,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/cultura/música/sound",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Som",
         "text_eng": "Sound",
         "status": "revised",
@@ -2377,7 +2377,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/pessoas/familia/daughter",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Filha",
         "text_eng": "Daughter",
         "status": "revised",
@@ -2386,7 +2386,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/encontros/casamento/we_are_happy_to_announce_the_engagement_of_our_daughter",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Estamos felizes em anunciar o noivado da nossa filha.",
         "text_eng": "We are happy to announce the engagement of our daughter.",
         "status": "revised",
@@ -2395,7 +2395,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/comunicações/correio/package",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Pacote | Encomenda | Embrulho",
         "text_eng": "Package",
         "status": "revised",
@@ -2404,7 +2404,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/compras/no_supermercado/a_package_of_cookies,_please",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Um pacote de bolachas, por favor.",
         "text_eng": "A package of cookies, please.",
         "status": "revised",
@@ -2413,7 +2413,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/serviços/reparações/my_watch_needs_adjusting",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "O meu relógio precisa ser ajustado.",
         "text_eng": "My watch needs adjusting.",
         "status": "revised",
@@ -2422,7 +2422,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/serviços/reparações/i_think_it_needs_a_new_battery",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Acho que precisa de uma bateria nova.",
         "text_eng": "I think it needs a new battery.",
         "status": "revised",
@@ -2431,7 +2431,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/verbos/ações_1/to_come",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "vir",
         "text_eng": "to come",
         "status": "pending",
@@ -2440,7 +2440,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/compras/dispositivos_eletrónicos/does_it_come_with_instructions",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Vem com instruções?",
         "text_eng": "Does it come with instructions?",
         "status": "revised",
@@ -2449,7 +2449,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/cidades/restaurante_e_bar/snack_bar",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "lanchonete",
         "text_eng": "Snack bar",
         "status": "revised",
@@ -2458,7 +2458,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/cidades/restaurante_e_bar/bar_counter",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Balcão de bar",
         "text_eng": "Bar counter",
         "status": "revised",
@@ -2467,7 +2467,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/compras/loja_de_produtos_de_banho/soap",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Sabão | Sabonete",
         "text_eng": "Soap",
         "status": "revised",
@@ -2476,7 +2476,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/verbos/ações_1/to_soap",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Ensaboar",
         "text_eng": "to soap",
         "status": "revised",
@@ -2485,7 +2485,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/advérbios/advérbios_de_modo_2/honestly",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "honestamente",
         "text_eng": "Honestly",
         "status": "revised",
@@ -2494,7 +2494,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/sistemas/tamanhos_e_formas/straight",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Reto | Direito | Honesto",
         "text_eng": "Straight",
         "status": "revised",
@@ -2503,7 +2503,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/viagem/dar_indicações/continue_straight_ahead_for_about_a_kilometer",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "\nContinue em frente por cerca de um quilômetro.",
         "text_eng": "Continue straight ahead for about a kilometer.",
         "status": "revised",
@@ -2512,7 +2512,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/corpo/ações/to_sleep",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "dormir",
         "text_eng": "to sleep",
         "status": "pending",
@@ -2521,7 +2521,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/nomes/substantivos_abstratos_1/sleep",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "o sono",
         "text_eng": "sleep",
         "status": "pending",
@@ -2530,8 +2530,8 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/advérbios/palavras_interrogativas_e_ligação/even",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
-        "text_pt_br": "Eté | Mesmo | Ainda",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
+        "text_pt_br": "Até | mesmo | ainda",
         "text_eng": "Even",
         "status": "revised",
         "audio_path": "database/extract_data_video/data/extracted_data/words/data_organize/advérbios/palavras_interrogativas_e_ligação/even/audio.wav",
@@ -2539,7 +2539,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/educação/matematica/even_number",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Número par",
         "text_eng": "Even number",
         "status": "revised",
@@ -2548,7 +2548,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/corpo/cabeça_e_rosto/nose",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "o nariz",
         "text_eng": "nose",
         "status": "pending",
@@ -2557,7 +2557,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/saúde/doenças/i_have_a_runny_nose",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Meu nariz está escorrendo.",
         "text_eng": "I have a runny nose.",
         "status": "revised",
@@ -2566,7 +2566,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/verbos/comunicação/to_tell",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "contar | descrever",
         "text_eng": "to tell",
         "status": "pending",
@@ -2575,7 +2575,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/viagem/excursões/would_you_please_tell_me_what_museums_are_here",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "\nVocê poderia me dizer quais museus ficam aqui?",
         "text_eng": "Would you please tell me what museums are here?",
         "status": "revised",
@@ -2584,7 +2584,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/outras_partes_do_discurso/pronomes/its",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "isso é ",
         "text_eng": "its",
         "status": "revised",
@@ -2593,7 +2593,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/restaurante_e_bar/reclamações/is_our_meal_on_its_way",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "\nNossa refeição está a caminho?",
         "text_eng": "Is our meal on its way?",
         "status": "revised",
@@ -2602,7 +2602,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/saúde/no_dentista/i_would_like_to_have_a_tooth_filled",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "\nEu gostaria de restaurar um dente.",
         "text_eng": "I would like to have a tooth filled.",
         "status": "revised",
@@ -2611,7 +2611,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/outras_partes_do_discurso/preposições/about",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "sobre",
         "text_eng": "about",
         "status": "pending",
@@ -2620,7 +2620,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/viagem/dar_indicações/continue_straight_ahead_for_about_a_kilometer",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "\nContinue em frente por cerca de um quilômetro.",
         "text_eng": "Continue straight ahead for about a kilometer.",
         "status": "revised",
@@ -2629,7 +2629,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/conversa_geral/opiniões/i_can't_say_it_jpeals_to_me_ve_much",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "\nNão posso dizer que me atrai muito.",
         "text_eng": "I can't say it appeals to me very much.",
         "status": "revised",
@@ -2638,7 +2638,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/compras/sapatos/did_you_find_something_you_like",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "Encontrou algo que gostasse?",
         "text_eng": "Did you find something you like?",
         "status": "pending",
@@ -2647,7 +2647,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/compras/outros_produtos/did_you_choose_anything",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "\nVocê escolheu alguma coisa?",
         "text_eng": "Did you choose anything?",
         "status": "revised",
@@ -2656,7 +2656,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/words/data_organize/verbos/gestão/to_let",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "deixar",
         "text_eng": "to let",
         "status": "pending",
@@ -2665,7 +2665,7 @@
     },
     {
         "path": "database/extract_data_video/data/extracted_data/phrases/data_organize/restaurante_e_bar/pedir_comida/let_me_know_when_you're_ready_to_order",
-        "files": "['text_v2.json', 'image_figure.jpg', 'image_text.jpg', 'audio.wav']",
+        "files": "['audio.wav', 'text_v2.json', 'audio.wav:Zone.Identifier', 'image_figure.jpg:Zone.Identifier', 'image_text.jpg', 'image_figure.jpg', 'image_text.jpg:Zone.Identifier', 'text_v2.json:Zone.Identifier']",
         "text_pt_br": "\nAvise-me quando estiver pronto para fazer o pedido.",
         "text_eng": "Let me know when you're ready to order.",
         "status": "revised",

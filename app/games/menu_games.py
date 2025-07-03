@@ -92,6 +92,7 @@ class PageTwo(BasePage):
 class PageMenuApapter(tk.Frame):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
+        print("Iniciando PageMenuApapter")
         # self.title("Aplicação com Múltiplas Páginas")
         # self.geometry('700x500')
 
@@ -129,6 +130,7 @@ class PageMenuApapter(tk.Frame):
 
     def show_frame(self, name):
         """Exibe a página pelo nome."""
+        print(f"Exibindo frame: {name}")
         frame = self.frames[name]
         frame.tkraise()
     

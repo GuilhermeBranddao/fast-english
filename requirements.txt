@@ -4,13 +4,17 @@ isort
 black
 ipykernel
 nltk
+tqdm
 stanza
-googletrans
+pygame
+pillow
+# googletrans
 deep-translator
 pyttsx3
-inflect
-gtts
+# inflect
+# gtts
+matplotlib
 pandas
-speechrecognition
-textblob
-quiz-maker
+# speechrecognition
+# textblob
+# quiz-maker

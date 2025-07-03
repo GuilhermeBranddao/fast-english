@@ -90,6 +90,7 @@ class FrameConfiguracoes(tk.Frame):
 
 class App:
     def __init__(self, root:tk.Tk):
+        print("Iniciando o aplicativo...")
         self.root = root
         self.root.title("Sistema com Sidebar Recolhível")
         self.root.geometry("800x600")

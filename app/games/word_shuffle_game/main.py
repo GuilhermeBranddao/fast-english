@@ -13,7 +13,9 @@ import json
 from app.toolkit import word_utils
 
 # Inicializa áudio
-pygame.mixer.init()
+# pygame.mixer.init()
+# pygame.mixer.pre_init(frequency=44100, size=-16, channels=2, buffer=512)
+# # pygame.mixer.music.set_volume(1.5)  # Volume em 50%
 
 def highlight_letters(user_input, shuffled_word, text_widget):
     text_widget.config(state='normal')
@@ -469,7 +471,9 @@ class WordShuffleGame(tk.Frame):
             if pygame.mixer.music.get_busy():
                 pygame.mixer.music.stop()
             pygame.mixer.music.load(self.audio_path)
-            pygame.mixer.music.play()
+            pygame.mixer.pre_init(frequency=44100, size=-16, channels=2, buffer=512)
+            pygame.mixer.music.set_volume(70)  # Volume em 50%
+            pygame.mixer.music.play(0)
             self.quantity_play_audio += 1
         else:
             messagebox.showerror("Erro", "Áudio não encontrado!")

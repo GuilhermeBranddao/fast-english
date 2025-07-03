@@ -6,7 +6,7 @@ import pandas as pd
 from PIL import Image, ImageTk
 import json
 import pygame
-# import random
+import random
 from datetime import datetime
 from deep_translator import GoogleTranslator
 # from random import randint
