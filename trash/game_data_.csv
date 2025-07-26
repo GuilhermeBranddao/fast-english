@@ -1,0 +1,8 @@
+datetime,word,hint,won,difficulty,total_attempts,used_attempts,correct_guessed_letters,incorrect_guessed_letters,correct_guesses,incorrect_guesses,time_taken,game_name,teste,teste2
+2025-05-01T08:42:29,beautiful,adjetivo,True,0.33,6,4,"a,e,d","a,e,d",2,2,40.5,,,
+2025-05-01T08:42:41,beautiful,adjetivo,True,0.33,6,4,"a,e,d","a,e,d",2,2,40.5,,,
+2025-05-01T08:42:42,beautiful,adjetivo,True,0.33,6,4,"a,e,d","a,e,d",2,2,40.5,,,
+2025-05-01T08:42:43,beautiful,adjetivo,True,0.33,6,4,"a,e,d","a,e,d",2,2,40.5,,,
+2025-05-01T08:42:49,beautiful,adjetivo,True,0.33,6,4,"a,e,d","a,e,d",2,2,40.5,,teste,
+2025-05-01T08:42:53,beautiful,adjetivo,True,0.33,6,4,"a,e,d","a,e,d",2,2,40.5,,teste,
+2025-05-01T08:43:08,beautiful,adjetivo,True,0.33,6,4,"a,e,d","a,e,d",2,2,40.5,,teste,teste

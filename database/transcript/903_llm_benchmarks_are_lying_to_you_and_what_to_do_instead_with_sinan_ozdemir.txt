@@ -1,0 +1,817 @@
+So, how does this kind of leaderboard mentality skew our understanding of a model's real
+abilities on everyday tasks that the rest of us use them for? That mismatch of what's being tested on the benchmark versus what's being
+marketed the benchmark is for can be quite disperate. And if humanity's last
+exam includes knowing what happened in season 14 of League of Legends, I I don't want to take this exam either,
+quite frankly. Recognizing that you have gaps in your knowledge, for me, that's even more interesting. A benchmark
+should be the start of a conversation, not the end of a conversation. Who has
+the right to judge whether or not the AI was correct or not?
+That's a big question. [Music]
+San, welcome back to the Super Data Science podcast. How you doing today, John? Thank you for having me yet again.
+I'm I'm super excited to be here as always. Yes, we were just tallying prior to starting recording how many times
+you've been on the show. We you've been on more times than you even knew. You you came into the the green room the
+like before we get into the recording studio and you said you've been on the This is going to be your fifth time, but
+actually it's your sixth. Uh so you're one of our first guests ever. Episode 21 back in January 2017.
+Exactly. Old enough to drink. that podcast episode was finally in the US.
+And uh yeah, then you were back about a year later in 161 and then jumped a
+couple years at episode 333 in January 2020. And then significant for me was
+another year after that in February 2021. You were one of my first guests
+when I took over hosting the show from Kurroll. That's right. That was episode 445. And then last year
+at the Open Data Science Conference East in Boston, we we met up quickly. I set up a camera and you and I recorded a
+quick episode live in person in Boston um on AI alignment.
+Yes. LLM alignment. Um and yeah, so that was episode 784. So lots of episodes. Uh
+this is number six. It's going to be the best yet. That's Yeah, that's how I think about it, too.
+just like do you think Okay, so you're currently writing your 10th book. Is that right?
+That sounds right. It's It's up there. I'm working on Yeah,
+like I'm working on two right now actually. Do you think that the books get better or do you think you're like Cuz often
+rock bands, you know, they have many years to make their first album. So like I don't know, Bush was a band in the 90s
+that was super popular. Oh yeah. in Canada. Their first album, 16 Stone, I guess it was popular in the US as well.
+You know them. You know, it's funny. They're British. People don't know them in the UK. Machine Head. Are you some of my favorite? Exactly. Glycerine.
+Oh, yeah. And that one album it was like everyone knew every track and you know, huge huge
+global hit. They're doing world tours and then so the record company's like, you know, we're going to need another album next year. And they're like, oh
+man, we spent like five years making the first one. Uh, and yeah, that seems to
+happen all the time with rock bands and then, you know, they never quite have the same kinds of of hits. Do you think you're like a rock band or do you think
+your books get better? Do you think number 10 is better than number one? Uh, bold question for throwing shade to
+all the rock bands out there. No, I I think I I very much go in with to my books with a mentality of not
+necessarily better, but something different. Like I I'm very conscious about I wrote about this four years ago.
+Do I really have something new to say here or do I digress to something else? So I I I I aim very much for diversity
+more than I aim for just kind of building upon the same content every year. Do you do second editions ever?
+Oh yeah, actually one of the books this year is a third edition of my most recent Quickstar guide to LLM. Like kind
+of like the So only only really two of my books have ever gotten second and third editions and they are very much
+the holistic books. Like my first book ever was the principles of data science and that was almost 10 years ago at this
+point and it was very much a zero to deep learning in 300 pages. So that's
+gotten updates over the year just as an introduction to data science. And the same thing with quick start guide to
+LLM. It's very much meant for someone who is just diving in for the first time
+engineer or not just what do I need to know to understand LLM? So that book gets updated because that's pretty much
+evergreen content at this point. Nice. Tell us about the quick start guide to LLMs. Tell us about what's in
+that book uh and what's new in the third edition. Sure. The book is um actually it was
+literally had a copy here just because I was holding up for someone else earlier right there. But um the the book is very
+much organized into a few sections starting with kind of a level set like what is a language model? What is an
+auto reggressive language model versus autoenccoding language model? Like what does that mean? In fact, in in one of my
+episodes on super data science, the one from 2020, like January 2020, that was
+actually the first time I had brought up like BERT and GPT on the show. So, the
+first part of the book really just talks about what is the difference between these kinds of LLMs. Then it gets into the different applications and how to
+evaluate them and the kind of philosophy of alignment. What do we mean when we say alignment? Then the last parts are
+usually all right now that we're speaking the same language let's make a a phone bot let's make a embeddings
+classifier let's actually build these things let's make a chatbot from scratch so it's very much organized into that
+those three sections and the third edition is pretty much the same the additions are mostly around obviously
+newer loms newer evaluation criteria newer benchmarks and just um different
+ways of applying LOM M like reasoning models for example. This will be the first time that I talk about reasoning
+models in one of those books. Very cool. So yeah, reasoning models like 01 03. We actually at the time
+R1. Yeah. From Deepseek. We at the time of recording have a new Have you played with uh 03 Pro? Yes.
+No, I have not played with it. I I got the email I think yesterday like late night yesterday.
+Yeah. But um I have not yet tried it. What's the What's the shtick here? Better,
+better, faster, cheaper, all the above. I think it's I think it's I don't think it's cheaper. I think it's kind of it's
+bigger and better because we have the 03 Mini some months ago. And they had
+things like 03 Mini High where you could have it do inference for longer. And so I believe 03 03 Pro is kind of orders of
+magnitude larger in terms of model weights. And so theoretically nuance. Well, that makes sense.
+Yeah. But I I actually I haven't used it yet. It's been a busy day so far. And now I'm recording this podcast episode.
+You know, it's tough to tough to stay up to date on all the fastmoving things in AI. It is. And again, that's also why a lot
+of the book is about models will change. But at the end of the day, this thing is the next token predictor. And just
+because it thinks before it speaks to you doesn't mean we can't evaluate it the same way as we evaluate everything
+else. For sure. For sure. There are definitely there are mega trends that you can that
+you can ease into and find comfort in despite you know brands maybe changing quickly model brands company brands
+going from 4.5 to 4.1 from 01 to 03 to 04 back to 03 but 03 but better it can
+be a lot to keep up with. Exactly. That's right. Um so you're
+working on another book right now I understand as well. I don't know if you want to talk about that on air. Maybe it's secret. It's not secret. I mean,
+I'd love to talk about it. The the title is not known yet. So, I'll give you at least the working title. It It's very
+much an applied AI book. It is very much around it's very much a cookbook of AI
+applications. It's assuming you've read my quick start guide. And again, we are speaking the same language here is let's
+just dive into the top 20 applications of LLM I have seen in the last 10 years.
+everything from let's build a prompt to summarize a podcast transcript and
+really evaluate this thing to its core all the way to let's use reinforcement
+learning to actually build some of these reasoning models from scratch for your specific domain. So it's a pretty wide
+spectrum of things that we do but it very much starts hits the ground running kind of book. Very nice. Very nice. I like that
+cookbook model. Uh and I assume both of these books applied AI and quick start they're both in Python. Yes. So everything, all the code that
+I'm writing is in Python. Nice. Nice. And um in addition to your books, to your many books, you also do a
+ton of teaching in the O'Reilly platform, which also actually kind of brings up, we don't need to go into this in too much detail, but it's kind of
+interesting because O'Reilly is a uniquely predominant brand
+in tech publishing, but you and I both write for Pearson.
+Mhm. Uh and I think even when you and I are teaching in the O'Reilly platform, we're usually doing that for Pearson.
+Yep. Um and it's and I I love them. I absolutely love same every Pearson book that comes out,
+everyone that I work with there. Um yeah, hopefully we're uh you and I
+are contributing to increasing kind of awareness of Pearson as being a great
+technical publisher for for hands-on data science people. Exactly. and and and the way that they curate all that information, like they
+have like those expert playlists, which I think is a really cool little feature. So, they basically take a lot of my
+videos and books and put them in order to basically say here's your journey. Here's how you should be watching these
+and reading these in in what order. So, it's not just here's your content. It's more like here's your journey. What are
+you trying to do here? And here's what you should watch. I I I love that because I think a lot of that education
+journey is is hard to disseminate, especially when you are new to the field of AI. It's I don't I don't know where
+to start. I don't know how these things work. And having that curation is really helpful. For sure. If we have book authors out
+there or people who have, you know, kind of maybe you've been writing for a long time and you have a book proposal in mind, reach out to me or reach out to
+son on LinkedIn probably and we'd be delighted to introduce you to folks at Pearson or O'Reilly for that matter.
+Oh yeah. Uh but uh if you want you know with Pearson the folks over there that we work with they are so switched on
+about the industry and they can really help you uh kind of massage the content of your book. So you have big hits like
+Sand does and you we both do and yeah so in addition to your books you do lots of trainings for Pearson in
+the O'Reilly platform and uh so or.com probably lots of our listeners know it. Millions of people
+subscribe to it, often through their employer or through their university. And you teach in there a couple of times
+a month, pretty much every month, right? Oh, yeah. Uh about once a week, right? About once a week. That's wild.
+And so, uh this episode is supposed to be published on July 8th, which means
+the very next day on July 9th, you have a transformer architectures course,
+which I think kind of dives deeply. And actually, this one might really resonate with Super Data Science podcast
+listeners because the most popular episode of 2024 was episode 747 with
+Kier Arnango, the founder and original host of this podcast. And it was an intro to Transformers. And it kind of it
+went into the nitty-gritty. And I said to him, I paused recording and I said to Carol, "This is too much. Like, you're
+going too deep. This is not going to work. like the people can't see things in a podcast and it was the most popular
+episode of 2024. Exa I I honestly I bet like I I I think when I first made that content the
+transformer architectures for Genai was like one of the first pieces of content I made for Pearson and O'Reilly. I
+originally made that content in 2020 I believe 2021.
+uh Chad GPT had not come out yet and and and it was very much around this idea of this architecture is changing things and
+what people do with it is now you know open sky like we don't know what's going to happen and then chat GPT came out a
+couple months later so I think when that happened people really came back down to kind of back down to the roots of where
+does this come from and then people are shocked to realize oh you know this thing was invented in 2017
+what have we been doing since then why Haven't we been doing anything with this since 2017? And then they they're even
+more shocked to realize that it actually came out of Google. Google invented the transformer architecture. And then
+people re think about that and say, well, hold on. Why are they still not at the top of the pack then of LLMs? You
+know, they're doing their best to get up there. But it's also it's always a very funny history to think about, you know, how long ago this all was relative to
+even today. Yep. Fastmoving space. I mean, lots of competitors. It seems like you probably know this better than me, but my
+understanding is that it was OpenAI uh betting big on scaling that you know
+like Google Deep Mind which there used to be kind of two big AI labs at Google, Google Brain and
+Google Deep Mind and DeepMind was kind of I think I mean in some ways they were kind of they they had more nature
+papers. They were kind of a lot of people might have argued that they were the leading AI lab in the world and they focused really
+specifically on things like deep reinforcement learning and uh uh having
+you know generalizing to gradually more and more tasks whereas Ilioskver at
+OpenAI at that time just had this hunch that scaling big
+would you know that we would just have emergent properties kind of automatically And uh that ended up being
+right being true. Yeah. I mean it's a big bet to say hey this thing works when it's 200 megabytes.
+What if it were 200 gigabytes large you know and yeah it was right. I mean even before that though they were a
+reinforcement learning lab for the most part. I mean if you know open before the transformer
+they are responsible for the reinforcement learning gym. They made a lot of content to teach people reinforcement learning and that matters
+because the whole in their words one of the reasons chat GBT works is that
+alignment phase including reinforcement learning from human feedback. So there are only so many labs on the planet who
+really had the the combination of well we're already working on reinforcement learning and this transformer
+architecture seems to be pretty amazing and emergent. What if you know what if we put those two things together? What
+would happen? And then we got chat GPT to put it simply at least. Yeah. So there you go. Little uh little
+history lesson. I I assume people can learn more in your transformer architectures course uh which you must
+you must teach recurringly on a rally if if you missed it on July 9th 2025
+tomorrow theoretically uh at the time of publication then you can you I'm sure you can check
+it out in the future. And then you have other courses coming up in O'Reilly. You've got an AI agents a Toz and you've got a rag class coming up in the coming
+weeks. Those are always fun. Lot a lot of big crowd, a lot of people asking a lot of agent questions. Always
+fun. Very nice. And in addition to the books, in addition to the O'Reilly teaching
+that you do, you also you have your own podcast these days, don't you? I do. It's it's not as big as yours,
+No text
+just don't worry. It's called practically intelligent and it started I was working with a a friend
+of mine former student uh Akshai Bushan he he's my co-host he's now the partner
+at a VC uh Tola Capital and he basically asked me one day uh over lunch or drinks
+or something and said hey you know what you know I I I meet a lot of cool people you know how to how to teach AI what if
+we just started bring some guests on and we've had um we've had some pretty amazing people talking about the the the
+beginnings of IBM Watson and Amazon Sage Maker and we we we've we've been with a
+lot of interesting people talking about a lot of interesting AI products in the throughout the years.
+This episode of Super Data Science is brought to you by AWS Tranium 2, the latest generation AI chip from AWS. AWS
+Tranium 2 instances deliver 20.8 8 pedaflops of compute, while the new Trannium 2 ultra servers combine 64
+chips to achieve over 83 pedlops in a single node. Purpose-built for today's
+largest AI models, these instances offer 30 to 40% better price performance relative to GPU alternatives. That's why
+companies across the spectrum from giants like Anthropic and Data Bricks to cutting edge startups like Poolside are
+choosing Trrenium 2 to power their next generation of AI workloads. Learn how
+AWS Trinium 2 can transform your AI workloads through the links in our show notes. All right, now back to the show.
+Now, Tula Capital Ta Capital sounds familiar to me. Is that because Yes, it
+is. So, you advise them? They also advi that's how we kind of got together again. So Ash was a student of mine at
+General Assembly many many years ago and then eventually independently he became a partner at Tola. He invited me to help
+advise and then that's how we started talking again into eventually starting uh our own show.
+Nice. Tell us a bit about that about being a Tola Capital and you know what it's like being an like an adviser on AI
+to a financial institution. Absolutely. It's it's it's not what I expected. I I'll say that. Uh
+when they when they first asked me to come on, my my expectation was was that I was going to be looking at a lot of
+different companies just kind of just figuring out, you know, who who's lying, who's who's on to something and and and
+kind of where the technology actually sits. But really, it's become a lot more around the education side of AI, meaning
+I I would rather not just be called in whenever they don't know what's going on. My my thinking about it was, well,
+what if I just teach you how it works so that when the next company comes in, you may not need to call me, which kind of
+sounds counterintuitive because they're paying me to help them do this. But that's always been my philosophy is a
+conversation with me is not just supposed to, you know, get you to your goal. It's supposed to kind of give you
+the framework for how to actually tackle this problem the next time it comes around. Same with my books, right? It's,
+you know, this LLM will be dead in the matter of years. But if the next one is just some auto reggressive decoder based
+LLM, basically everything's the same, just replace the model name. Same thing with TA. It's, hey, look, when you see a
+company promising this, your first question should be, you know, whatever XYZ. So ask them that and see what they
+say. Nice. That's some cool insight. And it makes sense in that case to have someone
+like you who is such a renowned AI educator to come in and do that kind of
+teaching role makes a lot of sense. I bet with a lot of firms, they don't get to enjoy that. And so then they do end
+up having to constantly be calling someone in, wait to schedule a meeting when they have availability. Um, and so
+yeah, by teaching them how to fish as it were, you are allowing the kind of investment cycle to proceed more
+rapidly. And plus, they're the domain experts here. They understand market share better than I do. You know, when if they
+have a technology question, I'm happy to walk them through it. But at the end of the day, they're making the business decisions here.
+Yeah. Yeah. Yeah. Well, you must learn from them a bit. I have for sure. Yes. I've done my own investing since then. I've become a
+little bit of a of an angel investor, which has been so so rewarding. Like I I remember
+Yeah. Like mostly through Tola or like through through companies that they recommend or you're you're kind of you're you're getting them even sooner.
+Oh, some mostly even sooner. So, I actually live in San Francisco, specifically in the Dog Patch
+neighborhood, which if you're not familiar, is the new location of where Y Combinator lives. Uh, in fact, where I
+in my apartment building, there's a lot of YC founders and I can tell because they they wear all the all the gear. So,
+I just happen to meet a lot of YC companies just like in my day-to-day life, and I get to talking to them and
+eventually, you know, sign a safe because I because I can see what they're doing and and I can say, I think that's
+the right way to to think about this problem. I hope and then you hope too. And if we're both right, you know, win-win.
+Very cool. I didn't know that. I didn't know that you were uh in the YC neighborhood there in Dog Patch. Knew you were in San Fran, but yeah, right in
+the thick of it there. That was an accident. I moved here first. They follow Maybe it's not an accident.
+Um Okay. So, the main topic that I want to cover in this episode is related to
+the talk that you gave at ODSC East this year. So we caught that was the last time that you and I caught up in person
+about a month ago at the time of recording. And so you'd given a talk in May at ODSC East on um on benchmarks and
+specifically on limitations and pitfalls around current AI benchmarks and and what we could be doing instead. So uh
+No text
+I've got lots of questions for you here. I we'll see how many we can get through
+uh in one podcast episode. Let's do it. So benchmarks today, they they tend to
+lead the AI labs, the frontier AI labs to be competing to chase high scores on
+the popular benchmarks, things like MMLU, humanity's last exam. Uh and so
+that leads teams to teach to test to use the quote where you are deliberately
+fine-tuning your models to be really good at these popular kinds of benchmarks. Um, so how does this kind of
+leaderboard mentality skew our understanding of a model's real abilities on everyday tasks that the
+rest of us use them for? Great question. It's a it's a tough opening question. I the way I would approach that thinking about a benchmark
+is kind of what I said earlier. A benchmark should be the start of a conversation, not the end of a
+conversation. So even even before we you or I look at a benchmark for a specific
+model, benchmarks are used for a few reasons. Benchmarks are used to evaluate the general macro trends of LLM in a
+specific domain or task. benchmarks are used much more intimately to decide for
+an individual or an organization which models should we be considering which which ones are quote unquote good at
+coding or good at X and they will look at a benchmark performance to kind of give them that that gist of of it.
+Benchmarks, to your point, are also used as a marketing tactic for a company to say, "Hey, we're beating XYZ at
+benchmark Z. Therefore, we are a better company at task here." So, when when I
+think about benchmarks, the number one thing I want to remind everybody is I'm not against benchmarks. Benchmarks are necessary. They are they are pretty
+crucial to our conversation because without them we're all just kind of stuck in a spid's web of how I do my
+evaluations versus how you do your evaluations. But when it comes to these open-ended or
+rather I should say just open source benchmarks, you're right, you you end up having these harder conversations around
+how do we know without a shadow of a doubt that you are not training to test
+or what we might call contaminating your training data with the test set of your benchmark. And a lot of that comes back
+to the question of what is the difference between open source and open weights. This question came up actually
+at a lecture today where I I mentioned LMD decontamination uh of training data
+for for to remove items similar to benchmark questions. And I had mentioned
+that the the method for doing so for a lot of companies just comes down to a keyword search like an engram match or
+some kind of embedding similarity, which is simply not going to be enough because you can rephrase a question enough. And
+there was their papers even found that if you if you trained Llama 2 on data that was rephrased just enough to miss
+all of those those industry standard checks it would have beaten GPT4 at
+pretty common benchmarks. And on one hand that's bad because well clearly we don't want that. But on the
+other hand, it's actually good because it gives us a sense of well, we can get a gut check if someone is cheating.
+Because if they're actually performing worse than the state-of-the-art model, you would think, well, they're probably
+not cheating. But that's also kind of a double-edged sword because you would say, well, hold on. I don't want to be
+worse. I want to be at the same level of these models. So then I want to be at the level, but I also want to prove to
+everyone that we're not cheating. But if you're not an open source model, meaning you're not also releasing the data set
+that you use to train your system, Llama is the kind of perfect example of this, it's hard to make that claim. And it
+gets to a point where I mean I don't know if you saw this but there were allegations like published in in um in
+TechCrunch that even the meta VP of generative AI had to come out and say we
+did not manipulate our benchmark tests because the rumors got so big because
+people were using law before and they were kind of noticing this discrepancy between it's not working for me
+dayto-day but I'm looking at this benchmark score and it's pretty darn good. What's what's the deal here?
+Rumors start, allegations start, and because Medic doesn't release their data, all we can do is really take their
+word for it. And they could be lying, they could be telling the truth. Frankly, we'll never know. And I think
+that's kind of the hard part. And that starts to erode that trust of AI Frontier Labs. You know, OpenAI
+similarly hasn't open sourced an autogressive language model in some years at this point. And they've also
+stopped releasing, to my knowledge, they stopped releasing the contents of their training data after GPT3, right before
+chat GPT. So it's been years since we've actually had a sense for what they were using to train their models. And that
+also leads to that sycopantic debacle, right? In May of this year, 2025, OpenAI
+released a model with little fanfare and then within a week pulled it off the shelf because it was just agreeing with
+people too much. It wasn't actually being a good language model. it was just agreeing with everything the human said.
+And after the fact, they admitted, we changed the reward signal in our reinforcement learning alignment. And we
+think that's what happened. But again, we have to take their word for it. We have no way of actually double-checking any of this. It's just, okay, I guess
+please don't do that again. And that starts to eat at this this kind of trust in these companies, whether it's open
+weights or not. Yep. Some great examples there that you gave. Another issue with LLM benchmarks
+is that a lot of the the questions in them, they don't they don't they often
+don't seem practically related to the kinds of problems that people solve. So, for example, I would agree. Um,
+yeah, I think I I think I'm pulling this out of your content here. Uh, but I have
+uh on humanity's last exam, there's questions like uh how long was the second great war in
+Starcraft? And there's also three questions on League of Legends in there. Yeah. So, yeah,
+these kinds of questions, you know, gaming trivia knowledge probably Yeah.
+often not the kinds of things that people in a business context are concerned about. But that's a good point because again
+that that mismatch of what's being tested on the benchmark versus what's being marketed the benchmark is for can
+be quite disperate, right? A humanity's last exam, those are some pretty big words, right? And if humanity's last
+exam includes knowing what happened in season 14 of League of Legends, I I
+don't want to take this exam either, quite frankly. Now, to be fair, the counter to that would be, well, the
+point of the question is so that the AI doesn't know the answer, it knows how to
+go find it. Okay, but that's not what we're testing. There's an answer and
+we're just checking if the answer is right or not. So whether it memorized it just from reading it on the internet
+versus recognized it didn't know that, looked it up, pieced together some
+information, and came back with the right answer. That's more interesting to me. And whether it's League of Legends
+or not, I care less because now I'm evaluating its ability to generalize the
+process of finding new information. Allah, a GI. So simply memorizing a fact
+and knowing how to go fill in the gaps of your own knowledge and recognizing that you have gaps in your knowledge for
+me that's even more interesting. But again for us when it comes to a benchmark it's just no the answer was
+17. So we're moving on now. Yeah. Yeah. Yeah. Interesting points there. What do you think? So how could
+people do better? How could benchmark makers do better on this trivia versus
+practicality kind of issue? I I think a lot of the onus should not be on the
+benchmark creators because I think the I guess let me let me say that a different way. The people who create benchmarks
+are already putting in a lot of work for the most part. Not every benchmark is
+perfect but for the top call it 20 30 benchmarks that people would recognize.
+The institutions behind them generally they are also frontier labs partnering with academic institutions like for SWE.
+They are putting in a lot of work to curate read over thoroughly vet a lot of
+these questions and answers. So I I I think a lot of that work is already being done extremely well. I think the
+actual onus is now back on us the consumer and on the frontier labs themselves because again when you're
+chasing a a large number on a benchmark you can take shortcuts. I'll give you
+another example. If you look at I mean honestly any LLM um marketing page
+you're you're going to find some table where each row is a benchmark in each column is an LLM and usually theirs is
+the first one and they circle their their numbers and they're showing you the scores on the benchmarks compared to
+other leading models in that category. Sure, great. However, underneath the name of the benchmark, often they will
+also in small print say something like five shot coot. And what they're saying
+is we tried this just by asking the questions and it didn't go so well. So
+what we did is we added fot learning and chain of thought prompting and then all of a sudden our model was better than
+this other one. And you go, okay, so that's fine, but you're not telling me
+the whole story. If I don't know anything about LLM's, I might look at that and just say, "Oh, LLM A is better
+than LLM B." But actually, the takeaway is LLMA responds very positively to fot
+learning. So, when I use LMA for whatever task, I should attempt to
+induce fot learning into that system because they're claiming they can only make it better than other models by
+introducing that prompting technique. So the onus I think in in my opinion is is
+less on the benchmark creators and just more back on the education side of the frontier labs is to say look we're an
+open book here when we say our model got x% this is how we did it this is what we use you can replicate it here and if
+you're going to use it we recommended doing it this way and then if you do I think everything is going to be great that's what more of what I want to see
+this episode is sponsored by adverity an integrated data platform for connecting managing and using your data at scale.
+Imagine being able to ask your data a question just like you would a colleague and getting an answer instantly. No more
+digging through dashboards, waiting on reports, or dealing with complex BI tools. Just the insights you need right
+when you need them. With Adverity's AI powered data conversations, marketers will finally talk to their data in plain
+English. Get instant answers, make smarter decisions, collaborate more easily, and cut reporting time in half.
+What questions will you ask? To learn more, check out the show notes or visit www.adverity.com.
+That's advi ty.com.
+Nice. And in your response, you mentioned SWE or it's very often often called SWEBench.
+Yeah. Uh so yeah, uh software evaluation
+benchmark. Oh man, I don't even know. Should have looked it up before I asked the question. The software engineering software
+engineering. Software engineering. Yeah. Benchmark. Right. Right. Right. Um and
+so are benchmarks like that that are domain specific are are they starting to resolve some of the issues that that you
+have with benchmarks that that maybe you know are are trying to be so broad that you don't even really know what they're
+testing when they have things like trivia in them. Well, SUI uh is actually a really good example of a benchmark
+that goes beyond just answer the question because I think before before SUI, most benchmarks were multiple
+choice or some kind of one to two sentence free response. The one that comes to mind a lot is MMLU. MMLU is
+entirely multiple choice. It's basically the SAT, but even the SAT has free response sections, which is fine. Again,
+on one hand, that's fine. You're allowed to ask an AI a multiple choice question. However, you you forget sometimes or one
+forgets that transformer-based architectures are very very prone to something called a positional bias where
+they tend to prefer the first elements in a multiple choice over the last elements of a multiple choice. In more
+recent models that that positional bias is quite small mostly because of the uh the improvements in positional
+embeddings but we can talk about that another time or positional encodings.
+But the point stands is actually transformer-based decoderbased LLMs are
+naturally biased against being good at multiple choice questions. So if that's true, when you give it an entirely
+multiple choice benchmark like MMLU, you have to remember with a grain of salt that hey, you know, maybe ask the same
+question 10 times. Switch up the order of the answers and see if it gets the
+right answer even when it's the first one, the last one or something in the middle because if you can't get that resistance, that resiliency, consistency
+out of the LLM, that's also going to be a problem. So you can still use the same benchmark, but manipulate it in such a
+way that you actually get that sense of consistency. Ask the same question 20 times and you change the temperature up
+and down, switch everything around, you better hope it still gets the same answer more often than not. For folks listening who maybe haven't
+been using LLM's hands-on in a coding environment, what's temperature? Temperature is probably the most popular
+inference parameter. It's basically a number. It's a lever you're allowed to change while you are asking the LLM a
+question. So when you ask the LLM a question, by default, the temperature, which is a number, is one. And that just
+means the LM is picking tokens one after another. If you ask it again, it it'll it'll give something relatively similar,
+but the words might be a little bit different, but basically the same. If you turn the temperature down, what
+you're basically doing is you're changing that distribution, that probability distribution, so that what
+was 80% likely to show up now is 99% likely to show up. What was 2% likely to
+show up is now 0.1% likely to show up. You're really sharpening the distribution. It's more likely that
+you'll get the same answer over and over and over again. If you increase the temperature, the opposite happens. it,
+you get much more diverse responses. Fun fact, if you go right now to OpenAI and
+their playground and you turn the temperature up all the way they let you, which is two, and you ask it a basic
+question, you are very, very likely going to see some literal absolute gibberish come out of the LLM. So, it's
+a little fun thing that I tell my students to do because they used to not let you turn the temperature up beyond
+one. It used to be 0 to one. Now, it's 0 to2. And for the life of me, someone has
+never explained this to me. I don't understand the decision as to why to let someone increase the temperature more
+than one. You are asking for trouble. So when I say change the temperature, I'm I'm very much saying put it in hot
+water. Like make it harder for the LLM by turning up the temperature. You know, the analogy still fits. Turn the
+temperature up. Ask it again. And if it still answers the question correctly pretty consistently, you you've got
+yourself a pretty smart model. Nice. Uh, thanks for those insights into temperature there. I learned some things
+there. Uh, I have never tried turning it up to two. Maybe I will just for fun. Oh, it's fun. Yeah.
+One other issue. So, we've talked about already about issues like um teaching to
+test with benchmarks being a problem. We've talked about trivia being included when maybe the benchmark you kind of
+expect it to be just kind of a general intelligence kind of benchmark. Maybe useful for your enterprise.
+Trivia is still use. Trivia is still useful mostly for hallucination rates because if you want a really quick and
+cheap way to test how much your model will make something up slash generate something with confidence that is
+untrue, trivia is actually perfect for that. Like person QA, simple QA, those
+are two benchmarks which are about just basic question and answer. I have a trivia question, there's a relatively
+static answer that I'm expecting. So for those kinds of benchmarks, they they can also test things like hallucination.
+Everything has a place. But if you don't care about hallucinations, like you're not expecting your model to regurgitate
+facts and therefore I don't care if it hallucinates, that's debatable, but then you don't care about those benchmarks.
+So, but every benchmark generally does have its purpose. Nice. Okay, I see. Uh that was a good
+clarification. Um but uh yeah, so still for sure the teaching to test was a big
+issue. Um the we talked about domain specific benchmarks and how those can
+potentially uh be more useful especially if you're going to be doing like something like Swebench is going to be useful for you
+if you're going to be taking an open source LLM and putting it in your IDE
+that you're developing for software developers. Um another issue that we
+haven't talked about yet is well actually maybe it is maybe you just said it there with hallucinations. I guess that's kind of the same as truthfulness
+because you can end up in a situation where a model could say ACE MMLU
+uh in terms of capabilities but struggle on something like truth QA, truthful QA.
+Um and so like it outputs convincing misinformation. So I guess what you were
+describing there with uh some of these questions like the trivia I guess they're kind of addressing they're trying to something like hle humanity's
+last exam by including the trivia are they trying to get at the the hallucinations the truthfulness at the
+same time as uh capabilities maybe I I don't think so I I I don't
+think so because we already have if you are trying to test a model's just basic
+ability to not make stuff up. Why go as far as a very niche thing like
+Starcraft? Why not like person QA, Truthful QA, stick to the big things
+like this is a real question from Truthful QA. What happens if you eat watermelon seeds? That is a real
+question on truthful QA. Um, that's a fair question and technically you could
+answer it in a few different ways. There are a few different reference answers for that one question. But again, it's a
+general piece of knowledge that in theory anyone on the planet can get some, you know, advice from.
+Is it that you grow a watermelon in your stomach sit on? Is that the correct answer? Well, if you watch Magic School Bus, I'm
+pretty sure that isn't that is on the table. Um, so like when when you talk about these benchmarks, it it's it's it
+baffles me to think why does it have to be Starcraft? like why can't it be something that we all kind of recognize as correct gen because again even even
+on the simple person QA and simple QA benchmarks a model like 03 according to
+OpenAI themselves will hallucinate as much as 40% of the time that's a lot if
+it's already hallucinating that much on a relatively basic benchmark like tell me about these famous people who you
+should really know about by reading the internet at this point why go niche and go to Starcraft if we can't even that
+person trivia, right? It's so interesting when I hear things like that 40% hallucination rate with
+models like that. I'm so surprised because when I use like 01
+particularly, and maybe it's because of most of my usage of models like 01 and 03 is within OpenAI's deep research
+framework. I was about to say you're probably getting some grounded information from the web and these are not using these
+are not allowed to go to the web. These these have to be from the gut. From the LLM's gut. Tell me about Albert Einstein
+or whatever. I don't actually know who he's in. In person QA. The old LLM gut.
+Um, nice. Okay. You uh you right at the beginning, you were near the beginning I
+was talking about benchmarks. Um, you talked about contamination.
+Um, and so what is the resolution there? This seems like a really tricky problem.
+like how do we prevent leaks, you know, once once a benchmark's been out and the
+answers are online? I mean, I guess one solution is to just not have answers online. Tell that to the internet. Well, because
+here's the thing. If a benchmark literally comes with the answers, that's the whole point of the benchmark is
+you're supposed to know the right answer. So, the same place where you get the questions for the benchmark also has
+the answers to the benchmarks where you can validate that it's correct. So it's impossible to not have the answers not
+on the internet. Couldn't you couldn't you have something like it could be like kegle? Exactly.
+I mean you could but then who owns it? Who owns who owns someone has to own it?
+Well, someone has to because if it's going to be hidden from everybody else, someone now is in charge of holding
+those those answers. So who is it? The developer. like I guess in kind of the same way that um so so okay here's
+an interesting here's an interesting idea so what about a solution like chatbot arena where in chatbot arena
+there's no there there's no correct answer necessarily it's so it's run by
+Berkeley uh the LM CIS lab if I'm remembering correctly I think it's Joey Gonzalez's lab and so Joey Gonzalez has
+actually been on this show talking about it uh if I can find that episode quickly
+yes episode 707 uh you can hear from the Berkeley professor that you know was in
+his lab that this chatbot arena was devised and so in the chat arena it's different from benchmarks in the sense
+that you don't have a specific set of questions and answers you pit two LLMs against each other and
+you as a human evaluator of the arena you don't know which two you're seeking output from but you you pick one as
+better than the other and so first of of all, I'd love to hear your thoughts on the arena, but the the reason why I'm
+bringing the arena up is that in that situation, I mean, so you're talking about like ownership, you could have a
+similar kind of thing where for a benchmark where, you know, somebody creates a training set like humanity's
+last exam, you could have a hold out uh answer set and yeah, I mean, some like a
+university like Berkeley could be administering it. Um, you know, people submit uh Yeah, people submit their
+responses and then they get a grade back. Yeah, I a few things. I I I'm a fan of the arena in general. The the idea of
+blind judging from a human for me is one of the best ways to really get a good
+sense of an LLM's usability. Now, a couple things caveats there. If
+I'm just a lay person talking to a chatbot, to your point, I'm not coming in with structured questions. I'm just
+going to pick the one I like the most. And that might come down to which one's talking the way I like it to talk, which
+kind of leads to the whole sick fancy thing, right? When OpenAI said, well, we relied too much on people's thumbs up
+and thumbs down, and that's what got us in trouble. The yellow marina is pretty much a thumbs up and a thumbs down. It's
+all we're really doing is saying, I like that better. I'm not telling you why. um just because it cursed once and I
+thought that was cool. You know, we have no idea. Uh and sure over a at scale
+when you when you aggregate these you'll get a much more stable answer, but again at this point we're just judging
+preference as opposed to knowledge. uh and again without that structured data
+set. Now also I I I think you mentioned this there is no answer to any questions
+on the arena right you are just you're just shown response like you are not coming in with a question you are just
+kind of shown answers and the human it's up to the human to decide which one is correct so whoever is judging it behind
+the scenes how are they doing it are they paying a human being to read each one and actually comparing it to the
+right answer or are they going the LLM as a judge route where they're saying well we have yet another LLM who is
+given a reference answer and this answer and it is asked to say how closely does it compare we don't know and again a lot
+of it just comes back to what actually is the right way to judge the system
+who's who has the right to judge whether or not the AI was correct or not
+that's a big question and again that's why we have benchmarks is that is our current proxy to that question which is
+well. If we all agree that Pablo Picasso painted this thing and that's one of the
+answers they can pick from, it's on the right track to knowing general world knowledge. But if it just comes down to
+which one do you like talking to better, like like an arena would be, you're
+going to miss a lot of the actual important pieces of information you're trying to get out of that LLM. I'll say
+one more thing. It's funny you brought up the arena. That's actually one of the allegations from law before. Again,
+total allegations. But one of the separate allegations from Llama 4 was they released a tested or a trained to
+test model specifically for the arena that was different than the Llama before
+we all got in the end. Again, total allegation. But those rumors start
+bubbling up when people notice discrepancies. And who's to say those discrepancies are
+correct? They're all just our own interpretations and our own expectations maybe not being met by what we were
+shown. There's no way to prove this. This episode of Super Data Science is
+brought to you by the Dell AI factory with Nvidia. Two trusted technology
+leaders united to deliver a comprehensive and secure AI solution. Dell Technologies and NVIDIA can help
+you leverage AI to drive innovation and achieve your business goals. The Dell AI factory with NVIDIA is the industry's
+first and only end-to-end enterprise AI solution designed to speed AI adoption
+by delivering integrated Dell and NVIDIA capabilities to accelerate your AI powered use cases, integrate your data
+and workflows and enable you to design your own AI journey for repeatable,
+scalable outcomes. Learn more at ww.dell.com/supdatience.
+That's dell.com/supdatience.
+Um, so we've, you know, we're bringing up problem after problem with
+benchmarks. I have solutions too. Yes. So that's that's kind of what I wanted to get into next. So you, for
+example, if I am an enterprise and I want to be having an LLM deployed for a
+specific set of use cases, you have a recommendation uh from, you know, I've
+I've checked out your slides. They checked out your blog posts and one of the key tips that you have is for
+organizations to be creating their own test sets specific to exactly the
+application that they're going to be deployed into. Uh do you want to tell us more about that? Yeah, absolutely. For any of my clients,
+the the first thing I ask when I get into their AI systems is, "How do you know your AI is working?" And I just
+stand there quietly and they're like, "What do you mean?" And I'm like, "I don't know. you tell me what I mean. How
+do you know your AI is working? And usually they'll say something like, "Oh, well, you know, we picked the model with
+the best benchmark or we picked the newest Open AI model and we wrote a prompt and we had our intern talk to it
+a couple times and it all seemed to check out. So now we're in production." That happens way more often than I would
+like to admit from a lot of the people that I talk to and it's just not going to be as efficient. So, at this point,
+one of the first things I always recommend is let's actually build a testing framework. It's going to be
+annoying, but it's only going to take a week. We're going to build out a couple of questions. We can even help, you
+know, we can get some help from GPT to build some synthetic data sets as long as a human actually overlooks all of
+them and make sure they're okay. We can speed up this process. But once you have that test set, you have two things. Once
+you have a test set for your domain a, you can now get a better sense of how
+your AI is doing. That's table stakes. Now however it really opens up your
+experimentation cuz the next phase of your AI labs or your AI team is to say
+okay now we have a way we all agree that if this number is bigger given these
+prompting you know chain of thought non-chain of thought if we all agree that a higher number on this test set
+means it's better for us go it's now everyone's job to prompt better
+fine-tune better do whatever you have to do to get better at our internal benchmark? Cuz what you're doing is
+you're creating a leaderboard. And we just got done talking about how leaderboards can be bad for for the
+general benchmark public. But when it's for your organization, you're basically
+treating it the same way you would might treat a sales team. You you're you're trying to figure out what is going to
+get be the best way to get close that sale or in our case get a better score
+on our test set. Now hopefully that doesn't also breed a uh culture of
+contamination and cheating and and you know training to test. Uh but it it's
+more of a fair application of chase the top of that leaderboard because now I'll give you a really good example is it
+Stripe both Stripe and eBay made an embedding model specific to their
+domain. Stripe more recently, but eBay actually built a BERT models uh for their recommendation engine years ago.
+And I say this a lot. I'm willing to bet that if you ever got your hands on those benchmarks, they would be abysmal at
+embedding benchmarks, which exists, the MTEB, they would probably be abysmal at
+the benchmark. But they don't care. They're using it to detect financial fraud or stripe is at least eBay is
+using it to sell stuff on their platform. They don't care about the document retrieval nature of it in in
+terms of MTV. So once you start realizing the benchmark's actually not testing for anything we care about our
+test set is. Now let's chase that leaderboard because that's now tuned to us.
+Very nice. That was a well explained solution. What other solutions do you have for benchmark issues? Son,
+No text
+for for back to creating that test set as well, um, one thing that you can do that is also true in benchmarks is a
+decontamination phase of your training data. Like I mentioned earlier, kind of the classical quote unquote classical
+ways of of matching a test set to a training set would be something like an engram match, right? Like are are these
+are there keywords in in common between our training and our test set or a cosign similarity? Are they actually
+semantically too similar that the AI might be able to cheat off of it? There
+are papers who actually go as far as to create fine-tuned LLMs whose only job is
+to detect rephrasing of questions. That's a task. Is this a rephrased
+version of that? Yes or no? That's a task that we can fine-tune an LLM for.
+And that's what the um I believe it was the LLM decontaminator. what exactly was. And that's the paper that also made
+that experiment of we rephrase these to a degree that industry standard ways
+didn't catch it, but ours did. And if we hadn't existed and Meta had tried some
+funny business, they would have been beating GPT4. They weren't. So that's our assumption that they weren't
+cheating. But they made the point of it's actually not that hard to cheat. It's pretty easy to rephrase these
+questions to make them sound different enough but still learn that information. So doing some kind of decontamination
+step in your training data would really uh just at least help the generalizability of the system because
+if you are using data that is too similar to your testing set. Sure maybe in the short term in your in your
+production phase it's going to look good but eventually drift will happen. drift,
+meaning people will ask new questions. People will ask it a different way. New products will come up, the LM won't know
+about it, you won't know how to test a generalization. It's going to go off the rails at some
+point. And if you if you don't watch out for that as early as possible, you are more likely to fall into that trap
+sooner than you want. And then you just don't know what to do about it. Nice. Nice. Yeah, another great solution
+there. What about going beyond benchmark? So for example, something that I've had success with in the past
+was so developing um a test set that um that was specific to a task um a
+generation task. So a very specific we had uh in a previous company that I worked at, we had a very specific uh we
+had a a relatively small large language model, something like seven billion parameters. Sure. I think it was one of the early llama
+models and it was doing something very specific. it was turning natural language into a JSON file that and that
+JSON file had specific structured fields that were useful for us to present to users and to do um and and to search
+over embeddings, that kind of thing. And um so we we used a whole bunch of
+LLM calls. So at that time you certainly couldn't even the leading uh proprietary
+LLM of that time you couldn't reliably create this JSON object with all the
+parameters that we wanted um in one call but you could do it in multiple calls so you could kind of go field by field and
+so exactly and so it would be it would be too slow it would be too expensive to do
+in real time uh with with our you know users of the client with our users of our platform.
+who are expecting like real-time results, but we could use that to create a test set or or to create a training
+set rather uh as well as a test set. And um and then we could also actually you
+know what now that I'm saying this a lot that's actually that's more related that's that's more related to creating
+our own benchmark and so that is something that we were able to do and training set though and and training set for sure. Exactly.
+Which was really useful because then you can actually you can fine-tune. So you could take something like a seven
+billion parameter llama model and you can fine-tune it very rapidly. Laura or something like that.
+Laura, exactly with lower rank adaptation. Usually I have that uh it's something that I can just say, but uh
+it's been a few months since I've done Laura. Um yeah, so L O R A. And we've done podcast episodes on Laura if you
+want to hear about it specifically. I love Laura. Laura is like one of my favorite Laura was one of the last times
+like very recently I read a paper and I just saw like the basics of linear algebra being applied in such a simple
+way. I think that and Deepseek the Deepseek the R1 paper and the the Laura
+paper were the last two papers where I was just like man sometimes all it is is just linear algebra 101 and and that's
+awesome. That's all it takes sometimes. And am I remembering correctly that you have a math degree? I do. I have my masters and bachelor's
+both in theoretical mathematics. Right. Right. Right. A likely guide to find the linear algebra beautiful. Um
+yeah. So we did a Laura episode episode 674 if you want to learn about that. But basically you can use it to very
+efficiently in terms of time and money. Um you add in some extra parameters like half a percent more um into your model
+something like that. And then you can fine-tune very rapidly just those that
+half percent more that you've added in and you get pretty remarkable results. You don't you don't end up with
+catastrophic catastrophic collapse. Um and so so that approach that I was
+talking about earlier where we stitched a bunch of LLM calls together to to create the training set and the test set that is actually that's more like your
+benchmark thing. In addition to that, we also on a separate task, now I'm
+realizing as I get through the whole story, um we would use large language models to judge the quality of LLM
+outputs. So, for example, use, you know, let's say we we fine-tune
+um you know, a cheap fast 7 billion llama model to be able to do something
+and then we want to be able to test it. uh and maybe like there's some reason why creating benchmarks for this would
+be very labor intensive. You could actually use LLMs to judge performance
+and that gives you something comparative. Maybe the LLM isn't perfect, but you use an expensive one um
+you know, you use whatever the state-of-the-art LLM is at the time of listening to this. You call that API and
+you use it to judge your outputs. That's something that I love because it allows you, it's so cheap and fast that you can
+do it, you know, as you're fine-tuning with Laura and see, you know, have we gone too far, have we overtrained? Um,
+uh, yeah, there's lots of great, you know, check marks there, checkpoints there, or you could compare different
+models, different ways you fine-tuned and, uh, yeah, and so it's very cheap
+and effective, way, way, way cheaper than having humans evaluate. And something that we've done, sorry I've been talking way too long, son. But
+something that we did in a previous company was we compared on a small number human evaluations which were
+super everyone hated doing it. Like we asked everyone on the product team, the software engineering team, the sales
+team to be evaluating model outputs and ranking them or saying which ones were
+correct, which ones weren't. And people hate it because it turns out it's really hard. Like we've gotten to a point
+Yeah. with a lot of tasks now. It's not like you're like, "Wow, one LLM is garbage and the other one's great." You're like, "Wow, these are two great
+sets of results. There's nuances here." Like, "This one is better here. This one is better there." I I mean, I don't know what to
+tell you. So, yeah. So, it can be really labor intensive. People hate doing it, but we forced people to do it. And so, we got
+this small set and we were able to compare. Okay, there is a high rate of
+interrator reliability between the humans and this expensive LLM that we're
+calling. Um, and so let's just use the LLM from now on. What you just said is is I want to say that again. I I I
+No text
+because I talk about this in my eval classes. What you what you are using is called a rubric. Effectively, you are you are judging a single piece of
+content against some criteria, maybe some references or some guidelines or in
+your case structure of the actual output. For example, it's it's a rubric effectively. And one of the problems
+with rubrics is they're just prompts on top of an LLM. And if you give that prompt to 10 different LLMs, they're all
+going to give probably some different scores across the board. So, which one
+actually matches the human? Because that's the right answer. Which one is correct is not the one with the highest score. It's the one that actually
+matches the human. But to do that, you need a human and it's really hard to
+make these evaluations. So, to to go through what you just talked about is not easy. But once you do it and you
+know this LLM knows how to judge this this task given this prompt again
+experiments open because now we have a relatively reliable way to make that evaluation in real time. I'll I'll go
+one step further with the rise of reasoning models the ability to use reinforcement learning to train kind of
+like uh I'll I'll I'll name drop some acronyms here. some GRPO or PO
+algorithms. These are types of reinforcement learning systems where you basically let an LLM try a task and
+before the LM tries again, you have to give it a score to say that was good or that was bad or that was really good or
+that was really bad. If you have a rubric providing that answer or at the
+very least just say hey this is not a JSON so thumbs down try that again over
+and over and over again. You're basically teaching the AI how to solve a task through reward and punishment. I I
+mean, which is the basic point of reinforcement learning anyways, but it it's almost perfect in the way that the
+way we think about evaluation lends itself quite nicely to the way we think about training these LLMs today.
+Nice. I'm glad to get the uh stamp of approval from you there, son. Um yeah,
+rubric based based grading. Thank you for bringing that up. That was one of the thing things that I wanted to to make sure we talked about. What about um
+in terms of you know solutions and emerging techniques for AI evaluations that kind of go beyond just standard
+benchmarks? What about perplexity and confidence signals where the model kind of has its own ability to recognize that
+this is a situation where it maybe isn't sure it could be hallucinating. Yeah, perplexity is a tricky one because
+perplexity is a metric that we have been using for decades but only recently have been using as a proxy for
+hallucinations. And for those who are who are the the uninitiated, perplexity
+is effectively a judge of the confidence of the tokens being predicted. I it is
+correlated to the actual token probabilities themselves. As the pro the confidence goes up, the perplexity goes
+down. A lower perplexity is better. The problem with perplexity among other
+things is that a it requires other answers to be judged against. For
+example, if I ask what planet is known as the red planet and I take the word Mars, which is the answer, I could I
+could calculate a perplexity given a model. Let's call it 1.3. I could then do it for Jupiter and Venus
+and I would get different numbers. Hopefully, they're going to be much larger. So, at that point, it's easy. Okay, great. The lowest one wins. What
+if you don't have options? What if you don't have other things to compare it to? Now, you need a threshold. Well,
+what's the threshold for a good perplexity? I don't know that's not really a textbook answer. Now you have to figure out in your own domain what a
+good threshold is and and gez at that point you might as well write a rubric and figure out some human grading solution. So perplexity itself is not
+perfect. The the other thing that's a problem with perplexity not the company the metric. Uh they are obviously
+related but that the value of perplexity is also dependent on the prevalence of
+that token in the training data. So that same example if you give it the word earth as the answer to the question
+which is not the right answer our little blue marble is not known as the red planet the perplexity will also be quite
+low but not because the model is confident in it in the answer but because it's just seen that token so
+often so it's just going to have a naturally lower uh lower perplexity and
+a higher confidence. So perplexity is a fine correlated proxy to hallucination, but
+really you're just measuring the confidence of the LLM. And if we equate confidence with truthfulness,
+I got a problem for some humans that I know. Confidence does not mean truthfulness, unfortunately. And it's
+the same goes for LLM. So it's tricky. I I'll say one more thing. I promise one
+more. The LLM doesn't know its own perplexity. To be clear, it doesn't know
+the probability confidences of its own token distribution when it predicts that token. The p the actual act of
+predicting a token is technically not done by the LLM. It's done by the system
+hosting the LLM. It's just choosing from that probability distribution. So, in a weird way, the LM doesn't actually know
+how confident it is is purely based on its own probabilities. It has to be
+somehow devised parametrically within its own parameters. It has to somehow
+come to the conclusion along the way that it doesn't know the answer. To my knowledge, it's not able to actually
+judge that simply from its token out next token probabilities itself. And that's when you start talking about
+world models that the idea of probing of can you hijack an LLM's internal
+parameters to try to see what is it thinking about here? like what what's going on through those 20 billion
+parameters so that by the time it gets to the next token, a lot's happened. What's going on in there?
+Nice. Thank you for that explanation of perplexity. Uh that is definitely the most we've gotten into perplexity on
+this podcast, believe it or not. So, thank you very much for that. Um nice.
+Okay, so that gets into the confidence thing a bit. I just have two last
+technical questions for you if you have the time. Let's do it. Okay. So the first one is with respect
+to multimodal models. So now all of a sudden we can have AI systems that can
+be processing images, natural language, audio, maybe all at once. And so testing
+has to become more complex, probably more expensive to create as well. So where are we on this? And you know, I'd
+just love to hear your thoughts on on multimodal evaluation. There multimodal evaluation in a lot of
+ways is not much different in a lot of ways. For example, there is an MMLU
+version for multimodal. It's called MMU. I'll I'll give you three guesses what
+the new M stands for it multimodal. Um, and they're just multiple choice
+questions. Here's an image. Here's a question. Here's your multiple choice. Please answer the question. Because the
+second you say multimodal for me, and I did a whole video on this, several hours long. What do you mean by multimodal? Is
+it audio? Is it video? Is it documents? Is it 3D images? Is it just 2D images?
+What do you mean by multimodal? And again, to your point, well, what's the architecture? Is it an omni model like
+40 or lava where it's able to take in these different modes of data and
+basically project them to all look like text tokens? That's how OpenAI uh 40
+does their their image input and also in a lot of ways how they do their newest image output. Now, technically that
+shouldn't matter because if you're just testing something like VQA, visual question and answering, here's a question, here's an image, answer the
+question. Shouldn't matter. If the AI can come up with the answer, we can judge the answer. But it's also going to
+come down to, well, what's the goal here? I is the goal to be a trivia answer with images or is the goal to
+actually be able to read what's in the image and use what's in that image for some other task. The point of it all is
+to say I don't think we should be judging multimodal models really any differently. We are still trying to
+understand if they can perform a specific task for us. Whether or not that task involves an image should
+frankly be irrelevant. It's just now that these models can start to take in images, we have to update our
+benchmarks. And there are hundreds of multimodal benchmarks out there, ranging from video ones to audio ones, mostly
+image ones. And there's even new LLM as judges specifically for multimodals.
+There's Lava Critic, who is specifically designed to take in an image, a
+question, and an answer, and give you a rubric score from 0 to 100. even does LLM as a judge, meaning it
+gives you an image, a question, two answers, and it tells you which one is better and why. So, we're still doing it
+the same way. It's just that it happens to be such that the input includes an image. Now, if the output includes an
+image and we have to judge that, it's a little bit of a more murky territory because that now involves that the
+system who is able to read the images is itself good enough to understand what's in that image. So, there's kind of this
+kind of self um self-fulfilling prophecy of well if this AI is trying to output an image and
+this one is trying to ingest the image to evaluate it how do we know if the evaluating model is actually good enough
+to do that task. Nice. Thank you for that tour of multimodal evaluation. My last technical
+question for you is on and you could probably do a whole episode on this, so it's probably not even fair of me to
+squeeze this in at the end, but one of the hottest topics in AI today we can probably agree is agents. How the heck
+do you evaluate an agent when they are being asked to do a you could have a
+team of agents being asked to gather information and create a website you
+know do they could be potentially working for days. How do you come up with a good benchmark
+or evaluation in any way of whether an agent is doing what you want it to be or
+not? How do you compare different agentic frameworks, different LLMs within the same agentic framework and so
+on? Yeah, you are right that it's going to be a total episode on its own. But let me let me let me try to break it down.
+There's there's two big components of the agent to put it very very simply.
+There's the final answer, whatever that final answer is, but there is eventually
+usually a final answer. And that answer could be, "Here's the email to this person that you asked me to email." Or
+it could be, "I've answered your question. Here's the answer to your question, and I've done so by reaching out to 20 agents." So, you can judge
+that answer using a lot of the ways that we've been talking about before. That that part I'm not going to get into. The
+part that I want to get into is the fact that really agents are themselves hidden
+workflows. We're not designating if yes, go here, if no, go there. But the agent
+does have the agency, pun intended, to be able to say, I need to look this up. Call tool to look this up. I need to now
+write Python code to do something. Writes Python code to do something. Every single one of those steps in
+theory can be evaluated ranging from did you pick the right tool to even begin
+with or did you just go off the cliff immediately and then have to stumble your way back towards the end. That's
+just tool selection accuracy. It's a big case study that I do also falls victim to the positional bias. Then it's did
+you call the right arguments? Did you Google the right thing? For example, I you googled something but did you Google
+the right thing? The point is every micro thing work part of the workflow can be evaluated. So the question
+becomes do we evaluate every micro action that an agent takes? No. But
+there is a middle ground. There is a midlevel where you can say, well, look, I'm going to build a data set that's
+just going to test first tool selection. Here's a 100 questions and here's the tool I'm expecting it to call. I don't
+even care about the arguments. If I ask this question, I want you to Google it. If I ask this question, I want you to
+pass it off to this other agent just to test the first act because usually
+that's where agents fail the most is the first action. Because then the second thing you want to test is how efficient
+was this whole process? How many tool calls? How many tokens? How long did it take? And if I ask you the same question
+with more and more context, does that efficiency window shrink? Meaning, is it
+getting more and more efficient? If yes, how much context does it take before you
+see that plateau? And is there a way to give you that much context in real life?
+So you're now you're just kind of figuring out the ceiling of the performance. and then asking yourself,
+can we tweak our system in order to give it the context that it so craves in
+order to make this entire process more efficient? So there's a when it comes down to it, you can just evaluate the
+end result, which is fine. You should be doing that, but realistically, you should also be testing the kind of micro
+actions along the way. And every single agent, if you I don't care if you have a hundred agents in your system. If you
+have a hundred agents, you better make sure that each 100 of those agents has a has some thing that they're good at. If
+they don't have anything that they are good at, then another agent is not good at, kill it. So, by the time you end up
+with the agents that are good at something, test them on it. Make your own benchmarks. same thing we've been talking about before. Test them on their
+individual characteristics and that should bubble up to an overall performance of the system.
+Very nice. Uh you said that so so well. It's amazing how well you can
+communicate these kinds of technical concepts. So yeah, so definitely it sounds tricky. You know, there's going to be a lot. It's going to be labor
+intensive to be able to come up with a good agent. It is. Yeah, it is and it will be. And that makes
+sense. As these machines get more capable, it's going to be trickier and trickier to evaluate them. And that's a good thing because they're more and more
+capable. And exciting things lie ahead for enterprises that can be jumping on, you know, cautious but uh thoughtful use
+um of of Agentic systems. A lot of possibility out there. Um Son, you've
+been very generous with your time. We've gone over the scheduled slot so that we can get in these extra technical questions. Happens. Um, uh, before I let you go, do
+you have a book recommendation for us? It can't be my book, right? I'm kidding. Uh, honestly, okay, I'm gonna give you
+less of a recommendation and more See, here's You know what? Now that
+I'm thinking about this, I don't even remember the last book that I recommended to you. I don't want to like accidentally recommend the same book
+again. Well, I'm confident that if it's the one we talked about before recording, we should be good. Well, that one is is
+also true, but I was I was thinking about other books in the meantime. The book I am excited to read and I will I
+will report back with my findings is a book called AI Snake Oil. Um it's by
+Arvind Narayan, I hope I'm saying that right, and Sash Kapoor. Uh both, I
+believe both from from Princeton. I had the pleasure of meeting Arvind actually at ODSC when we when we last hung out.
+and he gave a keynote that was just basically the 30inut version of my workshop you know less code and more
+just direct um knowledge and he was actually really instrumental in in in in benchmarks like sui and and working on
+on on and things like that the book is really exciting for me because I've always been
+call it ranting about the gap of marketing and functionality I mean I am on record really laying into IBM Watson
+10 years ago and just kind of the marketing mishaps that they had and how they weren't living up to a lot of
+expectations. I stand by everything I said, but that the whole concept of snake oil in AI is not new, but it is
+just explosive right now. So, I I am really excited to hear and read about
+kind of what are the modern takes on snake oil because it used to just be big company makes big claims. Google says
+they can call your hairdresser and make an appointment in 2017. Do we believe
+them? No. Now, do we believe them? Yes. So, things can change quickly. So, what
+is the new snake oil that people are selling? That's what I'm really excited to dig into.
+Fantastic. Thanks, son. That's a great recommendation. And yeah, uh that author
+Arvvent, right? Uh he was highly recommended by Sheamus McGovern, who runs ODSC East. He said that I got to
+get him on the show. So, maybe we will have him on the show for an AI snake oil episode soon. Uh in the meantime for
+people who want to be hearing more from you on we know about your books. So quick start guide to LLM for example
+third edition is now out. Uh third edition is coming out. Second edition edition is coming out.
+Gotcha. Gotcha. Um your O'Reilly trainings people can find you there about once a week uh for classes like
+trans uh transformer architectures AI agents a toz a to zed a toz in America.
+Um, and RAG. Uh, of course you have agent classes in O'Reilly as well that I don't we've spoken about, but of course
+you do. Yeah. Agent and RAG courses also in July and then in the next week or two. Yeah. And then practically intelligent
+your podcast. Maybe our listeners maybe won't be too long before they hear me as a guest on that show.
+I was going to say I didn't want to uh ruin the surprise, but yes, you can also hear John on my own show when it comes
+out. Nice. Nice. And yeah, so that'll be interesting because, you know, we if there are there's probably some
+dedicated listeners out there that are listening to most episodes of this show and maybe they actually don't know very
+much about me at all except for, you know, my kind of quips. How often are you a guest on a show? Because you're always you're always the
+host. You're always interviewing. How often do you get to be the guest? Yeah, I mean I've gone through phases.
+So when my book Deep Learning Illustrated came out in 2019, I kind of did a podcast tour where I was like
+actively reaching out to to be on shows. And in fact, that's how I ended up becoming the host of Super Data Science
+because Oh, well Kurill asked me to be a guest on his show on on on this podcast on the
+Super Data Science podcast. Um, and so I can actually probably look that episode up.
+Uh, I think it might be 365. I have that number in my head because it's kind of like an easy number to remember. Um, let me
+double check. Yeah, 365. And um, all year round. Uh, and
+and I asked him at that time basically the same question you just asked me, which was, "How often are you a guest on
+other people's podcasts?" And he said never. He said he'd done it one time. And I said, "Well, I've actually just
+launched my own little podcast, which was supposed to be uh, it was called the
+artificial neural the artificial neural network news network. And so it was supposed to be a weekly news show about
+AI news. And the thing that was fun about it, we got to film one episode in February 2020. And you can find people
+can find this online on any on all the major podcasting apps as well as on
+YouTube. Um it's called A4N, the artificial neural network news network.
+And the first episode was in February 2020. And it it it was my vision. So we had it
+was me and four other data scientists and and I was like the anchor of this news show and I'd say all right let's go
+over to Andrew for sports and he would talk about cheating and Kaggle and let's go over to Vince for weather and he'd
+talk about AI uh being used to tackle climate change and we had such a laugh
+recording it and then the next week the pandemic hit. I was about to say something else was about to happen in February 2020.
+Exactly. And then so nobody wanted to come into the office. We weren't able to keep doing it that way. So, I did four
+more episodes where I interviewed guests. Um,
+and Kurroll was one of those four. Huh. And then like six months after that, he
+was like, "Do you want to host the Super Designs podcast?" Wow. Wow. That's crazy. I had no idea. That's
+cool. Yeah. And what's really funny is if you listen, people listen to Kier's episode.
+We made fake ads for that episode. About what?
+And um so we had uh it was an app for finding toilet paper. Uh
+because it was the pandemic. It was like the pandemic had just started. Uh I can't remember. We had a silly name
+for it. We had music. Um and we just recorded it in one shot with Kurill with the guest there. Um I
+was just like, "Okay, I need to take a break here to record this fake ad." That's so funny.
+Yeah. Um, so yeah, I was kind of like I didn't know but I was auditioning for this podcast where we actually have real
+ads. I'm very much looking forward to being on practically intelligent and having a conversation and also meeting
+remind me of your a yeah looking forward to meeting him and I'm sure we'll have a lot of fun. Uh,
+and yeah, so uh I'll be yeah people follow me on LinkedIn or whatever I'll be posting about that when the
+practically intelligent episode comes out. And on that note, how should people be, you know, other than all like what's
+a social media place to follow you, son? For me, it's LinkedIn. Um, it was always funny to think about now, like I never
+really thought I'd be that guy on LinkedIn, but for me, my LinkedIn has been my social media of choice. I I kind
+of grew tired of Twitterx. Uh, and that's where most of my
+followers kind of can find my my my newsletters and my different blog articles and just everything that I'm
+doing. Yeah. Nice. Yeah, same for me. I yeah I don't know I got tired of like
+there's just so much more interaction on LinkedIn lately than X and so
+yeah at least for what we do in data science seems to be the place to be now. Yeah nice son thank you so much for taking
+the time and I'm sure it won't be long before you're on an episode again. Well, thank you, John. It's always a pleasure.
+Always great to have Son Osdemer on the show. In today's episode, he covered how current AI benchmarks suffer from
+teaching to test where labs optimize for high scores rather than real world performance, as well as contamination
+issues where test questions leak into training data. He talked about allegations emerging that Meta had to
+publicly deny manipulating Llama 4's benchmark scores, highlighting how the lack of transparency in training data
+makes it impossible to verify claims. He talked about how even advanced reasoning models like OpenAI's 03 hallucinate up
+to 40% of the time on basic factual benchmarks like simple QA, demonstrating that high capability scores don't
+guarantee truthfulness. And he talked about how organizations should create custom test sets specific to their use
+cases, implement rubricbased evaluation with LLMs as judges after validating against human evaluators ideally, and
+how they should chase their own internal leaderboards rather than generic benchmarks that don't reflect the
+enterprises actual needs. As always, you can get all the show notes, including the transcript for this episode, the
+video recording, any materials mentioned on the show, the URLs for Son's social media profiles, as well as my own at
+superdatience.com/903. Thanks to everyone on the Super Data Science podcast team, our podcast
+manager Sonia Bryovich, media editor, Mario Pombo, Nathan Daly, and Natalie Jysky on partnerships, our researcher
+Serge Miss, writer Dr. Zara Care, and yes, of course, our founder Kira Lamnco. Thanks to all of them for producing
+another excellent episode for us today, for enabling that super team to create this free podcast for you. We are deeply
+grateful to our sponsors. You, yes you, can support this show by checking out our sponsors links which are in the show
+notes. And if you yourself are interested in sponsoring an episode, you can find out how to do that by going to john.com/mpodcast.
+Otherwise, share, review, subscribe, uh, edit videos into shorts if you want to. But most importantly, just keep on
+tuning in. and I'm so grateful to have you listening and I hope I can continue to make episodes you love for years and years to come. Until next time, keep on
+rocking out there and I'm looking forward to enjoying another round of the Super Data Science podcast with you very soon.

@@ -1,0 +1,51 @@
+[tool.poetry]
+name = "fast-english"
+version = "0.1.0"
+description = ""
+authors = ["guilhermebranddao <guilhermebranddao@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+mkdocs = "^1.6.1"
+taskipy = "^1.14.1"
+isort = "^5.13.2"
+black = "^24.10.0"
+ipykernel = "^6.29.5"
+nltk = "^3.9.1"
+stanza = "^1.10.1"
+googletrans = "^4.0.2"
+deep-translator = "^1.11.4"
+pyttsx3 = "^2.98"
+inflect = "^7.5.0"
+gtts = "^2.5.4"
+pandas = "^2.2.3"
+speechrecognition = "^3.13.0"
+textblob = "^0.18.0.post0"
+quiz-maker = "^1.0"
+pillow = "^11.2.1"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.taskipy.tasks]
+format = """
+isort .
+black .
+"""
+
+run = "uvicorn app.main:app --reload"
+run_in_prod = "uvicorn app.main:app --host 0.0.0.0 --port 8000"
+run_etl = "python app/etl/main.py"
+test = "pytest -v --disable-warnings"
+kill = "kill -9 $(lsof -t -i:8000)"
+freeze_req = "pip freeze >> requirements.txt"
+freeze_req_dev = "pip freeze >> requirements-dev.txt"
+
+generate-migration = "alembic revision --autogenerate -m 'initial migration'"
+apply-migration = "alembic upgrade head"

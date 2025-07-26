@@ -1,0 +1,20 @@
+mkdocs
+taskipy
+isort
+black
+ipykernel
+nltk
+tqdm
+stanza
+pygame
+pillow
+# googletrans
+deep-translator
+pyttsx3
+# inflect
+# gtts
+matplotlib
+pandas
+# speechrecognition
+# textblob
+# quiz-maker
