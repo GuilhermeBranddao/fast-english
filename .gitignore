@@ -12,8 +12,8 @@ __pycache__/
 .venv/*
 
 raw_images
-# add_new_data/cambridge_dictionary_data.json
-# cambridge_dictionary_data.json
+add_new_data/cambridge_dictionary_data.json
+cambridge_dictionary_data.json
 # Ignora tudo dentro da pasta
 # database_antigo/*
 # !database_antigo/*

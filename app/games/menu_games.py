@@ -173,7 +173,7 @@ class WordBaseApp(BasePage):
 
     def build_data_structure(self):
         data_structure = {}
-        content_types = ["words", "phrases"]
+        content_types = ["words", "phrases", "personalized"]
 
         for content_type in content_types:
             loader = DataLoader(base_path=self.data_path.format(kind=content_type))
@@ -212,6 +212,9 @@ class WordBaseApp(BasePage):
         words_btn.pack(side="left", padx=5)
 
         phrases_btn = tk.Button(top_frame, text="Frases", command=lambda: self.switch_type("phrases"))
+        phrases_btn.pack(side="left", padx=5)
+
+        phrases_btn = tk.Button(top_frame, text="Personalizados", command=lambda: self.switch_type("personalized"))
         phrases_btn.pack(side="left", padx=5)
 
         database_words_btn = tk.Button(top_frame, text="Database", command=lambda: self.switch_type("database"))
@@ -411,6 +414,7 @@ class WordBaseApp(BasePage):
 
     def draw_categories(self):
         # TODO: Colocar icones
+        print("Draw Categories")
         for widget in self.content_frame.winfo_children():
             widget.destroy()
 
