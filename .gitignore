@@ -22,6 +22,7 @@ database/extract_data_video/*
 database/vocabulary_json/*
 database/vocabulary/*
 database/images/*
+database/data/*
 
 # Mas não ignora a pasta data
 # !extract_data_video/data/
@@ -206,3 +207,5 @@ poetry.toml
 pyrightconfig.json
 
 # End of https://www.toptal.com/developers/gitignore/api/python
+database/extract_data_video - Copia/*
+app/new_features/create_new_cards/dados.txt

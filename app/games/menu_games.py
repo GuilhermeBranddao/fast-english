@@ -6,7 +6,9 @@ from app.games.hangman_game.main import HangmanGame
 from app.games.word_shuffle_game.main import WordShuffleGame 
 from app.games.text_challenge.main import TextChallengeApp
 from app.games.text_reader_app.main import TextReaderApp
-from app.toolkit.utils.data_loader import DataLoader
+from app.games.drag_the_word.main import DragWordGame
+from app.toolkit.utils.data_loader import DataLoader as DataLoaderv1
+from app.toolkit.word_engine.data_loader import DataLoader
 import json
 import os
 from pathlib import Path
@@ -46,6 +48,7 @@ class MainPage(BasePage):
         # Lista de botões e páginas correspondentes
         games = [
             ("Jogo de Vocabulário", VocabularyGame),
+            ("Drag the Word", DragWordGame),
             ("Jogo Da Forca", HangmanGame),
             ("Word Shuffle Game", WordShuffleGame),
             ("Text Reader App", TextReaderApp),
@@ -167,7 +170,9 @@ class WordBaseApp(BasePage):
 
         self.word_stats_analyzer = WordLearningAnalyzer(word_stats_analyzer.stats_grouped)
 
-        self.data = self.build_data_structure()
+        self.data_loader = DataLoader()
+
+        # self.data = self.build_data_structure()
 
         self.build_ui()
 
@@ -176,7 +181,7 @@ class WordBaseApp(BasePage):
         content_types = ["words", "phrases", "personalized"]
 
         for content_type in content_types:
-            loader = DataLoader(base_path=self.data_path.format(kind=content_type))
+            loader = DataLoaderv1(base_path=self.data_path.format(kind=content_type))
             content_data = {}
 
             for category in loader.get_categories():
@@ -263,7 +268,7 @@ class WordBaseApp(BasePage):
                 text=file_path.stem,  # Nome do arquivo sem extensão
                 anchor="w",
                 # command=lambda path=file_path: self.load_database_file(path)
-                command=lambda items=data: self.start_game(words=items)
+                command=lambda items=data: self.start_game(words_path=items)
             )
             btn.pack(fill="x", padx=10, pady=2)
 
@@ -324,7 +329,7 @@ class WordBaseApp(BasePage):
         widget.bind("<Enter>", enter)
         widget.bind("<Leave>", leave)
 
-    def create_subcategory_box(self, parent, subcategory_name, word_list, category_name, all_maps):
+    def create_subcategory_box(self, parent, subcategory_name, list_word_path, category_name, all_maps):
         index = len(parent.winfo_children())
         sub_color = "#f9f9f9" if index % 2 == 0 else "#eeeeee"
 
@@ -337,18 +342,18 @@ class WordBaseApp(BasePage):
         # Progresso
         category_map = all_maps.get(category_name, {})
         sub_learned = category_map.get(subcategory_name, {}).get("learned", 0)
-        sub_progress = (sub_learned / len(word_list)) * 100 if word_list else 0
+        sub_progress = (sub_learned / len(list_word_path)) * 100 if list_word_path else 0
 
-        tk.Label(sub_frame, text=f"{sub_learned}/{len(word_list)} words", bg=sub_color,
+        tk.Label(sub_frame, text=f"{sub_learned}/{len(list_word_path)} words", bg=sub_color,
                 font=("Helvetica", 10), anchor="w").pack(anchor="w", padx=5)
 
         self.draw_progress_bar(parent=sub_frame, progress=sub_progress, padding=(0, 0))
 
         tk.Button(sub_frame, text="Study",
-                command=lambda words=word_list: self.start_game(words)
+                command=lambda words_path=list_word_path: self.start_game(words_path)
                 ).pack(pady=5, anchor="e", padx=5)
 
-    def create_category_box(self, frame, category_name, subcats, category_color, all_maps, learned_per_category):
+    def create_category_box(self, frame, category_name, dict_subcategory_words, category_color, all_maps, learned_per_category):
         # frame.pack(fill="x", padx=10, pady=5)
 
         # Frame principal da categoria
@@ -361,8 +366,7 @@ class WordBaseApp(BasePage):
 
         tk.Label(frame_header, text=category_name, font=("Helvetica", 14, "bold"), bg=category_color, anchor="w").pack(anchor="w")
 
-        total_words = sum(len(words) for words in subcats.values())
-
+        total_words = sum(len(words) for words in dict_subcategory_words.values())
         learned_words = learned_per_category.get(category_name, 0)  # Atualize com os dados reais futuramente
 
         label = tk.Label(frame_header, text=f"{learned_words}/{total_words} Words Learned", bg="white", font=("Helvetica", 10), anchor="w")#.pack(anchor="w")
@@ -382,13 +386,13 @@ class WordBaseApp(BasePage):
         frame_subcategory = tk.Frame(frame_category, bg="white")
 
 
-        def toggle_subcategories(frame=frame_subcategory, subcategory_dict=subcats, category_name=category_name):
+        def toggle_subcategories(frame=frame_subcategory, subcategory_words=dict_subcategory_words, category_name=category_name):
             if frame.winfo_ismapped():
                 frame.pack_forget()
             else:
                 if not frame.winfo_children():
-                    for subcategory_name, word_list in subcategory_dict.items():
-                        self.create_subcategory_box(frame, subcategory_name, word_list, category_name, all_maps)
+                    for subcategory_name, list_word_path in subcategory_words.items():
+                        self.create_subcategory_box(frame, subcategory_name, list_word_path, category_name, all_maps)
                 frame.pack(fill="x", padx=10, pady=5)
                         
         # Botão de expandir/retrair subcategorias
@@ -420,8 +424,6 @@ class WordBaseApp(BasePage):
 
         self.setup_scrollable_category_area(parent_frame=self.content_frame)
 
-        categories = self.data.get(self.current_type, {})
-
         category_colors = [
             "#FFC1C1", "#C1FFD7", "#C1D4FF", "#FFF5C1", "#E1C1FF", "#C1F0FF",
             "#A8D5BA",  # Verde menta
@@ -441,25 +443,37 @@ class WordBaseApp(BasePage):
             "#EBDEF0",  # Roxo claro
         ]
 
+        # categories = self.data.get(self.current_type, {})
+        categories = {}
         all_maps, learned_per_category = self.word_stats_analyzer.generate_learning_maps(categories)
         
-        for i, (category_name, subcats) in enumerate(categories.items()):
+        dict_categories_to_subcategories = self.data_loader.map_categories_to_subcategories(self.current_type)
+
+        dict_subcategories_to_word_path = self.data_loader.map_subcategories_to_word_path(self.current_type)
+
+        for i, category_name in enumerate(self.data_loader.get_categories(self.current_type)):
+            set_subcategory = dict_categories_to_subcategories.get(category_name, set())
+            filter_subcategory = {
+                name: dict_subcategories_to_word_path.get(name, set())
+                for name in set_subcategory
+                if name in dict_subcategories_to_word_path
+            }
 
             category_color = category_colors[i % len(category_colors)]
 
             self.create_category_box(frame=self.scroll_frame,
                                     category_name=category_name,
-                                    subcats=subcats,
+                                    dict_subcategory_words=filter_subcategory,
                                     category_color=category_color,
                                     all_maps=all_maps,
                                     learned_per_category=learned_per_category)
 
-    def start_game(self, words):
+    def start_game(self, words_path):
 
-        loader = DataLoader(base_path=self.data_path.format(kind=self.current_type))
+        # loader = DataLoader(base_path=self.data_path.format(kind=self.current_type))
 
         ## Salvando lista de nomes
-        study_word_list = [loader._carregar_palavra(path=Path(str(path).replace("\\", "/"))) for path in words]
+        study_word_list = [self.data_loader.load_words(path=Path(str(path).replace("\\", "/"))) for path in words_path]
 
         # Convert WindowsPath objects to strings in the study_word_list
         serializable_study_word_list = [
