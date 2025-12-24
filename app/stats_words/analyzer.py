@@ -5,6 +5,117 @@ from typing import List, Dict, Tuple
 import numpy as np
 import pandas as pd
 
+import pandas as pd
+from datetime import datetime
+
+class MasteryAnalyzer:
+    def __init__(self,
+                 min_attempts=7,
+                 weight_accuracy=0.6,
+                 weight_diversity=0.2,
+                 weight_recency=0.2,
+                 min_penalty=0.5,
+                 penalty_low_exposure=0.5):
+        self.min_attempts = min_attempts
+        self.weight_accuracy = weight_accuracy
+        self.weight_diversity = weight_diversity
+        self.weight_recency = weight_recency
+        self.min_penalty = min_penalty
+        self.penalty_low_exposure = penalty_low_exposure
+
+    def recency_factor(self, last_played, reference_date=None):
+        if reference_date is None:
+            reference_date = datetime.now()
+        days_since = (reference_date - pd.to_datetime(last_played)).days
+        return max(0, 1 - days_since / 180)
+
+    def calculate_mastery(self, row):
+        accuracy = row['correct_attempts'] / row['total_attempts'] if row['total_attempts'] > 0 else 0
+        diversity = len(row['game_name'])
+        recency = self.recency_factor(row['last_played'])
+
+        score = (
+            accuracy * self.weight_accuracy +
+            (diversity / 2) * self.weight_diversity +
+            recency * self.weight_recency
+        )
+
+        if row['total_attempts'] < self.min_attempts:
+            exposure_ratio = row['total_attempts'] / self.min_attempts
+            penalty = self.min_penalty + self.penalty_low_exposure * exposure_ratio
+            score *= penalty
+
+        return round(score, 3)
+
+    def classify(self, score):
+        if score >= 0.8:
+            return '✅ Dominada'
+        elif score >= 0.5:
+            return '⚠️ Parcialmente'
+        else:
+            return '❌ Não dominada'
+
+    def process_game_data(self, df):
+        df['correct_attempt'] = df['won'].astype(int)
+        summary = df.groupby('word').agg({
+            'correct_attempt': 'sum',
+            'word': 'count',
+            'game_name': lambda x: list(set(x)),
+            'datetime': 'max'
+        }).rename(columns={
+            'word': 'total_attempts',
+            'correct_attempt': 'correct_attempts',
+            'datetime': 'last_played'
+        })
+        return summary
+
+    def combine_game_summaries(self, *summaries):
+        df_combined = pd.concat(summaries)
+        df_final = df_combined.groupby(df_combined.index).agg({
+            'correct_attempts': 'sum',
+            'total_attempts': 'sum',
+            'game_name': lambda x: list(set(sum(x, []))),
+            'last_played': 'max'
+        })
+        return df_final
+
+    def generate_report(self, word_shuffle_path, hangman_path):
+        df_word = pd.read_csv(word_shuffle_path)
+        df_hangman = pd.read_csv(hangman_path)
+
+        word_summary = self.process_game_data(df_word)
+        hangman_summary = self.process_game_data(df_hangman)
+
+        df_final = self.combine_game_summaries(word_summary, hangman_summary)
+        df_final['mastery_score'] = df_final.apply(self.calculate_mastery, axis=1)
+        df_final['status'] = df_final['mastery_score'].apply(self.classify)
+
+        return df_final.sort_values(by='mastery_score', ascending=False)
+    
+    def analyze_phrase_mastery(self, phrases, mastery_df):
+        """
+        Recebe uma lista de frases e retorna o domínio de cada palavra.
+        """
+        results = []
+
+        for phrase in phrases:
+            words = phrase.lower().split()
+            for word in words:
+                if word in mastery_df.index:
+                    score = mastery_df.loc[word, 'mastery_score']
+                    status = mastery_df.loc[word, 'status']
+                else:
+                    score = 0.0
+                    status = '❌ Não dominada'
+                results.append({
+                    'word': word,
+                    'score': score,
+                    'status': status
+                })
+
+        return pd.DataFrame(results)
+
+
 class WordLearningAnalyzer:
     """
     Analyzes word learning progress based on word accuracy data.
@@ -23,6 +134,14 @@ class WordLearningAnalyzer:
         self.word_accuracy_map: Dict[str, float] = dict(
             zip(word_stats_df['word'].str.lower(), word_stats_df['acuracia'])
         )
+    def accuracy_word(self, word:str|list[str]) -> dict[str]:
+
+        if isinstance(word, str):
+            word = [word]
+        
+        accuracies = {part:self.word_accuracy_map.get(part, 0.0) for part in list(word)}
+        # return all(acc > threshold for acc in accuracies)
+        return accuracies
 
     def _is_word_learned(self, word: str, threshold: float = 60.0) -> bool:
         """
@@ -142,4 +261,6 @@ class WordStatsAnalyzer:
             "palavra_mais_difícil": [self.get_top_words(1, more_difficult=True)["word"].values[0]],
             "Acuracia media": [self.stats_grouped["acuracia"].mean()],
         })
+    
+    
 

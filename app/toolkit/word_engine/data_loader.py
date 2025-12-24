@@ -28,9 +28,13 @@ class DataLoader:
         else:
             return set([i["category"] for i in index if i["type"] == self.group])
 
-    def get_count_subcategory_per_category(self) -> dict:
+    def get_count_subcategory_per_category(self, group) -> dict:
         index = self.load_index()
-        return {i["category"]:len(i["subcategory"]) for i in index if i["type"] == self.group}
+
+        if group:
+            return {i["category"]:len(i["subcategory"]) for i in index if i["type"] == group}
+        else:
+            return {i["category"]:len(i["subcategory"]) for i in index if i["type"] == self.group}
     
     def map_categories_to_subcategories(self, group=None) -> dict:
         index = self.load_index()

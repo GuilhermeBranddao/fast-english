@@ -753,3 +753,18 @@ datetime,word,hint,won,difficulty,total_attempts,used_attempts,correct_guessed_l
 2025-05-14T12:49:42,to head,comandar,True,0.0,6,0,"t,o,h,e,a,d",,,,9.336730003356934,hangman,1,verbos,gestão,3d74906112fb8163,"t,o,h,e,a,d",to_head
 2025-05-14T12:50:26,she,ela,True,0.0,6,0,"s,h,e",,,,4.039291620254517,hangman,1,outras_partes_do_discurso,pronomes,3d74906112fb8163,"s,h,e",she
 2025-05-18T20:22:43,single,solteiro,True,0.16666666666666666,6,1,"s,i,n,g,l,e",a,,,29.01960802078247,hangman,5,pessoas,amor_e_amizade,43a08fc1b7611a1f,"a,l,s,i,n,g,e",single
+2025-11-19T17:45:55,why,porquê,False,1.0,6,6,"w,y","a,g,t,e,j,f",,,42.02382731437683,hangman,11,words,advérbios,61edf08fa04294df,"w,y,e,w,a,a,g,j,g,t,f",21467ded527a4c0da777391083867aee
+2025-11-19T17:46:18,perhaps,talvez,False,1.0,6,6,"e,a","t,m,y,b,x,n",,,23.019951820373535,hangman,5,words,advérbios,61edf08fa04294df,"m,a,y,b,e,t,x,a,n",e4480fb63eea442b8dac3b89ff73d145
+2025-11-19T18:17:42,how,como,True,0.0,6,0,"h,o,w",,,,19.02506113052368,hangman,1,words,advérbios,1ce0f05d73be448a,"h,o,w",4a7f5b37dc5a4f9ea0dbc1ea241d3d08
+2025-11-19T18:17:57,what,o quê,True,0.0,6,0,"w,h,a,t",,,,14.29068398475647,hangman,1,words,advérbios,1ce0f05d73be448a,"w,h,a,t",a214083cbbb340279a303389623a89d0
+2025-11-19T18:18:30,when,quando,True,0.0,6,0,"w,h,e,n",,,,33.18900227546692,hangman,1,words,advérbios,1ce0f05d73be448a,"w,h,e,n",d15989bd74454c69938ddaff5db7ec70
+2025-11-19T18:18:52,otherwise,De outra forma,False,1.0,6,6,"e,r,w,s,e","g,a,x,q,n,j",,,21.102104902267456,hangman,11,words,advérbios,1ce0f05d73be448a,"w,a,n,s,j,g,r,e,w,q,x",3277307f5bd940f98897abde99b9b130
+2025-11-19T18:19:29,especially,Especialmente,True,0.5,6,3,"e,s,p,e,c,i,a,l,l,y","x,h,r",,,37.59745144844055,hangman,12,words,advérbios,1ce0f05d73be448a,"s,p,e,s,x,a,r,a,l,y,h,c,i",637caf1c08474579b483cce6d465ab95
+2025-11-19T18:19:45,where,onde,True,0.0,6,0,"w,h,e,r,e",,,,15.68858814239502,hangman,1,words,advérbios,1ce0f05d73be448a,"w,h,e,r,e",ad560613d63448b2b52c23f232d686d4
+2025-11-19T18:20:28,even,Até | mesmo | ainda,True,0.5,6,3,"e,v,e,n","a,s,m",,,42.806865215301514,hangman,7,words,advérbios,1ce0f05d73be448a,"s,m,a,e,v,m,n",24d4214ff4974c129c5ca71eaf1c786c
+2025-11-19T18:21:43,therefore,Portanto | Por isso | Assim,False,1.0,6,6,"t,h,e,r,e,o,r,e","s,d,a,w,i,l",,,74.4675350189209,hangman,16,words,advérbios,1ce0f05d73be448a,"t,h,a,i,s,e,r,w,a,i,o,l,t,i,d",7efe2821d7534664a9a3ff43be339f48
+2025-11-20T07:50:54,logistics,a logística,True,0.0,6,0,"l,o,g,i,s,t,i,c,s",,,,9.005661725997925,hangman,1,words,trabalho,24f9438b01e07adc,"l,o,g,i,s,t,i,c",ad2371a9ade443c085ff24e2398c4f56
+2025-11-20T07:51:20,agreement,o contrato,False,1.0,6,6,"a,e,e,e","d,o,b,c,u,i",,,25.546087503433228,hangman,8,words,trabalho,24f9438b01e07adc,"b,c,d,a,e,i,o,u",1a13dd8d0d0944d4bfa5fb7bd24ce68d
+2025-11-20T07:52:16,association,a associação,True,0.0,6,0,"a,s,s,o,c,i,a,t,i,o,n",,,,56.40085554122925,hangman,7,words,trabalho,24f9438b01e07adc,"a,s,o,c,i,a,t,n",13f08bdcb21545bba88dcc2e25617994
+2025-11-20T07:52:47,mediator,o mediador,True,0.3333333333333333,6,2,"m,e,d,i,a,t,o,r","l,y",,,30.01434087753296,hangman,7,words,trabalho,24f9438b01e07adc,"m,e,d,i,a,t,l,e,y,o,r",e054add01aff4490b5ad3e89be2257a5
+2025-11-20T07:53:34,roof,Teto | Tenhado,True,0.0,6,0,"r,o,o,f",,,,14.006013631820679,hangman,1,words,casa,f5ecfc97ee03234,"r,o,o,f",2ae108a92f39415ba90491d68808c03f

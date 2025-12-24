@@ -173,25 +173,6 @@ class WordBaseApp(BasePage):
 
         self.data_loader = DataLoader()
 
-        self.category_colors = [
-            "#FFC1C1", "#C1FFD7", "#C1D4FF", "#FFF5C1", "#E1C1FF", "#C1F0FF",
-            "#A8D5BA",  # Verde menta
-            "#F9E79F",  # Amarelo claro
-            "#AED6F1",  # Azul bebê
-            "#F5CBA7",  # Pêssego
-            "#D7BDE2",  # Lavanda
-            "#FADBD8",  # Rosa claro
-            "#D5F5E3",  # Verde claro
-            "#FDEBD0",  # Creme
-            "#E8DAEF",  # Lilás
-            "#F6DDCC",  # Bege
-            "#D6EAF8",  # Azul claro
-            "#FCF3CF",  # Amarelo pastel
-            "#E5E8E8",  # Cinza claro
-            "#FDEDEC",  # Rosa muito claro
-            "#EBDEF0",  # Roxo claro
-        ]
-
         self.build_ui()
 
 
@@ -220,20 +201,53 @@ class WordBaseApp(BasePage):
         self.content_frame = tk.Frame(self)
         self.content_frame.pack(fill="both", expand=True, pady=10)
 
-        self.create_window(self.build_categories)
+        self.draw_categories()
 
     def switch_type(self, type_name):
         self.current_type = type_name
 
         if type_name == "database":
-            self.create_window(self.build_specific_words)
+            # Caminho da pasta com os arquivos
+            # folder = Path(os.path.join("database", "vocabulary", "save_words"))
+            # if not folder.exists():
+            #     folder.mkdir(parents=True)
+
+            # # Lista arquivos .json
+            # self.database_files = list(folder.glob("*.json"))
+            
+            # Chama função que desenha os botões dos arquivos
+            # self.draw_database_files()
+            self.draw_sessions()
             return
 
-        self.create_window(self.build_categories)
+        self.draw_categories()
     
     
-    def build_specific_words(self):
+    def draw_sessions(self):
         print("Draw Exercicios Por palavras Personalidados")
+        for widget in self.content_frame.winfo_children():
+            widget.destroy()
+
+        self.setup_scrollable_category_area(parent_frame=self.content_frame)
+        
+        category_colors = [
+            "#FFC1C1", "#C1FFD7", "#C1D4FF", "#FFF5C1", "#E1C1FF", "#C1F0FF",
+            "#A8D5BA",  # Verde menta
+            "#F9E79F",  # Amarelo claro
+            "#AED6F1",  # Azul bebê
+            "#F5CBA7",  # Pêssego
+            "#D7BDE2",  # Lavanda
+            "#FADBD8",  # Rosa claro
+            "#D5F5E3",  # Verde claro
+            "#FDEBD0",  # Creme
+            "#E8DAEF",  # Lilás
+            "#F6DDCC",  # Bege
+            "#D6EAF8",  # Azul claro
+            "#FCF3CF",  # Amarelo pastel
+            "#E5E8E8",  # Cinza claro
+            "#FDEDEC",  # Rosa muito claro
+            "#EBDEF0",  # Roxo claro
+        ]
 
         SAVE_FOLDER = Path("database/vocabulary/save_words")
         database_files = list(SAVE_FOLDER.glob("*.json"))
@@ -263,15 +277,100 @@ class WordBaseApp(BasePage):
 
         # for num_session, list_word_path in sessions.items():
         #     print(num_session, list_word_path)
-            category_color = self.category_colors[i % len(self.category_colors)]
+            category_color = category_colors[i % len(category_colors)]
 
-            self.create_category_box(frame=self.scroll_frame,
+            self.create_personalized_sessions_box(frame=self.scroll_frame,
                                         category_name=category_name,
                                         dict_subcategory_words=sessions,
                                         category_color=category_color,
                                         # all_maps=all_maps,
                                         # learned_per_category=learned_per_category
                                         )
+
+    
+    def create_personalized_sessions_box(self,
+                                        frame,
+                                        category_name,
+                                        dict_subcategory_words,
+                                        category_color,
+                                        all_maps={},
+                                        learned_per_category={}):
+
+        # frame.pack(fill="x", padx=10, pady=5)
+
+        # Frame principal da categoria
+        frame_category = tk.Frame(frame, bg="white", bd=2, relief="groove")
+        frame_category.pack(fill="x", padx=10, pady=10)
+
+        # Quadrado branco com nome e info da categoria
+        frame_header = tk.Frame(frame_category, bg=category_color, bd=5,)
+        frame_header.pack(fill="x", padx=10, pady=5)
+
+        tk.Label(frame_header, text=category_name, font=("Helvetica", 14, "bold"), bg=category_color, anchor="w").pack(anchor="w")
+
+        total_words = sum(len(words) for words in dict_subcategory_words.values())
+        learned_words = learned_per_category.get(category_name, 0)  # Atualize com os dados reais futuramente
+
+        label = tk.Label(frame_header, text=f"{learned_words}/{total_words} Words Learned", bg="white", font=("Helvetica", 10), anchor="w")#.pack(anchor="w")
+        # label = tk.Label(frame_header, text=f"{learned_words}/{total_words} words learned")
+        label.pack(anchor="w")
+        self.add_tooltip(label, f"{total_words - learned_words} words remaining")
+
+        # sub_progress = self.get_accuracy_for_words(word_list)
+        # Barra de progresso da categoria
+        progress = (learned_words / total_words) * 100 if total_words else 0
+
+        self.draw_progress_bar(parent=frame_header, 
+                                progress=progress, 
+                                height=10, background="#ddd", fill_color="#4caf50", padding=(0, 0))
+
+        # Subcategorias dentro da categoria (inicialmente ocultas)
+        frame_subcategory = tk.Frame(frame_category, bg="white")
+
+        def toggle_subcategories(frame=frame_subcategory, subcategory_words=dict_subcategory_words, category_name=category_name):
+            if frame.winfo_ismapped():
+                frame.pack_forget()
+            else:
+                if not frame.winfo_children():
+                    for subcategory_name, list_word_path in subcategory_words.items():
+                        self.create_subsession_box(frame, subcategory_name, list_word_path, category_name, all_maps)
+                frame.pack(fill="x", padx=10, pady=5)
+                        
+        # Botão de expandir/retrair subcategorias
+        toggle_button = tk.Button(frame_header, text="Mostrar / Ocultar", cursor="hand2",
+                                  command=toggle_subcategories)
+        toggle_button.pack(anchor="e", pady=(5, 0))
+    
+    def create_subsession_box(self, 
+                            frame,
+                            subcategory_name,
+                            list_word_path,
+                            category_name,
+                            all_maps):
+
+        index = len(frame.winfo_children())
+        sub_color = "#f9f9f9" if index % 2 == 0 else "#eeeeee"
+
+        sub_frame = tk.Frame(frame, bg=sub_color, bd=1, relief="solid")
+        sub_frame.pack(fill="x", pady=5)
+
+        tk.Label(sub_frame, text=subcategory_name, font=("Helvetica", 12, "bold"),
+                bg=sub_color, anchor="w").pack(anchor="w", padx=5, pady=(5, 0))
+
+        # Progresso
+        category_map = all_maps.get(category_name, {})
+        sub_learned = category_map.get(subcategory_name, {}).get("learned", 0)
+        sub_progress = (sub_learned / len(list_word_path)) * 100 if list_word_path else 0
+
+        tk.Label(sub_frame, text=f"{sub_learned}/{len(list_word_path)} words", bg=sub_color,
+                font=("Helvetica", 10), anchor="w").pack(anchor="w", padx=5)
+
+        self.draw_progress_bar(parent=sub_frame, progress=sub_progress, padding=(0, 0))
+
+        tk.Button(sub_frame, text="Study",
+                command=lambda words_path=list_word_path: self.start_game(words_path)
+                ).pack(pady=5, anchor="e", padx=5)
+
 
     def draw_database_files(self):
         for widget in self.content_frame.winfo_children():
@@ -333,9 +432,6 @@ class WordBaseApp(BasePage):
         canvas.create_rectangle(0, 0, canvas.winfo_reqwidth() * progress / 100, 10, fill="#4caf50", width=0)
         
         return canvas
-    
-    def calculate_progress(self, learned, total):
-        return (learned / total) * 100 if total else 0
 
     def add_tooltip(self, widget, text):
         tooltip = tk.Toplevel(widget)
@@ -380,7 +476,7 @@ class WordBaseApp(BasePage):
                 command=lambda words_path=list_word_path: self.start_game(words_path)
                 ).pack(pady=5, anchor="e", padx=5)
 
-    def create_category_box(self, frame, category_name, dict_subcategory_words, category_color, all_maps={}, learned_per_category={}):
+    def create_category_box(self, frame, category_name, dict_subcategory_words, category_color, all_maps, learned_per_category):
         # frame.pack(fill="x", padx=10, pady=5)
 
         # Frame principal da categoria
@@ -443,21 +539,38 @@ class WordBaseApp(BasePage):
         self.scroll_canvas = canvas
         self.scroll_frame = scroll_frame
 
-    def create_window(self, func_build_category):
-        print("Cria Janela")
+    def draw_categories(self):
         # TODO: Colocar icones
+        print("Draw Categories")
         for widget in self.content_frame.winfo_children():
             widget.destroy()
 
         self.setup_scrollable_category_area(parent_frame=self.content_frame)
 
-        func_build_category()
+        category_colors = [
+            "#FFC1C1", "#C1FFD7", "#C1D4FF", "#FFF5C1", "#E1C1FF", "#C1F0FF",
+            "#A8D5BA",  # Verde menta
+            "#F9E79F",  # Amarelo claro
+            "#AED6F1",  # Azul bebê
+            "#F5CBA7",  # Pêssego
+            "#D7BDE2",  # Lavanda
+            "#FADBD8",  # Rosa claro
+            "#D5F5E3",  # Verde claro
+            "#FDEBD0",  # Creme
+            "#E8DAEF",  # Lilás
+            "#F6DDCC",  # Bege
+            "#D6EAF8",  # Azul claro
+            "#FCF3CF",  # Amarelo pastel
+            "#E5E8E8",  # Cinza claro
+            "#FDEDEC",  # Rosa muito claro
+            "#EBDEF0",  # Roxo claro
+        ]
 
-    def build_categories(self):
-        print("Draw Categories de Palavras e Frases")
         categories = {}
         all_maps, learned_per_category = self.word_stats_analyzer.generate_learning_maps(categories)
+        
         dict_categories_to_subcategories = self.data_loader.map_categories_to_subcategories(self.current_type)
+
         dict_subcategories_to_word_path = self.data_loader.map_subcategories_to_word_path(self.current_type)
 
         for i, category_name in enumerate(self.data_loader.get_categories(self.current_type)):
@@ -468,7 +581,7 @@ class WordBaseApp(BasePage):
                 if name in dict_subcategories_to_word_path
             }
 
-            category_color = self.category_colors[i % len(self.category_colors)]
+            category_color = category_colors[i % len(category_colors)]
 
             self.create_category_box(frame=self.scroll_frame,
                                     category_name=category_name,
